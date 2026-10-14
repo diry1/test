@@ -53,7 +53,8 @@ for (const dialog of document.querySelectorAll('dialog')) {
 $('alphabet').onclick = event => {
   const button = event.target.closest('[data-letter]');
   if (!button || button.disabled) return;
-  selectedLetter = button.dataset.letter; expandedBrands = false; $('search').value = ''; pageSize = 48; render();
+  tab(false);
+  selectedLetter = button.dataset.letter; selectedBrand = null; activeCar = null; selectedGeneration = null; selectedSpecification = null; expandedBrands = false; $('search').value = ''; pageSize = 48; render();
 };
 const firstLetter = name => /^[A-Z]$/.test(name[0].toUpperCase()) ? name[0].toUpperCase() : '#';
 function navigate(level, value) {
@@ -93,7 +94,7 @@ function renderFolder(spotted) {
     (selectedBrand ? ' / ' + crumb('brand', selectedBrand, selectedBrand) : '') +
     (activeCar ? ' / ' + crumb('model', activeCar.id, activeCar.name) : '') +
     (selectedGeneration ? ' / ' + crumb('generation', selectedGeneration.id, selectedGeneration.name) : '');
-  $('alphabet').hidden = !!selectedBrand;
+  $('alphabet').hidden = false;
   const query = $('search').value.trim().toLocaleLowerCase();
   let entries = [];
   $('folder-info').innerHTML = '';
