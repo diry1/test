@@ -77,3 +77,5 @@ The browser opens on A and switches between individual letters using the highlig
 Brand cards have a settings gear. **Move to main list** promotes a brand from Show All into its alphabetical position in the main list. **Hide under Show All** moves a main-list brand into the additional list, where it can be restored later. Browser-local preferences override the supplied featured list and survive reloads; clearing site data resets them. Hiding a brand does not delete its sightings. Preference writes report storage errors without changing the visible lists.
 
 To verify preferences with the local server running, run `node web/tests/brand-preferences.cjs` with the same Playwright/browser environment variables as the smoke test.
+
+When a letter has three or fewer additional brands, all its brands appear in one alphabetical main list and Show All is omitted. The threshold is calculated before search and includes saved brand preferences. Letters with four or more additional brands retain the two-list layout.
