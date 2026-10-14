@@ -79,3 +79,5 @@ Brand cards have a settings gear. **Move to main list** promotes a brand from Sh
 To verify preferences with the local server running, run `node web/tests/brand-preferences.cjs` with the same Playwright/browser environment variables as the smoke test.
 
 When a letter has three or fewer additional brands, all its brands appear in one alphabetical main list and Show All is omitted. The threshold is calculated before search and includes saved brand preferences. Letters with four or more additional brands retain the two-list layout.
+
+Brand and model cards display completion circles. Brand completion is distinct spotted models divided by available models in the brand. Model completion is distinct spotted generations divided by known generations; model-only sightings do not imply a particular generation. Models with no generation records use a binary model-spotted percentage. Repeated sightings do not increase completion. Brands without any model data show an unavailable dash. The percentage stays below 100 until every relevant entry is spotted.

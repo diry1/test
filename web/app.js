@@ -107,12 +107,18 @@ $('catalogue-view').addEventListener('click', event => {
   const button = event.target.closest('[data-level]');
   if (button) navigate(button.dataset.level, button.dataset.value);
 });
-function folderCard(level, value, title, subtitle, spotted = false) {
-  return `<button class="card folder-card" data-level="${level}" data-value="${escapeHTML(value)}"><div class="folder-icon" aria-hidden="true">▱</div><div class="card-body"><div class="car-name">${escapeHTML(title)}</div><span class="meta">${escapeHTML(subtitle)}</span>${spotted ? '<span class="badge">✓ Spotted</span>' : ''}</div></button>`;
+function completionCircle(completed, total, unit) {
+  const ratio = total ? completed / total : 0;
+  const percent = completed === total && total ? 100 : Math.min(99, Math.round(ratio * 100));
+  const label = total ? `${completed} of ${total} ${unit} spotted (${percent}%)` : 'Completion unavailable: no catalogue records';
+  return `<span class="completion-circle${ratio === 1 ? ' complete' : ''}${!total ? ' unavailable' : ''}" role="img" aria-label="${escapeHTML(label)}" title="${escapeHTML(label)}" data-completed="${completed}" data-total="${total}"><svg viewBox="0 0 44 44" aria-hidden="true"><circle class="completion-track" cx="22" cy="22" r="18"/><circle class="completion-fill" cx="22" cy="22" r="18" pathLength="100" stroke-dasharray="${ratio * 100} 100"/></svg><span>${total ? percent + '%' : '—'}</span></span>`;
 }
-function brandCard(brand, subtitle, spotted) {
+function folderCard(level, value, title, subtitle, spotted = false, progress = '') {
+  return `<button class="card folder-card" data-level="${level}" data-value="${escapeHTML(value)}"><div class="folder-art"><div class="folder-icon" aria-hidden="true">▱</div>${progress}</div><div class="card-body"><div class="car-name">${escapeHTML(title)}</div><span class="meta">${escapeHTML(subtitle)}</span>${spotted ? '<span class="badge">✓ Spotted</span>' : ''}</div></button>`;
+}
+function brandCard(brand, subtitle, spotted, completed, total) {
   const main = brandIsFeatured(brand);
-  return `<article class="card folder-card brand-card"><button class="brand-open" data-level="brand" data-value="${escapeHTML(brand)}"><div class="folder-icon" aria-hidden="true">▱</div><div class="card-body"><div class="car-name">${escapeHTML(brand)}</div><span class="meta">${escapeHTML(subtitle)}</span>${spotted ? '<span class="badge">✓ Spotted</span>' : ''}</div></button><details class="card-settings" data-brand-settings="${escapeHTML(brand)}"><summary aria-label="Settings for ${escapeHTML(brand)}" title="Brand settings">⚙</summary><div class="card-settings-menu"><button data-brand-action="${main ? 'hide' : 'show'}" data-brand="${escapeHTML(brand)}">${main ? '↓ Hide under Show All' : '↑ Move to main list'}</button></div></details></article>`;
+  return `<article class="card folder-card brand-card"><button class="brand-open" data-level="brand" data-value="${escapeHTML(brand)}"><div class="folder-art"><div class="folder-icon" aria-hidden="true">▱</div>${completionCircle(completed, total, 'models')}</div><div class="card-body"><div class="car-name">${escapeHTML(brand)}</div><span class="meta">${escapeHTML(subtitle)}</span>${spotted ? '<span class="badge">✓ Spotted</span>' : ''}</div></button><details class="card-settings" data-brand-settings="${escapeHTML(brand)}"><summary aria-label="Settings for ${escapeHTML(brand)}" title="Brand settings">⚙</summary><div class="card-settings-menu"><button data-brand-action="${main ? 'hide' : 'show'}" data-brand="${escapeHTML(brand)}">${main ? '↓ Hide under Show All' : '↑ Move to main list'}</button></div></details></article>`;
 }
 document.addEventListener('click', event => {
   for (const menu of document.querySelectorAll('.card-settings[open]')) {
@@ -131,6 +137,7 @@ function renderFolder(spotted) {
     (activeCar ? ' / ' + crumb('model', activeCar.id, activeCar.name) : '') +
     (selectedGeneration ? ' / ' + crumb('generation', selectedGeneration.id, selectedGeneration.name) : '');
   $('alphabet').hidden = false;
+  const spottedGenerations = new Set(sightings.map(s => s.generationID).filter(Boolean));
   const query = $('search').value.trim().toLocaleLowerCase();
   let entries = [];
   $('folder-info').innerHTML = '';
@@ -156,7 +163,7 @@ function renderFolder(spotted) {
     $('alphabet').innerHTML = `<div class="alphabet-heading"><span class="eyebrow">BROWSE BY LETTER</span><span class="letter-current" aria-live="polite">${selectedLetter}</span></div><div class="alphabet-letters">` + ['#', ...'ABCDEFGHIJKLMNOPQRSTUVWXYZ'].filter(letter => letter !== '#' || available.has('#')).map(letter => `<button data-letter="${letter}" aria-pressed="${selectedLetter === letter}" ${!available.has(letter) ? 'disabled' : ''} aria-label="Brands starting with ${letter === '#' ? 'numbers or symbols' : letter}">${letter}</button>`).join('') + '</div>';
     const letterBrands = [...groups].filter(([brand]) => firstLetter(brand) === selectedLetter).sort(([a], [b]) => a.localeCompare(b));
     const matches = ([brand]) => brand.toLocaleLowerCase().includes(query);
-    const card = ([brand, models]) => brandCard(brand, models.length ? `${models.length} models · ${models.filter(c => spotted.has(c.id)).length} spotted` : 'Model records not available yet', models.some(c => spotted.has(c.id)));
+    const card = ([brand, models]) => brandCard(brand, models.length ? `${models.length} models · ${models.filter(c => spotted.has(c.id)).length} spotted` : 'Model records not available yet', models.some(c => spotted.has(c.id)), models.filter(c => spotted.has(c.id)).length, models.length);
     const featured = letterBrands.filter(([brand]) => brandIsFeatured(brand)).filter(matches);
     const additional = letterBrands.filter(([brand]) => !brandIsFeatured(brand));
     entries = featured.map(card);
@@ -173,7 +180,7 @@ function renderFolder(spotted) {
   } else if (!activeCar) {
     $('folder-title').textContent = `${selectedBrand} models`;
     $('search').placeholder = `Find a ${selectedBrand} model…`;
-    entries = cars.filter(c => c.brand === selectedBrand && c.name.toLocaleLowerCase().includes(query)).map(c => folderCard('model', c.id, c.name, `${c.generations.length} known generations`, spotted.has(c.id)));
+    entries = cars.filter(c => c.brand === selectedBrand && c.name.toLocaleLowerCase().includes(query)).map(c => folderCard('model', c.id, c.name, `${c.generations.length} known generations`, spotted.has(c.id), completionCircle(c.generations.length ? c.generations.filter(g => spottedGenerations.has(g.id)).length : Number(spotted.has(c.id)), c.generations.length || 1, c.generations.length ? 'generations' : 'models')));
   } else if (!selectedGeneration) {
     $('folder-title').textContent = `${activeCar.name} generations`;
     $('search').placeholder = 'Find a generation…';
