@@ -1,6 +1,7 @@
 const $ = id => document.getElementById(id);
 const escapeHTML = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const silhouette = `<div class="visual"><svg viewBox="0 0 200 90" fill="none" aria-hidden="true"><path d="M22 59V48l20-7 24-24h59l30 24 25 7v18H22Z" fill="currentColor" opacity=".3"/><path d="m58 40 17-17h45l21 17H58Z" fill="currentColor" opacity=".5"/><circle cx="53" cy="65" r="13" fill="currentColor"/><circle cx="150" cy="65" r="13" fill="currentColor"/><circle cx="53" cy="65" r="6" fill="#eef0e8"/><circle cx="150" cy="65" r="6" fill="#eef0e8"/></svg><span class="placeholder">Reference photo not available</span></div>`;
+let selectedLetter = '';
 let selectedBrand = null, selectedGeneration = null, selectedSpecification = null;
 let cars = [], sightings = [], db, activeCar, pageSize = 48, photoData = null, photoLoading = false, photoRevision = 0;
 const englishGeneration = label => String(label ?? '').replace(/покол[іi]ння/gi, 'Generation').replace(/рестайл[іi]нг/gi, 'Facelift').replace(/^[IVXІ]+(?=[ -]Generation)/, prefix => prefix.replaceAll('І', 'I'));
@@ -48,9 +49,15 @@ $('more').onclick = () => { pageSize += 48; render(); };
 for (const dialog of document.querySelectorAll('dialog')) {
   dialog.querySelector('.close').onclick = () => dialog.close();
 }
+$('alphabet').onclick = event => {
+  const button = event.target.closest('[data-letter]');
+  if (!button || button.disabled) return;
+  selectedLetter = button.dataset.letter; pageSize = 48; render();
+};
+const firstLetter = name => /^[A-Z]$/.test(name[0].toUpperCase()) ? name[0].toUpperCase() : '#';
 function navigate(level, value) {
   selectedSpecification = null;
-  if (level === 'root') { selectedBrand = null; activeCar = null; selectedGeneration = null; }
+  if (level === 'root') { selectedLetter = ''; selectedBrand = null; activeCar = null; selectedGeneration = null; }
   if (level === 'brand') { selectedBrand = value; activeCar = null; selectedGeneration = null; }
   if (level === 'model') { activeCar = cars.find(c => c.id === value); selectedGeneration = null; }
   if (level === 'generation') { selectedGeneration = activeCar.generations.find(g => g.id === value); }
@@ -81,6 +88,7 @@ function renderFolder(spotted) {
     (selectedBrand ? ' / ' + crumb('brand', selectedBrand, selectedBrand) : '') +
     (activeCar ? ' / ' + crumb('model', activeCar.id, activeCar.name) : '') +
     (selectedGeneration ? ' / ' + crumb('generation', selectedGeneration.id, selectedGeneration.name) : '');
+  $('alphabet').hidden = !!selectedBrand;
   const query = $('search').value.trim().toLocaleLowerCase();
   let entries = [];
   $('folder-info').innerHTML = '';
@@ -90,7 +98,9 @@ function renderFolder(spotted) {
     $('search').placeholder = 'Find a brand…';
     const groups = new Map();
     for (const car of cars) { if (!groups.has(car.brand)) groups.set(car.brand, []); groups.get(car.brand).push(car); }
-    entries = [...groups].sort(([a], [b]) => a.localeCompare(b)).filter(([brand]) => brand.toLocaleLowerCase().includes(query)).map(([brand, models]) => folderCard('brand', brand, brand, `${models.length} models · ${models.filter(c => spotted.has(c.id)).length} spotted`));
+    const available = new Set([...groups.keys()].map(firstLetter));
+    $('alphabet').innerHTML = ['', '#', ...'ABCDEFGHIJKLMNOPQRSTUVWXYZ'].map(letter => `<button data-letter="${letter}" aria-pressed="${selectedLetter === letter}" ${letter && !available.has(letter) ? 'disabled' : ''} aria-label="${letter ? letter === '#' ? 'Brands starting with numbers or symbols' : `Brands starting with ${letter}` : 'All brands'}">${letter || 'All'}</button>`).join('');
+    entries = [...groups].filter(([brand]) => !selectedLetter || firstLetter(brand) === selectedLetter).sort(([a], [b]) => a.localeCompare(b)).filter(([brand]) => brand.toLocaleLowerCase().includes(query)).map(([brand, models]) => folderCard('brand', brand, brand, `${models.length} models · ${models.filter(c => spotted.has(c.id)).length} spotted`));
   } else if (!activeCar) {
     $('folder-title').textContent = `${selectedBrand} models`;
     $('search').placeholder = `Find a ${selectedBrand} model…`;
