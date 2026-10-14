@@ -1,7 +1,7 @@
 const $ = id => document.getElementById(id);
 const escapeHTML = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const silhouette = `<div class="visual"><svg viewBox="0 0 200 90" fill="none" aria-hidden="true"><path d="M22 59V48l20-7 24-24h59l30 24 25 7v18H22Z" fill="currentColor" opacity=".3"/><path d="m58 40 17-17h45l21 17H58Z" fill="currentColor" opacity=".5"/><circle cx="53" cy="65" r="13" fill="currentColor"/><circle cx="150" cy="65" r="13" fill="currentColor"/><circle cx="53" cy="65" r="6" fill="#eef0e8"/><circle cx="150" cy="65" r="6" fill="#eef0e8"/></svg><span class="placeholder">Reference photo not available</span></div>`;
-let selectedBrand = null, selectedGeneration = null;
+let selectedBrand = null, selectedGeneration = null, selectedSpecification = null;
 let cars = [], sightings = [], db, activeCar, pageSize = 48, photoData = null, photoLoading = false, photoRevision = 0;
 const formatGeneration = g => `${g.name}${g.yearFrom ? ` · ${g.yearFrom}–${g.yearTo ?? 'unspecified'}` : ''}`;
 const request = req => new Promise((resolve, reject) => { req.onsuccess = () => resolve(req.result); req.onerror = () => reject(req.error); });
@@ -24,7 +24,7 @@ function render() {
   $('count').textContent = spotted.size;
   $('progress').textContent = `${spotted.size.toLocaleString()} / ${cars.length.toLocaleString()} models spotted`;
   renderFolder(spotted);
-  $('sightings').innerHTML = [...sightings].sort((a,b) => b.date.localeCompare(a.date)).map(s => `<article class="card">${s.photo ? `<img class="sighting-photo" src="${s.photo}" alt="Your photo of ${escapeHTML(s.carTitle)}">` : silhouette}<div class="card-body"><div class="car-name">${escapeHTML(s.carTitle)}</div>${s.generationLabel ? `<p class="meta">${escapeHTML(s.generationLabel)}</p>` : ''}<p class="date">${escapeHTML(new Date(s.date).toLocaleString())}</p>${s.note ? `<p class="note">${escapeHTML(s.note)}</p>` : ''}<button class="delete" data-delete="${escapeHTML(s.id)}">Delete sighting</button></div></article>`).join('') || '<div class="empty"><h3>Your collection starts here</h3><p>Find a car in the catalogue and log your first sighting.</p></div>';
+  $('sightings').innerHTML = [...sightings].sort((a,b) => b.date.localeCompare(a.date)).map(s => `<article class="card">${s.photo ? `<img class="sighting-photo" src="${s.photo}" alt="Your photo of ${escapeHTML(s.carTitle)}">` : silhouette}<div class="card-body"><div class="car-name">${escapeHTML(s.carTitle)}</div>${s.specificationLabel ? `<p class="meta">${escapeHTML(s.specificationLabel)}</p>` : ''}${s.generationLabel ? `<p class="meta">${escapeHTML(s.generationLabel)}</p>` : ''}<p class="date">${escapeHTML(new Date(s.date).toLocaleString())}</p>${s.note ? `<p class="note">${escapeHTML(s.note)}</p>` : ''}<button class="delete" data-delete="${escapeHTML(s.id)}">Delete sighting</button></div></article>`).join('') || '<div class="empty"><h3>Your collection starts here</h3><p>Find a car in the catalogue and log your first sighting.</p></div>';
   $('export').hidden = !sightings.length;
 }
 function tab(garage) {
@@ -39,6 +39,7 @@ for (const dialog of document.querySelectorAll('dialog')) {
   dialog.querySelector('.close').onclick = () => dialog.close();
 }
 function navigate(level, value) {
+  selectedSpecification = null;
   if (level === 'root') { selectedBrand = null; activeCar = null; selectedGeneration = null; }
   if (level === 'brand') { selectedBrand = value; activeCar = null; selectedGeneration = null; }
   if (level === 'model') { activeCar = cars.find(c => c.id === value); selectedGeneration = null; }
@@ -50,6 +51,14 @@ $('breadcrumbs').onclick = event => {
   if (button) navigate(button.dataset.level, button.dataset.value);
 };
 $('cars').onclick = event => {
+  const specButton = event.target.closest('[data-spec]');
+  if (specButton) {
+    selectedSpecification = selectedGeneration.specifications.find(s => s.id === specButton.dataset.spec);
+    $('detail-content').innerHTML = `<p class="eyebrow">${escapeHTML(activeCar.brand)} · ${escapeHTML(activeCar.name)}</p><h2>${escapeHTML(selectedSpecification.name)}</h2><p>${escapeHTML(formatGeneration(selectedGeneration))}</p><div class="detail-visual">${silhouette}</div><p class="meta">Source record ${escapeHTML(selectedSpecification.sourceID)}</p><p class="muted">Body style and detailed technical fields were not supplied separately.</p><button id="log-spec" class="primary" ${db ? '' : 'disabled'}>Log this specification</button>`;
+    $('log-spec').onclick = () => { $('detail').close(); openLog(); };
+    $('detail').showModal();
+    return;
+  }
   const button = event.target.closest('[data-level]');
   if (button) navigate(button.dataset.level, button.dataset.value);
 };
@@ -65,7 +74,7 @@ function renderFolder(spotted) {
   const query = $('search').value.trim().toLocaleLowerCase();
   let entries = [];
   $('folder-info').innerHTML = '';
-  $('search').closest('.filters').hidden = !!selectedGeneration;
+  $('search').closest('.filters').hidden = false;
   if (!selectedBrand) {
     $('folder-title').textContent = 'Brand folders';
     $('search').placeholder = 'Find a brand…';
@@ -83,8 +92,9 @@ function renderFolder(spotted) {
     $('folder-info').innerHTML = `<p class="muted">${activeCar.generations.length ? 'Choose a generation to view its specifications, or log the model if you are unsure.' : 'Generation records are missing for this model. You can still log a model-level sighting.'}</p><button id="open-log" class="primary" ${db ? '' : 'disabled'}>Log this model</button>`;
   } else {
     $('folder-title').textContent = `${activeCar.name} · Specifications`;
+    $('search').placeholder = 'Find an engine or specification…';
     const specs = selectedGeneration.specifications ?? [];
-    entries = specs.filter(spec => spec.name.toLocaleLowerCase().includes(query)).map(spec => `<article class="card"><div class="card-body"><h3>${escapeHTML(spec.name)}</h3><p>${escapeHTML(spec.description ?? '')}</p></div></article>`);
+    entries = specs.filter(spec => spec.name.toLocaleLowerCase().includes(query)).map(spec => `<button class="card" data-spec="${escapeHTML(spec.id)}"><div class="card-body"><h3>${escapeHTML(spec.name)}</h3><p class="meta">Source record ${escapeHTML(spec.sourceID)}</p><span class="meta">View specification →</span></div></button>`);
     $('folder-info').innerHTML = `<div class="spec-panel"><div class="detail-visual">${silhouette}</div><h3>${escapeHTML(formatGeneration(selectedGeneration))}</h3><p class="muted">${specs.length ? 'Available specifications for this generation.' : 'Engine, trim, and specification records are not available in the source catalogue yet.'}</p><button id="open-log" class="primary" ${db ? '' : 'disabled'}>Log this generation</button></div>`;
   }
   $('results').textContent = selectedGeneration ? `${entries.length} specifications` : `${entries.length.toLocaleString()} ${!selectedBrand ? 'brands' : !activeCar ? 'models' : 'generations'}`;
@@ -100,8 +110,16 @@ function openLog() {
   $('log-title').textContent = `${activeCar.brand} ${activeCar.name}`;
   $('generation').innerHTML = '<option value="">Not sure / model only</option>' + activeCar.generations.map(g => `<option value="${escapeHTML(g.id)}">${escapeHTML(formatGeneration(g))}</option>`).join('');
   $('generation').value = selectedGeneration?.id ?? '';
+  populateSpecifications(selectedSpecification?.id);
   $('log').showModal();
 }
+function populateSpecifications(selectedID = '') {
+  const generation = activeCar.generations.find(g => g.id === $('generation').value);
+  $('specification').innerHTML = '<option value="">Not sure / generation only</option>' + (generation?.specifications ?? []).map(spec => `<option value="${escapeHTML(spec.id)}">${escapeHTML(spec.name)} · #${escapeHTML(spec.sourceID)}</option>`).join('');
+  $('specification').value = selectedID || '';
+  $('specification').disabled = !generation?.specifications?.length;
+}
+$('generation').onchange = () => populateSpecifications();
 $('photo').onchange = async () => {
   const revision = ++photoRevision;
   photoData = null; $('preview').hidden = true; $('form-error').textContent = '';
@@ -124,8 +142,9 @@ $('log-form').onsubmit = async event => {
   event.preventDefault(); if (photoLoading || !db) return;
   const submit = $('log-form').querySelector('[type=submit]'); submit.disabled = true;
   const g = activeCar.generations.find(g => g.id === $('generation').value);
+  const spec = g?.specifications?.find(s => s.id === $('specification').value);
   try {
-    await mutate(store => store.put({ id: crypto.randomUUID(), carID: activeCar.id, carTitle: `${activeCar.brand} ${activeCar.name}`, generationID: g?.id ?? null, generationLabel: g ? formatGeneration(g) : null, date: new Date().toISOString(), note: $('note').value.trim(), photo: photoData }));
+    await mutate(store => store.put({ id: crypto.randomUUID(), carID: activeCar.id, carTitle: `${activeCar.brand} ${activeCar.name}`, specificationID: spec?.id ?? null, specificationLabel: spec?.name ?? null, generationID: g?.id ?? null, generationLabel: g ? formatGeneration(g) : null, date: new Date().toISOString(), note: $('note').value.trim(), photo: photoData }));
     $('log').close(); $('status').textContent = 'Sighting saved to this browser.';
   } catch { $('form-error').textContent = 'Could not save. Browser storage may be full or unavailable. Your draft is still here.'; }
   finally { submit.disabled = false; }

@@ -17,14 +17,15 @@ Sightings and photos are stored locally using SwiftData. No account, server uplo
 
 ## Catalogue
 
-The supplied AUTO.RIA CSV was converted to 5,053 models across 388 brands, with 57 generation records. IDs are namespaced source identifiers, including the brand and model IDs. Multiple generation rows are grouped into a single model. Missing years remain unknown rather than being inferred. Variant fields were empty in the source, so variant selection is deferred.
+The supplied AUTO.RIA CSV was converted to 5,053 models across 388 brands, with 10,456 generation records and 98,333 specification records from the full 99,401-row export. IDs are namespaced source identifiers, including the brand and model IDs. Multiple generation rows are grouped into a single model. Missing years remain unknown rather than being inferred. The browser supports specification cards and specification-level sightings. The native prototype uses the enriched generations but does not yet expose specifications. Identical specification labels with different source IDs are retained as distinct records; the CSV does not explain their differences. Body styles are not supplied as a separate field and are not inferred.
 
-Cards use a clearly labelled system car icon placeholder. Reference images, licensed usage, specifications, English generation labels, and richer generation coverage still need curation. Confirm catalogue reuse rights before distribution.
+Cards use a clearly labelled system car icon placeholder. Reference images, licensed usage, body styles, and English generation labels still need curation. Confirm catalogue reuse rights before distribution.
 
 To rebuild from an original CSV:
 
 ```sh
 python3 scripts/import_catalogue.py /path/to/catalogue.csv CarSpotter/Resources/catalogue.json
+cp CarSpotter/Resources/catalogue.json web/catalogue.json
 python3 -m unittest discover -s scripts -p 'test_*.py' -v
 ```
 
