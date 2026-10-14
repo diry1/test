@@ -73,3 +73,7 @@ All catalogue labels are converted to English on import. Proper names use curate
 ### Letter pages
 
 The browser opens on A and switches between individual letters using the highlighted alphabet panel. There is no combined all-letter view. `web/featured-brands.json` contains the 226 English brand entries extracted from the supplied AUTO.RIA recording. Only those brands appear initially on each letter page. A card-sized Show All control reveals the remaining catalogue brands for that letter in a separate alphabetical section below the initial list. Search stays within the active letter; changing letters clears search and collapses additional brands. Returning from a brand folder preserves the active letter. Featured brands without model records (currently Peterbilt) show a missing-data message rather than invented models.
+
+Brand cards have a settings gear. **Move to main list** promotes a brand from Show All into its alphabetical position in the main list. **Hide under Show All** moves a main-list brand into the additional list, where it can be restored later. Browser-local preferences override the supplied featured list and survive reloads; clearing site data resets them. Hiding a brand does not delete its sightings. Preference writes report storage errors without changing the visible lists.
+
+To verify preferences with the local server running, run `node web/tests/brand-preferences.cjs` with the same Playwright/browser environment variables as the smoke test.

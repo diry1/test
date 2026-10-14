@@ -2,7 +2,8 @@ const $ = id => document.getElementById(id);
 const escapeHTML = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const silhouette = `<div class="visual"><svg viewBox="0 0 200 90" fill="none" aria-hidden="true"><path d="M22 59V48l20-7 24-24h59l30 24 25 7v18H22Z" fill="currentColor" opacity=".3"/><path d="m58 40 17-17h45l21 17H58Z" fill="currentColor" opacity=".5"/><circle cx="53" cy="65" r="13" fill="currentColor"/><circle cx="150" cy="65" r="13" fill="currentColor"/><circle cx="53" cy="65" r="6" fill="#eef0e8"/><circle cx="150" cy="65" r="6" fill="#eef0e8"/></svg><span class="placeholder">Reference photo not available</span></div>`;
 let selectedLetter = 'A';
-let expandedBrands = false, featuredBrands = new Set();
+let expandedBrands = false, featuredBrands = new Set(), brandPreferences = new Map();
+const brandIsFeatured = brand => brandPreferences.has(brand) ? brandPreferences.get(brand) : featuredBrands.has(brand);
 let selectedBrand = null, selectedGeneration = null, selectedSpecification = null;
 let cars = [], sightings = [], db, activeCar, pageSize = 48, photoData = null, photoLoading = false, photoRevision = 0;
 const englishGeneration = label => String(label ?? '').replace(/покол[іi]ння/gi, 'Generation').replace(/рестайл[іi]нг/gi, 'Facelift').replace(/^[IVXІ]+(?=[ -]Generation)/, prefix => prefix.replaceAll('І', 'I'));
@@ -70,6 +71,23 @@ $('breadcrumbs').onclick = event => {
   if (button) navigate(button.dataset.level, button.dataset.value);
 };
 $('catalogue-view').addEventListener('click', event => {
+  const preference = event.target.closest('[data-brand-action]');
+  if (preference) {
+    const brand = preference.dataset.brand;
+    const next = new Map(brandPreferences);
+    const show = preference.dataset.brandAction === 'show';
+    next.set(brand, show);
+    try { localStorage.setItem('car-spotter-brand-preferences', JSON.stringify([...next])); }
+    catch { $('status').textContent = 'Could not save brand preferences. Browser storage may be unavailable.'; return; }
+    brandPreferences = next;
+    if (!show) expandedBrands = true;
+    render();
+    $('status').textContent = `${brand} ${show ? 'moved to the main list' : 'moved under Show All'}.`;
+    const moved = [...document.querySelectorAll('[data-brand-settings]')].find(el => el.dataset.brandSettings === brand);
+    moved?.querySelector('summary').focus();
+    return;
+  }
+  if (event.target.closest('[data-brand-settings]')) return;
   if (event.target.closest('[data-expand-brands]')) {
     expandedBrands = !expandedBrands; render(); document.querySelector('#cars [data-expand-brands]')?.focus(); return;
   }
@@ -88,6 +106,20 @@ $('catalogue-view').addEventListener('click', event => {
 function folderCard(level, value, title, subtitle, spotted = false) {
   return `<button class="card folder-card" data-level="${level}" data-value="${escapeHTML(value)}"><div class="folder-icon" aria-hidden="true">▱</div><div class="card-body"><div class="car-name">${escapeHTML(title)}</div><span class="meta">${escapeHTML(subtitle)}</span>${spotted ? '<span class="badge">✓ Spotted</span>' : ''}</div></button>`;
 }
+function brandCard(brand, subtitle, spotted) {
+  const main = brandIsFeatured(brand);
+  return `<article class="card folder-card brand-card"><button class="brand-open" data-level="brand" data-value="${escapeHTML(brand)}"><div class="folder-icon" aria-hidden="true">▱</div><div class="card-body"><div class="car-name">${escapeHTML(brand)}</div><span class="meta">${escapeHTML(subtitle)}</span>${spotted ? '<span class="badge">✓ Spotted</span>' : ''}</div></button><details class="card-settings" data-brand-settings="${escapeHTML(brand)}"><summary aria-label="Settings for ${escapeHTML(brand)}" title="Brand settings">⚙</summary><div class="card-settings-menu"><button data-brand-action="${main ? 'hide' : 'show'}" data-brand="${escapeHTML(brand)}">${main ? '↓ Hide under Show All' : '↑ Move to main list'}</button></div></details></article>`;
+}
+document.addEventListener('click', event => {
+  for (const menu of document.querySelectorAll('.card-settings[open]')) {
+    if (!menu.contains(event.target)) menu.open = false;
+  }
+});
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape') {
+    for (const menu of document.querySelectorAll('.card-settings[open]')) { menu.open = false; menu.querySelector('summary').focus(); }
+  }
+});
 function renderFolder(spotted) {
   const crumb = (level, value, title) => `<button data-level="${level}" data-value="${escapeHTML(value)}">${escapeHTML(title)}</button>`;
   $('breadcrumbs').innerHTML = crumb('root', '', `${selectedLetter} brands`) +
@@ -111,9 +143,9 @@ function renderFolder(spotted) {
     $('alphabet').innerHTML = `<div class="alphabet-heading"><span class="eyebrow">BROWSE BY LETTER</span><span class="letter-current" aria-live="polite">${selectedLetter}</span></div><div class="alphabet-letters">` + ['#', ...'ABCDEFGHIJKLMNOPQRSTUVWXYZ'].filter(letter => letter !== '#' || available.has('#')).map(letter => `<button data-letter="${letter}" aria-pressed="${selectedLetter === letter}" ${!available.has(letter) ? 'disabled' : ''} aria-label="Brands starting with ${letter === '#' ? 'numbers or symbols' : letter}">${letter}</button>`).join('') + '</div>';
     const letterBrands = [...groups].filter(([brand]) => firstLetter(brand) === selectedLetter).sort(([a], [b]) => a.localeCompare(b));
     const matches = ([brand]) => brand.toLocaleLowerCase().includes(query);
-    const card = ([brand, models]) => folderCard('brand', brand, brand, models.length ? `${models.length} models · ${models.filter(c => spotted.has(c.id)).length} spotted` : 'Model records not available yet');
-    const featured = letterBrands.filter(([brand]) => featuredBrands.has(brand)).filter(matches);
-    const additional = letterBrands.filter(([brand]) => !featuredBrands.has(brand));
+    const card = ([brand, models]) => brandCard(brand, models.length ? `${models.length} models · ${models.filter(c => spotted.has(c.id)).length} spotted` : 'Model records not available yet', models.some(c => spotted.has(c.id)));
+    const featured = letterBrands.filter(([brand]) => brandIsFeatured(brand)).filter(matches);
+    const additional = letterBrands.filter(([brand]) => !brandIsFeatured(brand));
     entries = featured.map(card);
     if (!entries.length) entries.push('<div class="empty">No matching folders on this letter page. Try another search or Show All.</div>');
     if (additional.length) {
@@ -208,6 +240,10 @@ try {
   const featuredResponse = await fetch('./featured-brands.json');
   if (!featuredResponse.ok) throw new Error('Featured brands request failed');
   featuredBrands = new Set(await featuredResponse.json());
+  try {
+    const saved = JSON.parse(localStorage.getItem('car-spotter-brand-preferences') || '[]');
+    if (Array.isArray(saved)) brandPreferences = new Map(saved.filter(entry => Array.isArray(entry) && typeof entry[0] === 'string' && typeof entry[1] === 'boolean'));
+  } catch { $('status').textContent = 'Brand preferences could not be loaded. Using the default list.'; }
   catalogueByID = new Map(cars.map(c => [c.id, c]));
   generationByID = new Map(cars.flatMap(c => c.generations.map(g => [g.id, g])));
   specificationByID = new Map(cars.flatMap(c => c.generations.flatMap(g => (g.specifications ?? []).map(s => [s.id, s]))));
