@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Car Spotter</title><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header><a class="logo" href="#">◉ Car Spotter</a><span class="local">Saved on this device</span></header>
+<main>
+<section class="intro"><p class="eyebrow">EVERY CAR HAS A STORY</p><h1>Keep track of<br>what catches your eye.</h1><p>Your personal car collection, one sighting at a time.</p></section>
+<nav aria-label="Views"><button id="catalogue-tab" class="active">Catalogue</button><button id="garage-tab">My garage <span id="count">0</span></button></nav>
+<p id="status" role="status"></p>
+<section id="catalogue-view">
+<div class="filters"><label class="search">Search cars<input id="search" type="search" placeholder="Try Porsche, Golf, or MX-5…"></label><label>Brand<select id="brand"><option value="">All brands</option></select></label></div>
+<div class="section-heading"><h2>Explore the catalogue</h2><span id="results"></span></div>
+<div id="cars" class="grid"></div><button id="more" class="secondary">Show more cars</button>
+</section>
+<section id="garage-view" hidden><div class="section-heading"><h2>Your collection</h2><span id="progress"></span></div><p class="muted">Repeat sightings are welcome. Your photos stay in this browser.</p><div id="sightings" class="grid"></div><button id="export" class="secondary">Export sightings backup</button></section>
+</main>
+<dialog id="detail"><button class="close" aria-label="Close car card">×</button><div id="detail-content"></div></dialog>
+<dialog id="log"><button class="close" aria-label="Close sighting form">×</button><p class="eyebrow">ADD TO YOUR COLLECTION</p><h2 id="log-title"></h2><form id="log-form"><label>Generation<select id="generation"></select></label><label>Short note <span class="muted">optional</span><textarea id="note" maxlength="500" rows="3" placeholder="Where did you see it? What stood out?"></textarea></label><label class="photo-picker">Photo <span class="muted">optional</span><input id="photo" type="file" accept="image/*"></label><img id="preview" alt="Selected sighting photo" hidden><p class="muted small">A photo records your sighting; it is not independently verified.</p><p id="form-error" role="alert"></p><button type="submit" class="primary">Save sighting</button></form></dialog>
+<script type="module" src="app.js"></script>
+</body></html>
