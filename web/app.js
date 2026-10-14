@@ -5,6 +5,15 @@ let selectedBrand = null, selectedGeneration = null, selectedSpecification = nul
 let cars = [], sightings = [], db, activeCar, pageSize = 48, photoData = null, photoLoading = false, photoRevision = 0;
 const englishGeneration = label => String(label ?? '').replace(/покол[іi]ння/gi, 'Generation').replace(/рестайл[іi]нг/gi, 'Facelift').replace(/^[IVXІ]+(?=[ -]Generation)/, prefix => prefix.replaceAll('І', 'I'));
 const formatGeneration = g => `${englishGeneration(g.name)}${g.yearFrom ? ` · ${g.yearFrom}–${g.yearTo ?? 'unspecified'}` : ''}`;
+let catalogueByID = new Map(), generationByID = new Map(), specificationByID = new Map();
+function currentSightingLabels(s) {
+  const car = catalogueByID.get(s.carID);
+  const generation = generationByID.get(s.generationID);
+  const specification = specificationByID.get(s.specificationID);
+  return {...s, carTitle: car ? `${car.brand} ${car.name}` : s.carTitle,
+    generationLabel: generation ? formatGeneration(generation) : s.generationLabel ? englishGeneration(s.generationLabel) : null,
+    specificationLabel: specification?.name ?? s.specificationLabel};
+}
 const request = req => new Promise((resolve, reject) => { req.onsuccess = () => resolve(req.result); req.onerror = () => reject(req.error); });
 async function openDB() {
   const req = indexedDB.open('car-spotter', 1);
@@ -17,7 +26,7 @@ async function mutate(operation) {
     tx.oncomplete = resolve; tx.onerror = () => reject(tx.error); tx.onabort = () => reject(tx.error);
     operation(tx.objectStore('sightings'));
   });
-  sightings = await request(db.transaction('sightings').objectStore('sightings').getAll());
+  sightings = await request(db.transaction('sightings').objectStore('sightings').getAll()).then(rows => rows.map(currentSightingLabels));
   render();
 }
 function render() {
@@ -162,7 +171,10 @@ $('export').onclick = () => {
 try {
   const response = await fetch('./catalogue.json'); if (!response.ok) throw new Error('Catalogue request failed');
   cars = await response.json();
-  try { db = await openDB(); sightings = await request(db.transaction('sightings').objectStore('sightings').getAll()); }
+  catalogueByID = new Map(cars.map(c => [c.id, c]));
+  generationByID = new Map(cars.flatMap(c => c.generations.map(g => [g.id, g])));
+  specificationByID = new Map(cars.flatMap(c => c.generations.flatMap(g => (g.specifications ?? []).map(s => [s.id, s]))));
+  try { db = await openDB(); sightings = await request(db.transaction('sightings').objectStore('sightings').getAll()).then(rows => rows.map(currentSightingLabels)); }
   catch { $('status').textContent = 'Browser storage is unavailable. You can browse, but cannot save sightings.'; }
   render();
 } catch { $('status').textContent = 'Could not load the catalogue. Start the web server and reload this page.'; }

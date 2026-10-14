@@ -5,7 +5,7 @@ const assert = require('node:assert/strict');
   const page = await browser.newPage();
   const errors = []; page.on('pageerror', e => errors.push(e.message));
   await page.goto(process.env.CAR_SPOTTER_URL || 'http://127.0.0.1:8000');
-  await page.locator('#results').filter({hasText:'388 brands'}).waitFor();
+  await page.locator('#results').filter({hasText:'387 brands'}).waitFor();
   assert.equal(await page.locator('#cars .card').count(),48);
   await page.locator('#search').fill('Porsche');
   await page.locator('#cars .card').first().click();

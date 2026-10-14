@@ -3,8 +3,19 @@ import tempfile
 import unittest
 from pathlib import Path
 from import_catalogue import convert, english_generation
+from catalogue_english import english_text
 
 class CatalogueTests(unittest.TestCase):
+    def test_english_catalogue_terms(self):
+        for source, expected in [
+            ('ВАЗ / Lada', 'VAZ / Lada'), ('Москвич/АЗЛК', 'Moskvich / AZLK'),
+            ('1102 Таврія', '1102 Tavria'), ('21 Волга', '21 Volga'),
+            ('(3 двери) 1.4 АТ (109 к.с.)', '(3 doors) 1.4 AT (109 hp)'),
+            ('0.3 MT (30 к.с)', '0.3 MT (30 hp)'),
+            ('1.4 (80 лс)', '1.4 (80 hp)'), ('ГБО', 'LPG'),
+        ]:
+            self.assertEqual(english_text(source), expected)
+
     def test_generation_translation(self):
         for source, expected in [
             ('I покоління', 'I Generation'),
@@ -20,7 +31,7 @@ class CatalogueTests(unittest.TestCase):
         cars = json.loads((Path(__file__).resolve().parents[1] / 'CarSpotter/Resources/catalogue.json').read_text())
         self.assertEqual(len(cars), 5053)
         self.assertEqual(len({car['id'] for car in cars}), len(cars))
-        self.assertEqual(len({car['brand'] for car in cars}), 388)
+        self.assertEqual(len({car['brand'] for car in cars}), 387)
         generations = [g for car in cars for g in car['generations']]
         self.assertEqual(len(generations), 10456)
         self.assertEqual(len({g['id'] for g in generations}), 10456)
@@ -29,6 +40,9 @@ class CatalogueTests(unittest.TestCase):
         self.assertEqual(len({s['id'] for s in specs}), 98333)
         bmw = next(c for c in cars if c['brand'] == 'BMW' and c['name'] == '3 Series')
         self.assertTrue({'E36', 'F30'} <= {g['name'] for g in bmw['generations']})
+        labels = [c['brand'] for c in cars] + [c['name'] for c in cars] + [g['name'] for g in generations] + [s['name'] for s in specs]
+        for label in labels:
+            self.assertNotRegex(label, r'[\u0400-\u04ff]')
         for car in cars:
             self.assertTrue(car['brand'] and car['name'])
         for g in generations:

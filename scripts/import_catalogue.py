@@ -2,16 +2,12 @@
 import argparse
 import csv
 import json
-import re
+from catalogue_english import english_text
 from pathlib import Path
 
 
 def english_generation(label):
-    label = re.sub(r"покол[іi]ння", "Generation", label.strip(), flags=re.IGNORECASE)
-    label = re.sub(r"рестайл[іi]нг", "Facelift", label, flags=re.IGNORECASE)
-    if "Generation" in label:
-        label = re.sub(r"^[IVXІ]+", lambda m: m[0].replace("І", "I"), label)
-    return label
+    return english_text(label)
 
 
 def convert(source):
@@ -22,8 +18,8 @@ def convert(source):
         for row in csv.DictReader(stream):
             key = f"autoria:{row['make_id']}:{row['model_id']}"
             model = models.setdefault(key, {
-                "id": key, "brand": row["make"].strip(),
-                "name": row["model"].strip(), "generations": [],
+                "id": key, "brand": english_text(row["make"]),
+                "name": english_text(row["model"]), "generations": [],
             })
             if row["generation_id"]:
                 generation_key = f"{key}:generation:{row['generation_id']}"
@@ -42,7 +38,7 @@ def convert(source):
                     spec_id = f"{generation_key}:spec:{row['modification_id']}"
                     if spec_id not in specifications:
                         generation["specifications"].append({
-                            "id": spec_id, "name": row["modification"].strip(),
+                            "id": spec_id, "name": english_text(row["modification"]),
                             "sourceID": row["modification_id"],
                         })
                         specifications.add(spec_id)

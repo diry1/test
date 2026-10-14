@@ -17,9 +17,9 @@ Sightings and photos are stored locally using SwiftData. No account, server uplo
 
 ## Catalogue
 
-The supplied AUTO.RIA CSV was converted to 5,053 models across 388 brands, with 10,456 generation records and 98,333 specification records from the full 99,401-row export. IDs are namespaced source identifiers, including the brand and model IDs. Multiple generation rows are grouped into a single model. Missing years remain unknown rather than being inferred. The browser supports specification cards and specification-level sightings. The native prototype uses the enriched generations but does not yet expose specifications. Identical specification labels with different source IDs are retained as distinct records; the CSV does not explain their differences. Body styles are not supplied as a separate field and are not inferred.
+The supplied AUTO.RIA CSV was converted to 5,053 models across 387 English brand folders (388 source brand identities), with 10,456 generation records and 98,333 specification records from the full 99,401-row export. IDs are namespaced source identifiers, including the brand and model IDs. Multiple generation rows are grouped into a single model. Missing years remain unknown rather than being inferred. The browser supports specification cards and specification-level sightings. The native prototype uses the enriched generations but does not yet expose specifications. Identical specification labels with different source IDs are retained as distinct records; the CSV does not explain their differences. Body styles are not supplied as a separate field and are not inferred.
 
-Cards use a clearly labelled system car icon placeholder. Reference images, licensed usage, body styles, and English generation labels still need curation. Confirm catalogue reuse rights before distribution.
+Cards use a clearly labelled system car icon placeholder. Reference images, licensed usage, body styles, and further technical details still need curation. Confirm catalogue reuse rights before distribution.
 
 To rebuild from an original CSV:
 
@@ -67,3 +67,5 @@ The `.github/workflows/pages.yml` workflow deploys `web/` after a push to `main`
 After a successful deployment, GitHub reports the live address on the Pages settings screen and workflow deployment. For `diry1/test`, the expected address is `https://diry1.github.io/test/`. That address only works after Pages is enabled and deployment succeeds. Catalogue data is public; personal sightings and photos remain in the visitor's browser. No credentials are included in the site.
 
 Catalogue browsing now starts with brand folders. Open a brand to see its models, open a model to see its available generations, and open a generation to see the specifications level. Breadcrumbs navigate back through the hierarchy; search filters the current folder. Models without generation data and generations without specifications show explicit missing-data messages. You can log either a model-only sighting or a generation sighting, with the selected generation prefilled. Existing saved sightings remain compatible.
+
+All catalogue labels are converted to English on import. Proper names use curated English spellings or transliteration; engine/chassis codes retain Latin technical notation. Horsepower is labelled hp (the supplied numeric values are not converted). Source brand labels Zuk and Жук share the Zuk folder; model identities remain unchanged. Existing sightings resolve their catalogue titles by ID, leaving personal notes unchanged.

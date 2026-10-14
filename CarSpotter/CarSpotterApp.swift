@@ -236,12 +236,23 @@ struct LogSighting: View {
     }
 }
 
+enum CatalogueLabels {
+    static let cars: [String: Car] = {
+        guard let url = Bundle.main.url(forResource: "catalogue", withExtension: "json"),
+              let data = try? Data(contentsOf: url),
+              let cars = try? JSONDecoder().decode([Car].self, from: data) else { return [:] }
+        return Dictionary(uniqueKeysWithValues: cars.map { ($0.id, $0) })
+    }()
+}
+
 struct SightingRow: View {
     let sighting: Sighting
     var body: some View {
         VStack(alignment: .leading, spacing: 4) {
-            Text(sighting.carTitle).font(.headline)
-            if let generation = sighting.generationLabel { Text(englishGeneration(generation)).font(.caption) }
+            Text(CatalogueLabels.cars[sighting.carID]?.title ?? sighting.carTitle).font(.headline)
+            if let generation = CatalogueLabels.cars[sighting.carID]?.generations.first(where: { $0.id == sighting.generationID })?.label ?? sighting.generationLabel {
+                Text(englishGeneration(generation)).font(.caption)
+            }
             Text(sighting.date, style: .date).font(.caption).foregroundStyle(.secondary)
         }
     }
