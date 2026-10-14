@@ -11,8 +11,10 @@
 <nav aria-label="Views"><button id="catalogue-tab" class="active">Catalogue</button><button id="garage-tab">My garage <span id="count">0</span></button></nav>
 <p id="status" role="status"></p>
 <section id="catalogue-view">
-<div class="filters"><label class="search">Search cars<input id="search" type="search" placeholder="Try Porsche, Golf, or MX-5…"></label><label>Brand<select id="brand"><option value="">All brands</option></select></label></div>
-<div class="section-heading"><h2>Explore the catalogue</h2><span id="results"></span></div>
+<div class="filters"><label class="search">Search within this folder<input id="search" type="search" placeholder="Find a brand…"></label></div>
+<nav id="breadcrumbs" aria-label="Catalogue folders"></nav>
+<div class="section-heading"><h2 id="folder-title">Brands</h2><span id="results"></span></div>
+<div id="folder-info"></div>
 <div id="cars" class="grid"></div><button id="more" class="secondary">Show more cars</button>
 </section>
 <section id="garage-view" hidden><div class="section-heading"><h2>Your collection</h2><span id="progress"></span></div><p class="muted">Repeat sightings are welcome. Your photos stay in this browser.</p><div id="sightings" class="grid"></div><button id="export" class="secondary">Export sightings backup</button></section>
