@@ -1,3 +1,4 @@
+import {calculateScore, nextScoreTarget} from './score.mjs';
 const $ = id => document.getElementById(id);
 const escapeHTML = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const silhouette = `<div class="visual"><svg viewBox="0 0 200 90" fill="none" aria-hidden="true"><path d="M22 59V48l20-7 24-24h59l30 24 25 7v18H22Z" fill="currentColor" opacity=".3"/><path d="m58 40 17-17h45l21 17H58Z" fill="currentColor" opacity=".5"/><circle cx="53" cy="65" r="13" fill="currentColor"/><circle cx="150" cy="65" r="13" fill="currentColor"/><circle cx="53" cy="65" r="6" fill="#eef0e8"/><circle cx="150" cy="65" r="6" fill="#eef0e8"/></svg><span class="placeholder">Reference photo not available</span></div>`;
@@ -34,7 +35,19 @@ async function mutate(operation) {
   sightings = await request(db.transaction('sightings').objectStore('sightings').getAll()).then(rows => rows.map(currentSightingLabels));
   render();
 }
+function renderScore() {
+  const score = calculateScore(sightings, catalogueByID);
+  const target = nextScoreTarget(score.total);
+  $('score-total').textContent = score.total.toLocaleString();
+  $('score-target').textContent = `${(target - score.total).toLocaleString()} points to ${target.toLocaleString()}`;
+  $('score-fill').setAttribute('stroke-dasharray', `${score.total / target * 100} 100`);
+  $('score-gauge').setAttribute('aria-label', `${score.total} total points. Next target ${target}.`);
+  $('score-models').textContent = `+${score.modelPoints.toLocaleString()}`;
+  $('score-brands').textContent = `+${score.brandPoints.toLocaleString()}`;
+  $('score-generations').textContent = `+${score.generationPoints.toLocaleString()}`;
+}
 function render() {
+  renderScore();
   const spotted = new Set(sightings.map(s => s.carID));
   $('count').textContent = spotted.size;
   $('progress').textContent = `${spotted.size.toLocaleString()} / ${cars.length.toLocaleString()} models spotted`;
@@ -238,10 +251,12 @@ $('log-form').onsubmit = async event => {
   event.preventDefault(); if (photoLoading || !db) return;
   const submit = $('log-form').querySelector('[type=submit]'); submit.disabled = true;
   const g = activeCar.generations.find(g => g.id === $('generation').value);
+  const previousPoints = calculateScore(sightings, catalogueByID).total;
   const spec = g?.specifications?.find(s => s.id === $('specification').value);
   try {
     await mutate(store => store.put({ id: crypto.randomUUID(), carID: activeCar.id, carTitle: `${activeCar.brand} ${activeCar.name}`, specificationID: spec?.id ?? null, specificationLabel: spec?.name ?? null, generationID: g?.id ?? null, generationLabel: g ? formatGeneration(g) : null, date: new Date().toISOString(), note: $('note').value.trim(), photo: photoData }));
-    $('log').close(); $('status').textContent = 'Sighting saved to this browser.';
+    $('log').close(); const earned = calculateScore(sightings, catalogueByID).total - previousPoints;
+    $('status').textContent = `Sighting saved to this browser.${earned > 0 ? ` +${earned} points!` : ' Already discovered — no additional points.'}`;
   } catch { $('form-error').textContent = 'Could not save. Browser storage may be full or unavailable. Your draft is still here.'; }
   finally { submit.disabled = false; }
 };

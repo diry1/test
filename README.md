@@ -81,3 +81,9 @@ To verify preferences with the local server running, run `node web/tests/brand-p
 When a letter has three or fewer additional brands, all its brands appear in one alphabetical main list and Show All is omitted. The threshold is calculated before search and includes saved brand preferences. Letters with four or more additional brands retain the two-list layout.
 
 Brand and model cards display completion circles. Brand completion is distinct spotted models divided by available models in the brand. Model completion is distinct spotted generations divided by known generations; model-only sightings do not imply a particular generation. Models with no generation records use a binary model-spotted percentage. Repeated sightings do not increase completion. Brands without any model data show an unavailable dash. The percentage stays below 100 until every relevant entry is spotted.
+
+### Discovery points
+
+A score gauge at the top of the browser app is recalculated from all saved sightings: one point per distinct model, twenty points per distinct brand, and one point per distinct identified generation. A first model with an identified generation earns 22 points; another generation of that same model adds one. Engine/trim specifications, photographs, notes, and repeat sightings do not award additional points. Catalogue membership is checked, including whether a generation belongs to the logged model. Existing sightings count automatically, and deleting the last sighting of a discovery removes its points. No separate incremental points balance exists, so delete/re-add cannot accumulate extra credit. The gauge targets are visual progress markers, not extra point rewards. Points stay in the current browser via saved sightings; no account or cloud sync exists yet.
+
+Run the scoring tests with `node --test web/tests/score.test.mjs`. They also run before Pages deployment.
