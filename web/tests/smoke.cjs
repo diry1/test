@@ -22,10 +22,23 @@ const assert = require('node:assert/strict');
   assert.equal(await page.locator('#sightings article').count(),1);
   assert.equal(await page.locator('.sighting-photo').count(),1);
   assert.match(await page.locator('#sightings').innerText(), /<script>alert\(1\)<\/script>/);
+  await page.evaluate(async () => {
+    const db = await new Promise((resolve, reject) => { const r = indexedDB.open('car-spotter', 1); r.onsuccess = () => resolve(r.result); r.onerror = reject; });
+    await new Promise((resolve, reject) => {
+      const tx = db.transaction('sightings', 'readwrite');
+      const store = tx.objectStore('sightings');
+      const r = store.getAll(); r.onsuccess = () => store.put({...r.result[0], generationLabel:'ІІ поколiння (FL) · 2000–2005'});
+      tx.oncomplete = resolve; tx.onerror = reject;
+    });
+    db.close();
+  });
   await page.reload();
   await page.locator('#count').filter({hasText:'1'}).waitFor();
   await page.locator('#garage-tab').click();
   assert.equal(await page.locator('#sightings article').count(),1);
+  assert.match(await page.locator('#sightings').innerText(), /II Generation \(FL\)/);
+  const names = await page.evaluate(async () => (await (await fetch('./catalogue.json')).json()).flatMap(c => c.generations.map(g => g.name)));
+  assert.ok(names.every(name => !/покол[іi]ння/i.test(name)));
   const download = page.waitForEvent('download'); await page.locator('#export').click();
   assert.match((await download).suggestedFilename(), /^car-spotter-.*\.json$/);
   page.once('dialog', d => d.accept()); await page.locator('[data-delete]').click();

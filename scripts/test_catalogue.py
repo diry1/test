@@ -2,9 +2,20 @@ import json
 import tempfile
 import unittest
 from pathlib import Path
-from import_catalogue import convert
+from import_catalogue import convert, english_generation
 
 class CatalogueTests(unittest.TestCase):
+    def test_generation_translation(self):
+        for source, expected in [
+            ('I покоління', 'I Generation'),
+            ('II поколiння (FL)/KB2', 'II Generation (FL)/KB2'),
+            ('ІІІ покоління', 'III Generation'),
+            ('І-покоління', 'I-Generation'),
+            ('I покоління (рестайлінг)', 'I Generation (Facelift)'),
+            ('F30 (FL)', 'F30 (FL)'),
+        ]:
+            self.assertEqual(english_generation(source), expected)
+
     def test_bundled_catalogue_integrity(self):
         cars = json.loads((Path(__file__).resolve().parents[1] / 'CarSpotter/Resources/catalogue.json').read_text())
         self.assertEqual(len(cars), 5053)
@@ -21,6 +32,7 @@ class CatalogueTests(unittest.TestCase):
         for car in cars:
             self.assertTrue(car['brand'] and car['name'])
         for g in generations:
+            self.assertNotRegex(g["name"], r"(?i)покол[іi]ння|рестайл[іi]нг")
             if g['yearTo'] is not None:
                 self.assertLessEqual(g['yearFrom'], g['yearTo'])
 

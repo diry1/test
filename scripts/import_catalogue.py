@@ -2,7 +2,16 @@
 import argparse
 import csv
 import json
+import re
 from pathlib import Path
+
+
+def english_generation(label):
+    label = re.sub(r"покол[іi]ння", "Generation", label.strip(), flags=re.IGNORECASE)
+    label = re.sub(r"рестайл[іi]нг", "Facelift", label, flags=re.IGNORECASE)
+    if "Generation" in label:
+        label = re.sub(r"^[IVXІ]+", lambda m: m[0].replace("І", "I"), label)
+    return label
 
 
 def convert(source):
@@ -21,7 +30,7 @@ def convert(source):
                 if generation_key not in generations:
                     generation = {
                         "id": generation_key,
-                        "name": row["generation"].strip(),
+                        "name": english_generation(row["generation"]),
                         "yearFrom": int(row["year_from"]) if row["year_from"] else None,
                         "yearTo": int(row["year_to"]) if row["year_to"] else None,
                         "specifications": [],

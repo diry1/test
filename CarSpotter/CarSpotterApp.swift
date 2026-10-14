@@ -2,6 +2,15 @@ import SwiftUI
 import SwiftData
 import PhotosUI
 
+func englishGeneration(_ label: String) -> String {
+    var result = label.replacingOccurrences(of: "покол[іi]ння", with: "Generation", options: [.regularExpression, .caseInsensitive])
+        .replacingOccurrences(of: "рестайл[іi]нг", with: "Facelift", options: [.regularExpression, .caseInsensitive])
+    if result.contains("Generation"), let range = result.range(of: "^[IVXІ]+", options: .regularExpression) {
+        result.replaceSubrange(range, with: String(result[range]).replacingOccurrences(of: "І", with: "I"))
+    }
+    return result
+}
+
 struct Car: Codable, Identifiable {
     let id: String
     let brand: String
@@ -232,7 +241,7 @@ struct SightingRow: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 4) {
             Text(sighting.carTitle).font(.headline)
-            if let generation = sighting.generationLabel { Text(generation).font(.caption) }
+            if let generation = sighting.generationLabel { Text(englishGeneration(generation)).font(.caption) }
             Text(sighting.date, style: .date).font(.caption).foregroundStyle(.secondary)
         }
     }
