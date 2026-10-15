@@ -1,0 +1,31 @@
+{
+  "queries": 48,
+  "successful_queries": 48,
+  "empty_successful_queries": 13,
+  "failed_queries": 0,
+  "candidate_relationships": 25,
+  "unique_source_ranges": [
+    "E36",
+    "E46",
+    "E53",
+    "E70",
+    "E90",
+    "E91",
+    "E92",
+    "E93",
+    "F15",
+    "F30",
+    "F31",
+    "F34 GT",
+    "G05",
+    "G20",
+    "G21",
+    "G80",
+    "G81"
+  ],
+  "single_catalogue_candidates": 1,
+  "facelift_resolution_required": 22,
+  "unmatched_ranges": 2,
+  "cross_model_conflicts": 2,
+  "live_catalogue_changes": 0
+}

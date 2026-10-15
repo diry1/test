@@ -1,0 +1,608 @@
+[
+  {
+    "query_id": "320-199306-Limousine",
+    "source_model": "320",
+    "registration_input": "199306",
+    "category": "Limousine",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=199306&category=Limousine",
+    "retrieved_at_utc": "2026-10-15T11:09:32.060000+00:00",
+    "status": 200,
+    "ranges": [
+      "E36"
+    ],
+    "sha256": "7e750893b92f932958161bbe2752d3ff1cc6c64c2431e64df3b78a13d2d0fd52"
+  },
+  {
+    "query_id": "320-199306-EstateCar",
+    "source_model": "320",
+    "registration_input": "199306",
+    "category": "EstateCar",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=199306&category=EstateCar",
+    "retrieved_at_utc": "2026-10-15T11:09:32.060690+00:00",
+    "status": 200,
+    "ranges": [],
+    "sha256": "685d8d511f77e159ad7e86367eb4e3c4863e547196cc3954cbf0430213cc85f4"
+  },
+  {
+    "query_id": "320-199306-SportsCar",
+    "source_model": "320",
+    "registration_input": "199306",
+    "category": "SportsCar",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=199306&category=SportsCar",
+    "retrieved_at_utc": "2026-10-15T11:09:32.995098+00:00",
+    "status": 200,
+    "ranges": [
+      "E36"
+    ],
+    "sha256": "7e750893b92f932958161bbe2752d3ff1cc6c64c2431e64df3b78a13d2d0fd52"
+  },
+  {
+    "query_id": "320-199306-Cabrio",
+    "source_model": "320",
+    "registration_input": "199306",
+    "category": "Cabrio",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=199306&category=Cabrio",
+    "retrieved_at_utc": "2026-10-15T11:09:33.112399+00:00",
+    "status": 200,
+    "ranges": [],
+    "sha256": "685d8d511f77e159ad7e86367eb4e3c4863e547196cc3954cbf0430213cc85f4"
+  },
+  {
+    "query_id": "320-199706-Limousine",
+    "source_model": "320",
+    "registration_input": "199706",
+    "category": "Limousine",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=199706&category=Limousine",
+    "retrieved_at_utc": "2026-10-15T11:09:33.714061+00:00",
+    "status": 200,
+    "ranges": [
+      "E36"
+    ],
+    "sha256": "7e750893b92f932958161bbe2752d3ff1cc6c64c2431e64df3b78a13d2d0fd52"
+  },
+  {
+    "query_id": "320-199706-EstateCar",
+    "source_model": "320",
+    "registration_input": "199706",
+    "category": "EstateCar",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=199706&category=EstateCar",
+    "retrieved_at_utc": "2026-10-15T11:09:33.757949+00:00",
+    "status": 200,
+    "ranges": [
+      "E36"
+    ],
+    "sha256": "7e750893b92f932958161bbe2752d3ff1cc6c64c2431e64df3b78a13d2d0fd52"
+  },
+  {
+    "query_id": "320-199706-SportsCar",
+    "source_model": "320",
+    "registration_input": "199706",
+    "category": "SportsCar",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=199706&category=SportsCar",
+    "retrieved_at_utc": "2026-10-15T11:09:34.276316+00:00",
+    "status": 200,
+    "ranges": [
+      "E36"
+    ],
+    "sha256": "7e750893b92f932958161bbe2752d3ff1cc6c64c2431e64df3b78a13d2d0fd52"
+  },
+  {
+    "query_id": "320-199706-Cabrio",
+    "source_model": "320",
+    "registration_input": "199706",
+    "category": "Cabrio",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=199706&category=Cabrio",
+    "retrieved_at_utc": "2026-10-15T11:09:34.294655+00:00",
+    "status": 200,
+    "ranges": [
+      "E36"
+    ],
+    "sha256": "7e750893b92f932958161bbe2752d3ff1cc6c64c2431e64df3b78a13d2d0fd52"
+  },
+  {
+    "query_id": "320-200106-Limousine",
+    "source_model": "320",
+    "registration_input": "200106",
+    "category": "Limousine",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=200106&category=Limousine",
+    "retrieved_at_utc": "2026-10-15T11:09:34.801082+00:00",
+    "status": 200,
+    "ranges": [
+      "E46"
+    ],
+    "sha256": "c9c9b722803258d6e5d871dfd15cffbde4f262a54d2e1801693a387f3ea931dd"
+  },
+  {
+    "query_id": "320-200106-EstateCar",
+    "source_model": "320",
+    "registration_input": "200106",
+    "category": "EstateCar",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=200106&category=EstateCar",
+    "retrieved_at_utc": "2026-10-15T11:09:35.026234+00:00",
+    "status": 200,
+    "ranges": [
+      "E46"
+    ],
+    "sha256": "c9c9b722803258d6e5d871dfd15cffbde4f262a54d2e1801693a387f3ea931dd"
+  },
+  {
+    "query_id": "320-200106-SportsCar",
+    "source_model": "320",
+    "registration_input": "200106",
+    "category": "SportsCar",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=200106&category=SportsCar",
+    "retrieved_at_utc": "2026-10-15T11:09:35.447277+00:00",
+    "status": 200,
+    "ranges": [
+      "E46"
+    ],
+    "sha256": "c9c9b722803258d6e5d871dfd15cffbde4f262a54d2e1801693a387f3ea931dd"
+  },
+  {
+    "query_id": "320-200106-Cabrio",
+    "source_model": "320",
+    "registration_input": "200106",
+    "category": "Cabrio",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=200106&category=Cabrio",
+    "retrieved_at_utc": "2026-10-15T11:09:35.645484+00:00",
+    "status": 200,
+    "ranges": [
+      "E46"
+    ],
+    "sha256": "c9c9b722803258d6e5d871dfd15cffbde4f262a54d2e1801693a387f3ea931dd"
+  },
+  {
+    "query_id": "320-200706-Limousine",
+    "source_model": "320",
+    "registration_input": "200706",
+    "category": "Limousine",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=200706&category=Limousine",
+    "retrieved_at_utc": "2026-10-15T11:09:36.060538+00:00",
+    "status": 200,
+    "ranges": [
+      "E90"
+    ],
+    "sha256": "f38c4571416e08c9ceaf17e2565a34d352b3dcd0c3afd7a006883496f40404b0"
+  },
+  {
+    "query_id": "320-200706-EstateCar",
+    "source_model": "320",
+    "registration_input": "200706",
+    "category": "EstateCar",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=200706&category=EstateCar",
+    "retrieved_at_utc": "2026-10-15T11:09:36.268825+00:00",
+    "status": 200,
+    "ranges": [
+      "E91"
+    ],
+    "sha256": "eed97cc8fe10430ad1e12d2842bde803633a9dfa2c305604ca030b044f6e26d9"
+  },
+  {
+    "query_id": "320-200706-SportsCar",
+    "source_model": "320",
+    "registration_input": "200706",
+    "category": "SportsCar",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=200706&category=SportsCar",
+    "retrieved_at_utc": "2026-10-15T11:09:36.422480+00:00",
+    "status": 200,
+    "ranges": [
+      "E46",
+      "E92"
+    ],
+    "sha256": "d671845611e77f2680e44ea2c961b15b283c80ac2428cdae5d2fba4c23e228ca"
+  },
+  {
+    "query_id": "320-200706-Cabrio",
+    "source_model": "320",
+    "registration_input": "200706",
+    "category": "Cabrio",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=200706&category=Cabrio",
+    "retrieved_at_utc": "2026-10-15T11:09:36.618737+00:00",
+    "status": 200,
+    "ranges": [
+      "E46",
+      "E93"
+    ],
+    "sha256": "8d31ebcc30970eae70c45835d9358062d08ba8ddb0d448a759fdc520fb416d77"
+  },
+  {
+    "query_id": "320-201106-Limousine",
+    "source_model": "320",
+    "registration_input": "201106",
+    "category": "Limousine",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=201106&category=Limousine",
+    "retrieved_at_utc": "2026-10-15T11:09:36.770484+00:00",
+    "status": 200,
+    "ranges": [
+      "E90",
+      "F30"
+    ],
+    "sha256": "6311049b41eff4faf016c8eac610d24285b3ebdcbf91d5db90460132db227e9f"
+  },
+  {
+    "query_id": "320-201106-EstateCar",
+    "source_model": "320",
+    "registration_input": "201106",
+    "category": "EstateCar",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=201106&category=EstateCar",
+    "retrieved_at_utc": "2026-10-15T11:09:37.266471+00:00",
+    "status": 200,
+    "ranges": [
+      "E91"
+    ],
+    "sha256": "eed97cc8fe10430ad1e12d2842bde803633a9dfa2c305604ca030b044f6e26d9"
+  },
+  {
+    "query_id": "320-201106-SportsCar",
+    "source_model": "320",
+    "registration_input": "201106",
+    "category": "SportsCar",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=201106&category=SportsCar",
+    "retrieved_at_utc": "2026-10-15T11:09:37.374998+00:00",
+    "status": 200,
+    "ranges": [
+      "E92"
+    ],
+    "sha256": "5f2241b89b1843d3991bdf1465ecb58c87f78ed6f279ce4e65e0b4d771049efe"
+  },
+  {
+    "query_id": "320-201106-Cabrio",
+    "source_model": "320",
+    "registration_input": "201106",
+    "category": "Cabrio",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=201106&category=Cabrio",
+    "retrieved_at_utc": "2026-10-15T11:09:37.649552+00:00",
+    "status": 200,
+    "ranges": [
+      "E93"
+    ],
+    "sha256": "68228a7881f939141c223f40dc69c8a6d819968e76f7974c831b749449d140a7"
+  },
+  {
+    "query_id": "320-201406-Limousine",
+    "source_model": "320",
+    "registration_input": "201406",
+    "category": "Limousine",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=201406&category=Limousine",
+    "retrieved_at_utc": "2026-10-15T11:09:37.978104+00:00",
+    "status": 200,
+    "ranges": [
+      "F30",
+      "F34 GT"
+    ],
+    "sha256": "7acf90e5c7c0f45f7ca6da1791d5a3aa12687cd055f271c1239534399918d61f"
+  },
+  {
+    "query_id": "320-201406-EstateCar",
+    "source_model": "320",
+    "registration_input": "201406",
+    "category": "EstateCar",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=201406&category=EstateCar",
+    "retrieved_at_utc": "2026-10-15T11:09:38.266105+00:00",
+    "status": 200,
+    "ranges": [
+      "F31"
+    ],
+    "sha256": "b81fa00cd02e7ba0810e593833f3306d327ee36237f399048f61ae68341cd633"
+  },
+  {
+    "query_id": "320-201406-SportsCar",
+    "source_model": "320",
+    "registration_input": "201406",
+    "category": "SportsCar",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=201406&category=SportsCar",
+    "retrieved_at_utc": "2026-10-15T11:09:38.343266+00:00",
+    "status": 200,
+    "ranges": [
+      "E92"
+    ],
+    "sha256": "5f2241b89b1843d3991bdf1465ecb58c87f78ed6f279ce4e65e0b4d771049efe"
+  },
+  {
+    "query_id": "320-201406-Cabrio",
+    "source_model": "320",
+    "registration_input": "201406",
+    "category": "Cabrio",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=201406&category=Cabrio",
+    "retrieved_at_utc": "2026-10-15T11:09:38.703406+00:00",
+    "status": 200,
+    "ranges": [
+      "E93"
+    ],
+    "sha256": "68228a7881f939141c223f40dc69c8a6d819968e76f7974c831b749449d140a7"
+  },
+  {
+    "query_id": "320-201706-Limousine",
+    "source_model": "320",
+    "registration_input": "201706",
+    "category": "Limousine",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=201706&category=Limousine",
+    "retrieved_at_utc": "2026-10-15T11:09:38.863299+00:00",
+    "status": 200,
+    "ranges": [
+      "F30"
+    ],
+    "sha256": "42c958f5f6d4a742d4dafc685825ec4fa1fe1c131f5fff6a0a9406f28972ffc8"
+  },
+  {
+    "query_id": "320-201706-EstateCar",
+    "source_model": "320",
+    "registration_input": "201706",
+    "category": "EstateCar",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=201706&category=EstateCar",
+    "retrieved_at_utc": "2026-10-15T11:09:39.062301+00:00",
+    "status": 200,
+    "ranges": [
+      "F31"
+    ],
+    "sha256": "b81fa00cd02e7ba0810e593833f3306d327ee36237f399048f61ae68341cd633"
+  },
+  {
+    "query_id": "320-201706-SportsCar",
+    "source_model": "320",
+    "registration_input": "201706",
+    "category": "SportsCar",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=201706&category=SportsCar",
+    "retrieved_at_utc": "2026-10-15T11:09:39.466125+00:00",
+    "status": 200,
+    "ranges": [],
+    "sha256": "685d8d511f77e159ad7e86367eb4e3c4863e547196cc3954cbf0430213cc85f4"
+  },
+  {
+    "query_id": "320-201706-Cabrio",
+    "source_model": "320",
+    "registration_input": "201706",
+    "category": "Cabrio",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=201706&category=Cabrio",
+    "retrieved_at_utc": "2026-10-15T11:09:39.648017+00:00",
+    "status": 200,
+    "ranges": [],
+    "sha256": "685d8d511f77e159ad7e86367eb4e3c4863e547196cc3954cbf0430213cc85f4"
+  },
+  {
+    "query_id": "320-202006-Limousine",
+    "source_model": "320",
+    "registration_input": "202006",
+    "category": "Limousine",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=202006&category=Limousine",
+    "retrieved_at_utc": "2026-10-15T11:09:39.897217+00:00",
+    "status": 200,
+    "ranges": [
+      "F30",
+      "G20",
+      "G80"
+    ],
+    "sha256": "7c50c07bc58e68f179157fa721006a5c0c88877c6e6da899f15dbc17964303fe"
+  },
+  {
+    "query_id": "320-202006-EstateCar",
+    "source_model": "320",
+    "registration_input": "202006",
+    "category": "EstateCar",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=202006&category=EstateCar",
+    "retrieved_at_utc": "2026-10-15T11:09:40.001930+00:00",
+    "status": 200,
+    "ranges": [
+      "F31",
+      "G21",
+      "G81"
+    ],
+    "sha256": "7cc409696e3c3c0cc6599dc9af739671a62250571438136e9e43c3edb30754fd"
+  },
+  {
+    "query_id": "320-202006-SportsCar",
+    "source_model": "320",
+    "registration_input": "202006",
+    "category": "SportsCar",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=202006&category=SportsCar",
+    "retrieved_at_utc": "2026-10-15T11:09:40.257792+00:00",
+    "status": 200,
+    "ranges": [],
+    "sha256": "685d8d511f77e159ad7e86367eb4e3c4863e547196cc3954cbf0430213cc85f4"
+  },
+  {
+    "query_id": "320-202006-Cabrio",
+    "source_model": "320",
+    "registration_input": "202006",
+    "category": "Cabrio",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=202006&category=Cabrio",
+    "retrieved_at_utc": "2026-10-15T11:09:40.371759+00:00",
+    "status": 200,
+    "ranges": [],
+    "sha256": "685d8d511f77e159ad7e86367eb4e3c4863e547196cc3954cbf0430213cc85f4"
+  },
+  {
+    "query_id": "320-202406-Limousine",
+    "source_model": "320",
+    "registration_input": "202406",
+    "category": "Limousine",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=202406&category=Limousine",
+    "retrieved_at_utc": "2026-10-15T11:09:40.611435+00:00",
+    "status": 200,
+    "ranges": [
+      "G80"
+    ],
+    "sha256": "424454736ada5c115b5ee3531ecd8533c721f99beb1c66d043d629176dd4f7e5"
+  },
+  {
+    "query_id": "320-202406-EstateCar",
+    "source_model": "320",
+    "registration_input": "202406",
+    "category": "EstateCar",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=202406&category=EstateCar",
+    "retrieved_at_utc": "2026-10-15T11:09:40.735181+00:00",
+    "status": 200,
+    "ranges": [
+      "G81"
+    ],
+    "sha256": "7afb163708baccd328173fea50b481700bd207c8165ea7f1dfaffd0dd2a5c48b"
+  },
+  {
+    "query_id": "320-202406-SportsCar",
+    "source_model": "320",
+    "registration_input": "202406",
+    "category": "SportsCar",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=202406&category=SportsCar",
+    "retrieved_at_utc": "2026-10-15T11:09:40.966076+00:00",
+    "status": 200,
+    "ranges": [],
+    "sha256": "685d8d511f77e159ad7e86367eb4e3c4863e547196cc3954cbf0430213cc85f4"
+  },
+  {
+    "query_id": "320-202406-Cabrio",
+    "source_model": "320",
+    "registration_input": "202406",
+    "category": "Cabrio",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=202406&category=Cabrio",
+    "retrieved_at_utc": "2026-10-15T11:09:41.097525+00:00",
+    "status": 200,
+    "ranges": [],
+    "sha256": "685d8d511f77e159ad7e86367eb4e3c4863e547196cc3954cbf0430213cc85f4"
+  },
+  {
+    "query_id": "X5-200206-OffRoad",
+    "source_model": "X5",
+    "registration_input": "200206",
+    "category": "OffRoad",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/X5/modelranges?firstregistration=200206&category=OffRoad",
+    "retrieved_at_utc": "2026-10-15T11:09:41.457492+00:00",
+    "status": 200,
+    "ranges": [
+      "E53"
+    ],
+    "sha256": "b22db9a36c0550512510258ee0422cd0e955220e50a1d57a97984d6f4ef274d7"
+  },
+  {
+    "query_id": "X5-200206-Cabrio",
+    "source_model": "X5",
+    "registration_input": "200206",
+    "category": "Cabrio",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/X5/modelranges?firstregistration=200206&category=Cabrio",
+    "retrieved_at_utc": "2026-10-15T11:09:41.588083+00:00",
+    "status": 200,
+    "ranges": [],
+    "sha256": "685d8d511f77e159ad7e86367eb4e3c4863e547196cc3954cbf0430213cc85f4"
+  },
+  {
+    "query_id": "X5-200906-OffRoad",
+    "source_model": "X5",
+    "registration_input": "200906",
+    "category": "OffRoad",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/X5/modelranges?firstregistration=200906&category=OffRoad",
+    "retrieved_at_utc": "2026-10-15T11:09:41.814897+00:00",
+    "status": 200,
+    "ranges": [
+      "E70"
+    ],
+    "sha256": "30a0a66679ec5eb4ded1bfb6ce297235673a70e1aa7f7a1bb2c8a5080b45fe68"
+  },
+  {
+    "query_id": "X5-200906-Cabrio",
+    "source_model": "X5",
+    "registration_input": "200906",
+    "category": "Cabrio",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/X5/modelranges?firstregistration=200906&category=Cabrio",
+    "retrieved_at_utc": "2026-10-15T11:09:41.942494+00:00",
+    "status": 200,
+    "ranges": [],
+    "sha256": "685d8d511f77e159ad7e86367eb4e3c4863e547196cc3954cbf0430213cc85f4"
+  },
+  {
+    "query_id": "X5-201506-OffRoad",
+    "source_model": "X5",
+    "registration_input": "201506",
+    "category": "OffRoad",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/X5/modelranges?firstregistration=201506&category=OffRoad",
+    "retrieved_at_utc": "2026-10-15T11:09:42.178974+00:00",
+    "status": 200,
+    "ranges": [
+      "F15"
+    ],
+    "sha256": "3ea79b6195479959602d6834067d5c555fab279b9c3729305587109da42b441c"
+  },
+  {
+    "query_id": "X5-201506-Cabrio",
+    "source_model": "X5",
+    "registration_input": "201506",
+    "category": "Cabrio",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/X5/modelranges?firstregistration=201506&category=Cabrio",
+    "retrieved_at_utc": "2026-10-15T11:09:42.290103+00:00",
+    "status": 200,
+    "ranges": [],
+    "sha256": "685d8d511f77e159ad7e86367eb4e3c4863e547196cc3954cbf0430213cc85f4"
+  },
+  {
+    "query_id": "X5-202006-OffRoad",
+    "source_model": "X5",
+    "registration_input": "202006",
+    "category": "OffRoad",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/X5/modelranges?firstregistration=202006&category=OffRoad",
+    "retrieved_at_utc": "2026-10-15T11:09:42.528241+00:00",
+    "status": 200,
+    "ranges": [
+      "G05"
+    ],
+    "sha256": "d98916a628a30c6676e1c8d580adefb630c22fbb25e620740af933bf1698d6d1"
+  },
+  {
+    "query_id": "X5-202006-Cabrio",
+    "source_model": "X5",
+    "registration_input": "202006",
+    "category": "Cabrio",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/X5/modelranges?firstregistration=202006&category=Cabrio",
+    "retrieved_at_utc": "2026-10-15T11:09:42.640479+00:00",
+    "status": 200,
+    "ranges": [],
+    "sha256": "685d8d511f77e159ad7e86367eb4e3c4863e547196cc3954cbf0430213cc85f4"
+  },
+  {
+    "query_id": "X5-202406-OffRoad",
+    "source_model": "X5",
+    "registration_input": "202406",
+    "category": "OffRoad",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/X5/modelranges?firstregistration=202406&category=OffRoad",
+    "retrieved_at_utc": "2026-10-15T11:09:42.881863+00:00",
+    "status": 200,
+    "ranges": [
+      "G05"
+    ],
+    "sha256": "d98916a628a30c6676e1c8d580adefb630c22fbb25e620740af933bf1698d6d1"
+  },
+  {
+    "query_id": "X5-202406-Cabrio",
+    "source_model": "X5",
+    "registration_input": "202406",
+    "category": "Cabrio",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/X5/modelranges?firstregistration=202406&category=Cabrio",
+    "retrieved_at_utc": "2026-10-15T11:09:43.005515+00:00",
+    "status": 200,
+    "ranges": [],
+    "sha256": "685d8d511f77e159ad7e86367eb4e3c4863e547196cc3954cbf0430213cc85f4"
+  },
+  {
+    "query_id": "318-199506-SportsCar",
+    "source_model": "318",
+    "registration_input": "199506",
+    "category": "SportsCar",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/318/modelranges?firstregistration=199506&category=SportsCar",
+    "retrieved_at_utc": "2026-10-15T11:09:43.239269+00:00",
+    "status": 200,
+    "ranges": [
+      "E36"
+    ],
+    "sha256": "7e750893b92f932958161bbe2752d3ff1cc6c64c2431e64df3b78a13d2d0fd52"
+  },
+  {
+    "query_id": "318-199506-Limousine",
+    "source_model": "318",
+    "registration_input": "199506",
+    "category": "Limousine",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/318/modelranges?firstregistration=199506&category=Limousine",
+    "retrieved_at_utc": "2026-10-15T11:09:43.354644+00:00",
+    "status": 200,
+    "ranges": [
+      "E36"
+    ],
+    "sha256": "7e750893b92f932958161bbe2752d3ff1cc6c64c2431e64df3b78a13d2d0fd52"
+  }
+]

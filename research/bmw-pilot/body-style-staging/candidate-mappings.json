@@ -1,0 +1,1125 @@
+[
+  {
+    "source_model": "318",
+    "source_range": "E36",
+    "category": "Limousine",
+    "category_label": "Saloon",
+    "evidence": [
+      {
+        "query_id": "318-199506-Limousine",
+        "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/318/modelranges?firstregistration=199506&category=Limousine",
+        "registration_input": "199506",
+        "all_returned_ranges": [
+          "E36"
+        ]
+      }
+    ],
+    "candidate_generations": [
+      {
+        "model_id": "autoria:9:3219",
+        "model": "3 Series",
+        "generation_id": "autoria:9:3219:generation:10065",
+        "generation": "E36",
+        "year_from": 1990,
+        "year_to": 1996
+      },
+      {
+        "model_id": "autoria:9:3219",
+        "model": "3 Series",
+        "generation_id": "autoria:9:3219:generation:10066",
+        "generation": "E36 (FL)",
+        "year_from": 1996,
+        "year_to": 2001
+      }
+    ],
+    "status": "facelift_resolution_required",
+    "cross_model_conflicts": [],
+    "review_required": true,
+    "ambiguous_source_queries": 0,
+    "broad_category": false
+  },
+  {
+    "source_model": "318",
+    "source_range": "E36",
+    "category": "SportsCar",
+    "category_label": "Sports Car/Coupe",
+    "evidence": [
+      {
+        "query_id": "318-199506-SportsCar",
+        "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/318/modelranges?firstregistration=199506&category=SportsCar",
+        "registration_input": "199506",
+        "all_returned_ranges": [
+          "E36"
+        ]
+      }
+    ],
+    "candidate_generations": [
+      {
+        "model_id": "autoria:9:3219",
+        "model": "3 Series",
+        "generation_id": "autoria:9:3219:generation:10065",
+        "generation": "E36",
+        "year_from": 1990,
+        "year_to": 1996
+      },
+      {
+        "model_id": "autoria:9:3219",
+        "model": "3 Series",
+        "generation_id": "autoria:9:3219:generation:10066",
+        "generation": "E36 (FL)",
+        "year_from": 1996,
+        "year_to": 2001
+      }
+    ],
+    "status": "facelift_resolution_required",
+    "cross_model_conflicts": [],
+    "review_required": true,
+    "ambiguous_source_queries": 0,
+    "broad_category": true
+  },
+  {
+    "source_model": "320",
+    "source_range": "E36",
+    "category": "Cabrio",
+    "category_label": "Convertible/Roadster",
+    "evidence": [
+      {
+        "query_id": "320-199706-Cabrio",
+        "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=199706&category=Cabrio",
+        "registration_input": "199706",
+        "all_returned_ranges": [
+          "E36"
+        ]
+      }
+    ],
+    "candidate_generations": [
+      {
+        "model_id": "autoria:9:3219",
+        "model": "3 Series",
+        "generation_id": "autoria:9:3219:generation:10065",
+        "generation": "E36",
+        "year_from": 1990,
+        "year_to": 1996
+      },
+      {
+        "model_id": "autoria:9:3219",
+        "model": "3 Series",
+        "generation_id": "autoria:9:3219:generation:10066",
+        "generation": "E36 (FL)",
+        "year_from": 1996,
+        "year_to": 2001
+      }
+    ],
+    "status": "facelift_resolution_required",
+    "cross_model_conflicts": [],
+    "review_required": true,
+    "ambiguous_source_queries": 0,
+    "broad_category": true
+  },
+  {
+    "source_model": "320",
+    "source_range": "E36",
+    "category": "EstateCar",
+    "category_label": "Estate car",
+    "evidence": [
+      {
+        "query_id": "320-199706-EstateCar",
+        "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=199706&category=EstateCar",
+        "registration_input": "199706",
+        "all_returned_ranges": [
+          "E36"
+        ]
+      }
+    ],
+    "candidate_generations": [
+      {
+        "model_id": "autoria:9:3219",
+        "model": "3 Series",
+        "generation_id": "autoria:9:3219:generation:10065",
+        "generation": "E36",
+        "year_from": 1990,
+        "year_to": 1996
+      },
+      {
+        "model_id": "autoria:9:3219",
+        "model": "3 Series",
+        "generation_id": "autoria:9:3219:generation:10066",
+        "generation": "E36 (FL)",
+        "year_from": 1996,
+        "year_to": 2001
+      }
+    ],
+    "status": "facelift_resolution_required",
+    "cross_model_conflicts": [],
+    "review_required": true,
+    "ambiguous_source_queries": 0,
+    "broad_category": false
+  },
+  {
+    "source_model": "320",
+    "source_range": "E36",
+    "category": "Limousine",
+    "category_label": "Saloon",
+    "evidence": [
+      {
+        "query_id": "320-199306-Limousine",
+        "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=199306&category=Limousine",
+        "registration_input": "199306",
+        "all_returned_ranges": [
+          "E36"
+        ]
+      },
+      {
+        "query_id": "320-199706-Limousine",
+        "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=199706&category=Limousine",
+        "registration_input": "199706",
+        "all_returned_ranges": [
+          "E36"
+        ]
+      }
+    ],
+    "candidate_generations": [
+      {
+        "model_id": "autoria:9:3219",
+        "model": "3 Series",
+        "generation_id": "autoria:9:3219:generation:10065",
+        "generation": "E36",
+        "year_from": 1990,
+        "year_to": 1996
+      },
+      {
+        "model_id": "autoria:9:3219",
+        "model": "3 Series",
+        "generation_id": "autoria:9:3219:generation:10066",
+        "generation": "E36 (FL)",
+        "year_from": 1996,
+        "year_to": 2001
+      }
+    ],
+    "status": "facelift_resolution_required",
+    "cross_model_conflicts": [],
+    "review_required": true,
+    "ambiguous_source_queries": 0,
+    "broad_category": false
+  },
+  {
+    "source_model": "320",
+    "source_range": "E36",
+    "category": "SportsCar",
+    "category_label": "Sports Car/Coupe",
+    "evidence": [
+      {
+        "query_id": "320-199306-SportsCar",
+        "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=199306&category=SportsCar",
+        "registration_input": "199306",
+        "all_returned_ranges": [
+          "E36"
+        ]
+      },
+      {
+        "query_id": "320-199706-SportsCar",
+        "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=199706&category=SportsCar",
+        "registration_input": "199706",
+        "all_returned_ranges": [
+          "E36"
+        ]
+      }
+    ],
+    "candidate_generations": [
+      {
+        "model_id": "autoria:9:3219",
+        "model": "3 Series",
+        "generation_id": "autoria:9:3219:generation:10065",
+        "generation": "E36",
+        "year_from": 1990,
+        "year_to": 1996
+      },
+      {
+        "model_id": "autoria:9:3219",
+        "model": "3 Series",
+        "generation_id": "autoria:9:3219:generation:10066",
+        "generation": "E36 (FL)",
+        "year_from": 1996,
+        "year_to": 2001
+      }
+    ],
+    "status": "facelift_resolution_required",
+    "cross_model_conflicts": [],
+    "review_required": true,
+    "ambiguous_source_queries": 0,
+    "broad_category": true
+  },
+  {
+    "source_model": "320",
+    "source_range": "E46",
+    "category": "Cabrio",
+    "category_label": "Convertible/Roadster",
+    "evidence": [
+      {
+        "query_id": "320-200106-Cabrio",
+        "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=200106&category=Cabrio",
+        "registration_input": "200106",
+        "all_returned_ranges": [
+          "E46"
+        ]
+      },
+      {
+        "query_id": "320-200706-Cabrio",
+        "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=200706&category=Cabrio",
+        "registration_input": "200706",
+        "all_returned_ranges": [
+          "E46",
+          "E93"
+        ]
+      }
+    ],
+    "candidate_generations": [
+      {
+        "model_id": "autoria:9:3219",
+        "model": "3 Series",
+        "generation_id": "autoria:9:3219:generation:10067",
+        "generation": "E46",
+        "year_from": 1998,
+        "year_to": 2003
+      },
+      {
+        "model_id": "autoria:9:3219",
+        "model": "3 Series",
+        "generation_id": "autoria:9:3219:generation:10068",
+        "generation": "E46 (FL)",
+        "year_from": 2001,
+        "year_to": 2006
+      }
+    ],
+    "status": "facelift_resolution_required",
+    "cross_model_conflicts": [],
+    "review_required": true,
+    "ambiguous_source_queries": 1,
+    "broad_category": true
+  },
+  {
+    "source_model": "320",
+    "source_range": "E46",
+    "category": "EstateCar",
+    "category_label": "Estate car",
+    "evidence": [
+      {
+        "query_id": "320-200106-EstateCar",
+        "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=200106&category=EstateCar",
+        "registration_input": "200106",
+        "all_returned_ranges": [
+          "E46"
+        ]
+      }
+    ],
+    "candidate_generations": [
+      {
+        "model_id": "autoria:9:3219",
+        "model": "3 Series",
+        "generation_id": "autoria:9:3219:generation:10067",
+        "generation": "E46",
+        "year_from": 1998,
+        "year_to": 2003
+      },
+      {
+        "model_id": "autoria:9:3219",
+        "model": "3 Series",
+        "generation_id": "autoria:9:3219:generation:10068",
+        "generation": "E46 (FL)",
+        "year_from": 2001,
+        "year_to": 2006
+      }
+    ],
+    "status": "facelift_resolution_required",
+    "cross_model_conflicts": [],
+    "review_required": true,
+    "ambiguous_source_queries": 0,
+    "broad_category": false
+  },
+  {
+    "source_model": "320",
+    "source_range": "E46",
+    "category": "Limousine",
+    "category_label": "Saloon",
+    "evidence": [
+      {
+        "query_id": "320-200106-Limousine",
+        "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=200106&category=Limousine",
+        "registration_input": "200106",
+        "all_returned_ranges": [
+          "E46"
+        ]
+      }
+    ],
+    "candidate_generations": [
+      {
+        "model_id": "autoria:9:3219",
+        "model": "3 Series",
+        "generation_id": "autoria:9:3219:generation:10067",
+        "generation": "E46",
+        "year_from": 1998,
+        "year_to": 2003
+      },
+      {
+        "model_id": "autoria:9:3219",
+        "model": "3 Series",
+        "generation_id": "autoria:9:3219:generation:10068",
+        "generation": "E46 (FL)",
+        "year_from": 2001,
+        "year_to": 2006
+      }
+    ],
+    "status": "facelift_resolution_required",
+    "cross_model_conflicts": [],
+    "review_required": true,
+    "ambiguous_source_queries": 0,
+    "broad_category": false
+  },
+  {
+    "source_model": "320",
+    "source_range": "E46",
+    "category": "SportsCar",
+    "category_label": "Sports Car/Coupe",
+    "evidence": [
+      {
+        "query_id": "320-200106-SportsCar",
+        "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=200106&category=SportsCar",
+        "registration_input": "200106",
+        "all_returned_ranges": [
+          "E46"
+        ]
+      },
+      {
+        "query_id": "320-200706-SportsCar",
+        "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=200706&category=SportsCar",
+        "registration_input": "200706",
+        "all_returned_ranges": [
+          "E46",
+          "E92"
+        ]
+      }
+    ],
+    "candidate_generations": [
+      {
+        "model_id": "autoria:9:3219",
+        "model": "3 Series",
+        "generation_id": "autoria:9:3219:generation:10067",
+        "generation": "E46",
+        "year_from": 1998,
+        "year_to": 2003
+      },
+      {
+        "model_id": "autoria:9:3219",
+        "model": "3 Series",
+        "generation_id": "autoria:9:3219:generation:10068",
+        "generation": "E46 (FL)",
+        "year_from": 2001,
+        "year_to": 2006
+      }
+    ],
+    "status": "facelift_resolution_required",
+    "cross_model_conflicts": [],
+    "review_required": true,
+    "ambiguous_source_queries": 1,
+    "broad_category": true
+  },
+  {
+    "source_model": "320",
+    "source_range": "E90",
+    "category": "Limousine",
+    "category_label": "Saloon",
+    "evidence": [
+      {
+        "query_id": "320-200706-Limousine",
+        "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=200706&category=Limousine",
+        "registration_input": "200706",
+        "all_returned_ranges": [
+          "E90"
+        ]
+      },
+      {
+        "query_id": "320-201106-Limousine",
+        "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=201106&category=Limousine",
+        "registration_input": "201106",
+        "all_returned_ranges": [
+          "E90",
+          "F30"
+        ]
+      }
+    ],
+    "candidate_generations": [
+      {
+        "model_id": "autoria:9:3219",
+        "model": "3 Series",
+        "generation_id": "autoria:9:3219:generation:3251",
+        "generation": "E90",
+        "year_from": 2004,
+        "year_to": 2008
+      },
+      {
+        "model_id": "autoria:9:3219",
+        "model": "3 Series",
+        "generation_id": "autoria:9:3219:generation:3252",
+        "generation": "E90 (FL)",
+        "year_from": 2008,
+        "year_to": 2012
+      }
+    ],
+    "status": "facelift_resolution_required",
+    "cross_model_conflicts": [],
+    "review_required": true,
+    "ambiguous_source_queries": 1,
+    "broad_category": false
+  },
+  {
+    "source_model": "320",
+    "source_range": "E91",
+    "category": "EstateCar",
+    "category_label": "Estate car",
+    "evidence": [
+      {
+        "query_id": "320-200706-EstateCar",
+        "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=200706&category=EstateCar",
+        "registration_input": "200706",
+        "all_returned_ranges": [
+          "E91"
+        ]
+      },
+      {
+        "query_id": "320-201106-EstateCar",
+        "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=201106&category=EstateCar",
+        "registration_input": "201106",
+        "all_returned_ranges": [
+          "E91"
+        ]
+      }
+    ],
+    "candidate_generations": [
+      {
+        "model_id": "autoria:9:3219",
+        "model": "3 Series",
+        "generation_id": "autoria:9:3219:generation:3249",
+        "generation": "E91",
+        "year_from": 2005,
+        "year_to": 2010
+      },
+      {
+        "model_id": "autoria:9:3219",
+        "model": "3 Series",
+        "generation_id": "autoria:9:3219:generation:3250",
+        "generation": "E91 (FL)",
+        "year_from": 2008,
+        "year_to": 2012
+      }
+    ],
+    "status": "facelift_resolution_required",
+    "cross_model_conflicts": [],
+    "review_required": true,
+    "ambiguous_source_queries": 0,
+    "broad_category": false
+  },
+  {
+    "source_model": "320",
+    "source_range": "E92",
+    "category": "SportsCar",
+    "category_label": "Sports Car/Coupe",
+    "evidence": [
+      {
+        "query_id": "320-200706-SportsCar",
+        "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=200706&category=SportsCar",
+        "registration_input": "200706",
+        "all_returned_ranges": [
+          "E46",
+          "E92"
+        ]
+      },
+      {
+        "query_id": "320-201106-SportsCar",
+        "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=201106&category=SportsCar",
+        "registration_input": "201106",
+        "all_returned_ranges": [
+          "E92"
+        ]
+      },
+      {
+        "query_id": "320-201406-SportsCar",
+        "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=201406&category=SportsCar",
+        "registration_input": "201406",
+        "all_returned_ranges": [
+          "E92"
+        ]
+      }
+    ],
+    "candidate_generations": [
+      {
+        "model_id": "autoria:9:3219",
+        "model": "3 Series",
+        "generation_id": "autoria:9:3219:generation:3228",
+        "generation": "E92",
+        "year_from": 2006,
+        "year_to": 2008
+      },
+      {
+        "model_id": "autoria:9:3219",
+        "model": "3 Series",
+        "generation_id": "autoria:9:3219:generation:1718",
+        "generation": "E92 (FL)",
+        "year_from": 2009,
+        "year_to": 2013
+      }
+    ],
+    "status": "facelift_resolution_required",
+    "cross_model_conflicts": [],
+    "review_required": true,
+    "ambiguous_source_queries": 1,
+    "broad_category": true
+  },
+  {
+    "source_model": "320",
+    "source_range": "E93",
+    "category": "Cabrio",
+    "category_label": "Convertible/Roadster",
+    "evidence": [
+      {
+        "query_id": "320-200706-Cabrio",
+        "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=200706&category=Cabrio",
+        "registration_input": "200706",
+        "all_returned_ranges": [
+          "E46",
+          "E93"
+        ]
+      },
+      {
+        "query_id": "320-201106-Cabrio",
+        "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=201106&category=Cabrio",
+        "registration_input": "201106",
+        "all_returned_ranges": [
+          "E93"
+        ]
+      },
+      {
+        "query_id": "320-201406-Cabrio",
+        "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=201406&category=Cabrio",
+        "registration_input": "201406",
+        "all_returned_ranges": [
+          "E93"
+        ]
+      }
+    ],
+    "candidate_generations": [
+      {
+        "model_id": "autoria:9:3219",
+        "model": "3 Series",
+        "generation_id": "autoria:9:3219:generation:10076",
+        "generation": "E93",
+        "year_from": 2007,
+        "year_to": 2010
+      },
+      {
+        "model_id": "autoria:9:3219",
+        "model": "3 Series",
+        "generation_id": "autoria:9:3219:generation:1720",
+        "generation": "E93 (FL)",
+        "year_from": 2010,
+        "year_to": 2014
+      }
+    ],
+    "status": "facelift_resolution_required",
+    "cross_model_conflicts": [],
+    "review_required": true,
+    "ambiguous_source_queries": 1,
+    "broad_category": true
+  },
+  {
+    "source_model": "320",
+    "source_range": "F30",
+    "category": "Limousine",
+    "category_label": "Saloon",
+    "evidence": [
+      {
+        "query_id": "320-201106-Limousine",
+        "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=201106&category=Limousine",
+        "registration_input": "201106",
+        "all_returned_ranges": [
+          "E90",
+          "F30"
+        ]
+      },
+      {
+        "query_id": "320-201406-Limousine",
+        "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=201406&category=Limousine",
+        "registration_input": "201406",
+        "all_returned_ranges": [
+          "F30",
+          "F34 GT"
+        ]
+      },
+      {
+        "query_id": "320-201706-Limousine",
+        "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=201706&category=Limousine",
+        "registration_input": "201706",
+        "all_returned_ranges": [
+          "F30"
+        ]
+      },
+      {
+        "query_id": "320-202006-Limousine",
+        "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=202006&category=Limousine",
+        "registration_input": "202006",
+        "all_returned_ranges": [
+          "F30",
+          "G20",
+          "G80"
+        ]
+      }
+    ],
+    "candidate_generations": [
+      {
+        "model_id": "autoria:9:3219",
+        "model": "3 Series",
+        "generation_id": "autoria:9:3219:generation:306",
+        "generation": "F30",
+        "year_from": 2011,
+        "year_to": 2015
+      },
+      {
+        "model_id": "autoria:9:3219",
+        "model": "3 Series",
+        "generation_id": "autoria:9:3219:generation:308",
+        "generation": "F30 (FL)",
+        "year_from": 2014,
+        "year_to": 2018
+      }
+    ],
+    "status": "facelift_resolution_required",
+    "cross_model_conflicts": [],
+    "review_required": true,
+    "ambiguous_source_queries": 3,
+    "broad_category": false
+  },
+  {
+    "source_model": "320",
+    "source_range": "F31",
+    "category": "EstateCar",
+    "category_label": "Estate car",
+    "evidence": [
+      {
+        "query_id": "320-201406-EstateCar",
+        "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=201406&category=EstateCar",
+        "registration_input": "201406",
+        "all_returned_ranges": [
+          "F31"
+        ]
+      },
+      {
+        "query_id": "320-201706-EstateCar",
+        "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=201706&category=EstateCar",
+        "registration_input": "201706",
+        "all_returned_ranges": [
+          "F31"
+        ]
+      },
+      {
+        "query_id": "320-202006-EstateCar",
+        "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=202006&category=EstateCar",
+        "registration_input": "202006",
+        "all_returned_ranges": [
+          "F31",
+          "G21",
+          "G81"
+        ]
+      }
+    ],
+    "candidate_generations": [
+      {
+        "model_id": "autoria:9:3219",
+        "model": "3 Series",
+        "generation_id": "autoria:9:3219:generation:307",
+        "generation": "F31",
+        "year_from": 2011,
+        "year_to": 2015
+      },
+      {
+        "model_id": "autoria:9:3219",
+        "model": "3 Series",
+        "generation_id": "autoria:9:3219:generation:309",
+        "generation": "F31 (FL)",
+        "year_from": 2015,
+        "year_to": 2019
+      }
+    ],
+    "status": "facelift_resolution_required",
+    "cross_model_conflicts": [],
+    "review_required": true,
+    "ambiguous_source_queries": 1,
+    "broad_category": false
+  },
+  {
+    "source_model": "320",
+    "source_range": "F34 GT",
+    "category": "Limousine",
+    "category_label": "Saloon",
+    "evidence": [
+      {
+        "query_id": "320-201406-Limousine",
+        "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=201406&category=Limousine",
+        "registration_input": "201406",
+        "all_returned_ranges": [
+          "F30",
+          "F34 GT"
+        ]
+      }
+    ],
+    "candidate_generations": [
+      {
+        "model_id": "autoria:9:43029",
+        "model": "3 Series GT",
+        "generation_id": "autoria:9:43029:generation:311",
+        "generation": "F34",
+        "year_from": 2013,
+        "year_to": 2016
+      },
+      {
+        "model_id": "autoria:9:43029",
+        "model": "3 Series GT",
+        "generation_id": "autoria:9:43029:generation:5691",
+        "generation": "F34 (FL)",
+        "year_from": 2016,
+        "year_to": 2020
+      }
+    ],
+    "status": "facelift_resolution_required",
+    "cross_model_conflicts": [],
+    "review_required": true,
+    "ambiguous_source_queries": 1,
+    "broad_category": false
+  },
+  {
+    "source_model": "320",
+    "source_range": "G20",
+    "category": "Limousine",
+    "category_label": "Saloon",
+    "evidence": [
+      {
+        "query_id": "320-202006-Limousine",
+        "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=202006&category=Limousine",
+        "registration_input": "202006",
+        "all_returned_ranges": [
+          "F30",
+          "G20",
+          "G80"
+        ]
+      }
+    ],
+    "candidate_generations": [
+      {
+        "model_id": "autoria:9:3219",
+        "model": "3 Series",
+        "generation_id": "autoria:9:3219:generation:6138",
+        "generation": "G20",
+        "year_from": 2018,
+        "year_to": 2023
+      },
+      {
+        "model_id": "autoria:9:3219",
+        "model": "3 Series",
+        "generation_id": "autoria:9:3219:generation:10080",
+        "generation": "G20 (FL)",
+        "year_from": 2022,
+        "year_to": null
+      }
+    ],
+    "status": "facelift_resolution_required",
+    "cross_model_conflicts": [],
+    "review_required": true,
+    "ambiguous_source_queries": 1,
+    "broad_category": false
+  },
+  {
+    "source_model": "320",
+    "source_range": "G21",
+    "category": "EstateCar",
+    "category_label": "Estate car",
+    "evidence": [
+      {
+        "query_id": "320-202006-EstateCar",
+        "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=202006&category=EstateCar",
+        "registration_input": "202006",
+        "all_returned_ranges": [
+          "F31",
+          "G21",
+          "G81"
+        ]
+      }
+    ],
+    "candidate_generations": [
+      {
+        "model_id": "autoria:9:3219",
+        "model": "3 Series",
+        "generation_id": "autoria:9:3219:generation:7546",
+        "generation": "G21",
+        "year_from": 2019,
+        "year_to": null
+      },
+      {
+        "model_id": "autoria:9:3219",
+        "model": "3 Series",
+        "generation_id": "autoria:9:3219:generation:10081",
+        "generation": "G21 (FL)",
+        "year_from": 2022,
+        "year_to": null
+      }
+    ],
+    "status": "facelift_resolution_required",
+    "cross_model_conflicts": [],
+    "review_required": true,
+    "ambiguous_source_queries": 1,
+    "broad_category": false
+  },
+  {
+    "source_model": "320",
+    "source_range": "G80",
+    "category": "Limousine",
+    "category_label": "Saloon",
+    "evidence": [
+      {
+        "query_id": "320-202006-Limousine",
+        "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=202006&category=Limousine",
+        "registration_input": "202006",
+        "all_returned_ranges": [
+          "F30",
+          "G20",
+          "G80"
+        ]
+      },
+      {
+        "query_id": "320-202406-Limousine",
+        "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=202406&category=Limousine",
+        "registration_input": "202406",
+        "all_returned_ranges": [
+          "G80"
+        ]
+      }
+    ],
+    "candidate_generations": [],
+    "status": "unmatched_range",
+    "cross_model_conflicts": [
+      {
+        "model_id": "autoria:9:3292",
+        "model": "M3",
+        "generation_id": "autoria:9:3292:generation:9224",
+        "generation": "G80"
+      },
+      {
+        "model_id": "autoria:9:3292",
+        "model": "M3",
+        "generation_id": "autoria:9:3292:generation:20874",
+        "generation": "G80 (FL)"
+      }
+    ],
+    "review_required": true,
+    "ambiguous_source_queries": 1,
+    "broad_category": false
+  },
+  {
+    "source_model": "320",
+    "source_range": "G81",
+    "category": "EstateCar",
+    "category_label": "Estate car",
+    "evidence": [
+      {
+        "query_id": "320-202006-EstateCar",
+        "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=202006&category=EstateCar",
+        "registration_input": "202006",
+        "all_returned_ranges": [
+          "F31",
+          "G21",
+          "G81"
+        ]
+      },
+      {
+        "query_id": "320-202406-EstateCar",
+        "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=202406&category=EstateCar",
+        "registration_input": "202406",
+        "all_returned_ranges": [
+          "G81"
+        ]
+      }
+    ],
+    "candidate_generations": [],
+    "status": "unmatched_range",
+    "cross_model_conflicts": [
+      {
+        "model_id": "autoria:9:3292",
+        "model": "M3",
+        "generation_id": "autoria:9:3292:generation:20042",
+        "generation": "G81"
+      },
+      {
+        "model_id": "autoria:9:3292",
+        "model": "M3",
+        "generation_id": "autoria:9:3292:generation:20875",
+        "generation": "G81 (FL)"
+      }
+    ],
+    "review_required": true,
+    "ambiguous_source_queries": 1,
+    "broad_category": false
+  },
+  {
+    "source_model": "X5",
+    "source_range": "E53",
+    "category": "OffRoad",
+    "category_label": "SUV/Off-road Vehicle/Pickup Truck",
+    "evidence": [
+      {
+        "query_id": "X5-200206-OffRoad",
+        "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/X5/modelranges?firstregistration=200206&category=OffRoad",
+        "registration_input": "200206",
+        "all_returned_ranges": [
+          "E53"
+        ]
+      }
+    ],
+    "candidate_generations": [
+      {
+        "model_id": "autoria:9:96",
+        "model": "X5",
+        "generation_id": "autoria:9:96:generation:10147",
+        "generation": "E53",
+        "year_from": 2000,
+        "year_to": 2003
+      },
+      {
+        "model_id": "autoria:9:96",
+        "model": "X5",
+        "generation_id": "autoria:9:96:generation:10148",
+        "generation": "E53 (FL)",
+        "year_from": 2003,
+        "year_to": 2007
+      }
+    ],
+    "status": "facelift_resolution_required",
+    "cross_model_conflicts": [],
+    "review_required": true,
+    "ambiguous_source_queries": 0,
+    "broad_category": true
+  },
+  {
+    "source_model": "X5",
+    "source_range": "E70",
+    "category": "OffRoad",
+    "category_label": "SUV/Off-road Vehicle/Pickup Truck",
+    "evidence": [
+      {
+        "query_id": "X5-200906-OffRoad",
+        "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/X5/modelranges?firstregistration=200906&category=OffRoad",
+        "registration_input": "200906",
+        "all_returned_ranges": [
+          "E70"
+        ]
+      }
+    ],
+    "candidate_generations": [
+      {
+        "model_id": "autoria:9:96",
+        "model": "X5",
+        "generation_id": "autoria:9:96:generation:10149",
+        "generation": "E70",
+        "year_from": 2006,
+        "year_to": 2010
+      },
+      {
+        "model_id": "autoria:9:96",
+        "model": "X5",
+        "generation_id": "autoria:9:96:generation:425",
+        "generation": "E70 (FL)",
+        "year_from": 2010,
+        "year_to": 2014
+      }
+    ],
+    "status": "facelift_resolution_required",
+    "cross_model_conflicts": [],
+    "review_required": true,
+    "ambiguous_source_queries": 0,
+    "broad_category": true
+  },
+  {
+    "source_model": "X5",
+    "source_range": "F15",
+    "category": "OffRoad",
+    "category_label": "SUV/Off-road Vehicle/Pickup Truck",
+    "evidence": [
+      {
+        "query_id": "X5-201506-OffRoad",
+        "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/X5/modelranges?firstregistration=201506&category=OffRoad",
+        "registration_input": "201506",
+        "all_returned_ranges": [
+          "F15"
+        ]
+      }
+    ],
+    "candidate_generations": [
+      {
+        "model_id": "autoria:9:96",
+        "model": "X5",
+        "generation_id": "autoria:9:96:generation:426",
+        "generation": "F15",
+        "year_from": 2013,
+        "year_to": 2018
+      }
+    ],
+    "status": "single_catalogue_candidate",
+    "cross_model_conflicts": [],
+    "review_required": true,
+    "ambiguous_source_queries": 0,
+    "broad_category": true
+  },
+  {
+    "source_model": "X5",
+    "source_range": "G05",
+    "category": "OffRoad",
+    "category_label": "SUV/Off-road Vehicle/Pickup Truck",
+    "evidence": [
+      {
+        "query_id": "X5-202006-OffRoad",
+        "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/X5/modelranges?firstregistration=202006&category=OffRoad",
+        "registration_input": "202006",
+        "all_returned_ranges": [
+          "G05"
+        ]
+      },
+      {
+        "query_id": "X5-202406-OffRoad",
+        "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/X5/modelranges?firstregistration=202406&category=OffRoad",
+        "registration_input": "202406",
+        "all_returned_ranges": [
+          "G05"
+        ]
+      }
+    ],
+    "candidate_generations": [
+      {
+        "model_id": "autoria:9:96",
+        "model": "X5",
+        "generation_id": "autoria:9:96:generation:5836",
+        "generation": "G05",
+        "year_from": 2018,
+        "year_to": null
+      },
+      {
+        "model_id": "autoria:9:96",
+        "model": "X5",
+        "generation_id": "autoria:9:96:generation:16255",
+        "generation": "G05 (FL)",
+        "year_from": 2023,
+        "year_to": null
+      }
+    ],
+    "status": "facelift_resolution_required",
+    "cross_model_conflicts": [],
+    "review_required": true,
+    "ambiguous_source_queries": 0,
+    "broad_category": true
+  }
+]

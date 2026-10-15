@@ -69,3 +69,7 @@ No generation, body style, specification, point total, or sighting identity was 
 ## Reproduce the comparison
 
 Run `python3 scripts/bmw_mobile_pilot.py` from the repository. It processes the captured XML offline and rewrites `mobile-de-comparison.csv` and `comparison-summary.json`. Raw responses are in `mobile-de/`, with retrieval metadata and checksums in `mobile-de/provenance.json`. No credentials or seller data are included.
+
+## Staged body-category mapping
+
+The next step is complete: [body-style-staging](body-style-staging/README.md) contains a 48-query sample, evidence-linked candidate mappings, ambiguity flags, and cross-model conflicts. No application import has been performed.
