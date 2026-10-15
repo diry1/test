@@ -1,6 +1,6 @@
 # BMW catalogue expansion pilot
 
-Status: official mobile.de reference data acquired and compared. Pilot complete for public reference endpoints; no live catalogue changes made.
+Status: initial collection endpoints compared; follow-up discovered accessible, documented modelrange and trimline endpoints. See [generation/body-category investigation](range-investigation/README.md). No live catalogue changes made.
 
 ## Baseline
 
@@ -57,12 +57,12 @@ Examples of incompatible levels:
 
 - mobile.de groups 320 and 330 under 3 Series; our catalogue already stores engine/variant-level entries beneath 3 Series generations. They are not automatically new top-level model families.
 - mobile.de lists X5 M50 as a model entry; our existing X5 specifications already include M50d and M50i. Treating that entry as a new family would duplicate existing coverage.
-- The BMW model, model-group, and category snapshots contain no chassis-generation mapping or generation-specific body styles. They cannot resolve E36 Coupe or F30/F31 relationships by themselves.
+- The BMW model, model-group, and category snapshots contain no chassis-generation mapping or generation-specific body styles. Those initial collection responses cannot resolve E36 Coupe or F30/F31 relationships by themselves. The follow-up modelrange queries can provide date/body-category-dependent generation candidates; see the linked investigation.
 - The documented item URLs returned for individual model/X5 and model/320 were checked and returned HTTP 404; the collection endpoints above were successful. No alternate routes or undocumented generation endpoints were assumed.
 
 ## Recommendation
 
-Retain the current application catalogue. Use mobile.de reference data as external model/variant aliases for discovery and reconciliation, with manual review of the 125 unmatched entries. For generation/body-style enrichment, obtain a source that explicitly maps those fields or an authorized listing-data sample that can be evaluated separately. Public reference endpoint access does not establish broader data-redistribution or photo rights.
+Retain the current application catalogue. Use mobile.de reference data as external model/variant aliases for discovery and reconciliation, with manual review of the 125 unmatched entries. For generation/body-style enrichment, the follow-up discovered documented modelrange queries that return generation candidates filtered by date and category. Start with a staged mapping of those results, retaining ambiguity; precise body styles and production boundaries may still need independent verification. Public reference endpoint access does not establish broader data-redistribution or photo rights.
 
 No generation, body style, specification, point total, or sighting identity was changed by this pilot. The comparison is staged for review.
 

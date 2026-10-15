@@ -1,0 +1,125 @@
+[
+  {
+    "case": "e36-coupe",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=199506&category=SportsCar",
+    "retrieved_at_utc": "2026-10-15T11:00:33.143902+00:00",
+    "status": 200,
+    "keys": [
+      "E36"
+    ]
+  },
+  {
+    "case": "e36-saloon",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=199506&category=Limousine",
+    "retrieved_at_utc": "2026-10-15T11:00:33.327536+00:00",
+    "status": 200,
+    "keys": [
+      "E36"
+    ]
+  },
+  {
+    "case": "e36-estate",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=199506&category=EstateCar",
+    "retrieved_at_utc": "2026-10-15T11:00:33.494491+00:00",
+    "status": 200,
+    "keys": [
+      "E36"
+    ]
+  },
+  {
+    "case": "e36-convertible",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=199506&category=Cabrio",
+    "retrieved_at_utc": "2026-10-15T11:00:33.961152+00:00",
+    "status": 200,
+    "keys": [
+      "E36"
+    ]
+  },
+  {
+    "case": "e36-318-coupe",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/318/modelranges?firstregistration=199506&category=SportsCar",
+    "retrieved_at_utc": "2026-10-15T11:00:34.123259+00:00",
+    "status": 200,
+    "keys": [
+      "E36"
+    ]
+  },
+  {
+    "case": "f31-estate",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=201406&category=EstateCar",
+    "retrieved_at_utc": "2026-10-15T11:00:34.325966+00:00",
+    "status": 200,
+    "keys": [
+      "F31"
+    ]
+  },
+  {
+    "case": "f31-2013-estate",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=201306&category=EstateCar",
+    "retrieved_at_utc": "2026-10-15T11:00:34.509339+00:00",
+    "status": 200,
+    "keys": [
+      "F31"
+    ]
+  },
+  {
+    "case": "f30-saloon",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=201406&category=Limousine",
+    "retrieved_at_utc": "2026-10-15T11:00:34.666434+00:00",
+    "status": 200,
+    "keys": [
+      "F30",
+      "F34 GT"
+    ]
+  },
+  {
+    "case": "f3x-unfiltered",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=201406",
+    "retrieved_at_utc": "2026-10-15T11:00:35.072090+00:00",
+    "status": 200,
+    "keys": [
+      "E92",
+      "E93",
+      "F30",
+      "F31",
+      "F34 GT"
+    ]
+  },
+  {
+    "case": "x5-2015",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/X5/modelranges?firstregistration=201506",
+    "retrieved_at_utc": "2026-10-15T11:00:35.244878+00:00",
+    "status": 200,
+    "keys": [
+      "F15"
+    ]
+  },
+  {
+    "case": "bmw-trim",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/trimlines?firstregistration=201406",
+    "retrieved_at_utc": "2026-10-15T11:00:35.414881+00:00",
+    "status": 200,
+    "keys": [
+      "-",
+      "Edition Exclusive",
+      "Luxury Line",
+      "M Sport Edition",
+      "Modern Line",
+      "Sport Line"
+    ]
+  },
+  {
+    "case": "x5-wrong-category",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/X5/modelranges?firstregistration=201506&category=Cabrio",
+    "retrieved_at_utc": "2026-10-15T11:00:35.577767+00:00",
+    "status": 200,
+    "keys": []
+  },
+  {
+    "case": "x5-before-production",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/X5/modelranges?firstregistration=198006",
+    "retrieved_at_utc": "2026-10-15T11:00:35.980501+00:00",
+    "status": 200,
+    "keys": []
+  }
+]
