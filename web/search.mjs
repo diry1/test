@@ -28,13 +28,17 @@ export function searchCatalogue(index, query, submitted = false) {
   const q = normalizeSearch(query);
   if (!q) return [];
   const tokens = q.split(' ');
+  const numericQuery = /^\d+$/.test(q);
   const priority = {'brand':0,'model':1,'generation':2,'body style':3,'specification':4};
   const ranked = [];
   for (let id=0; id<index.length; id++) {
     const entry=index[id];
     const exact=entry.keys.includes(q), prefix=exact || entry.keys.some(k=>k.startsWith(q));
-    if (!(submitted ? tokens.every(t=>entry.text.includes(t)) : prefix)) continue;
+    const numberMatch = numericQuery && entry.keys.some(k => k.includes(q));
+    if (!(submitted ? tokens.every(t=>entry.text.includes(t)) : prefix || numberMatch)) continue;
     ranked.push({id,entry,rank:exact ? 0 : prefix ? 1 : 2});
   }
-  return ranked.sort((a,b)=>a.rank-b.rank || priority[a.entry.type]-priority[b.entry.type] || a.entry.label.localeCompare(b.entry.label));
+  return ranked.sort((a,b)=> submitted
+    ? priority[a.entry.type]-priority[b.entry.type] || a.entry.label.localeCompare(b.entry.label)
+    : a.rank-b.rank || priority[a.entry.type]-priority[b.entry.type] || a.entry.label.localeCompare(b.entry.label));
 }

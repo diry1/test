@@ -27,3 +27,22 @@ test('exact names precede longer prefixes, with deterministic order',()=>{
   assert.deepEqual(searchCatalogue(items,'am').map(r=>r.entry.title),['AM','AM Cars','AMC']);
   assert.deepEqual(searchCatalogue(index,'  '),[]);
 });
+test('numeric suggestions include numbers within names across brands',()=>{
+ const data=buildSearchIndex([
+  {id:'merc',brand:'Mercedes-Benz',name:'E320',generations:[]},
+  {id:'bmw',brand:'BMW',name:'320i',generations:[]},
+  {id:'mazda',brand:'Mazda',name:'323',generations:[]},
+ ]);
+ for (const submitted of [false,true]) assert.deepEqual(searchCatalogue(data,'320',submitted).map(r=>r.entry.title).sort(),['320i','E320']);
+});
+test('submitted searches return matching paths in hierarchy order, excluding unrelated cars',()=>{
+ const data=buildSearchIndex([
+  {id:'p',brand:'Porsche',name:'911',generations:[{id:'g',name:'992',specifications:[{id:'s',name:'Carrera'}]}]},
+  {id:'b',brand:'BMW',name:'Porsche Edition',generations:[]},
+  {id:'a',brand:'AMC',name:'Eagle',generations:[]},
+ ]);
+ const results=searchCatalogue(data,'porsche',true);
+ assert.deepEqual(results.map(r=>r.entry.type),['brand','model','model','generation','specification']);
+ assert(results.every(r=>r.entry.text.includes('porsche')));
+ assert(!results.some(r=>r.entry.route.carID==='a'));
+});

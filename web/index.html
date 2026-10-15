@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Car Spotter</title><link rel="stylesheet" href="styles.css">
+<title>Car Spotter</title><link rel="stylesheet" href="styles.css?v=global-search-2">
 </head>
 <body>
 <header><a class="logo" href="#">◉ Car Spotter</a><span class="local">Saved on this device</span></header>
@@ -20,7 +20,7 @@
 <p id="status" role="status"></p>
 <nav id="alphabet" aria-label="Filter brands by first letter"></nav>
 <form id="catalogue-search" class="filters" role="search"><label class="search">Search the entire catalogue<input id="search" type="search" placeholder="Search brands, models, generations or specifications…" autocomplete="off" aria-describedby="search-help"></label><button type="submit" class="primary">Search</button></form>
-<p id="search-help" class="muted small">Type for suggestions starting with your search. Press Enter or Search for partial matches everywhere.</p>
+<p id="search-help" class="muted small">Search all letters, brands, models, generations and specifications. Type for name prefixes or matching numbers; press Enter or Search for all partial matches.</p>
 <section id="catalogue-view">
 <nav id="breadcrumbs" aria-label="Catalogue folders"></nav>
 <div class="section-heading"><h2 id="folder-title">Brands</h2><span id="results"></span></div>
@@ -33,5 +33,5 @@
 <footer class="site-footer">Vehicle data by <a href="https://vehiclesdb.com" target="_blank" rel="noopener noreferrer">VehiclesDB</a> · CC BY 4.0 · <a href="credits.html">Data sources &amp; attribution</a></footer>
 <dialog id="detail"><button class="close" aria-label="Close car card">×</button><div id="detail-content"></div></dialog>
 <dialog id="log"><button class="close" aria-label="Close sighting form">×</button><p class="eyebrow">ADD TO YOUR COLLECTION</p><h2 id="log-title"></h2><form id="log-form"><label>Generation<select id="generation"></select></label><label>Body style<select id="body-style"></select></label><label>Engine / designation<select id="engine"></select></label><label>Technical reference (optional)<select id="specification"></select></label><label>Short note <span class="muted">optional</span><textarea id="note" maxlength="500" rows="3" placeholder="Where did you see it? What stood out?"></textarea></label><label class="photo-picker">Photo <span class="muted">optional</span><input id="photo" type="file" accept="image/*"></label><img id="preview" alt="Selected sighting photo" hidden><p class="muted small">A photo records your sighting; it is not independently verified.</p><p id="form-error" role="alert"></p><button type="submit" class="primary">Save sighting</button></form></dialog>
-<script type="module" src="app.js"></script>
+<script type="module" src="app.js?v=global-search-2"></script>
 </body></html>
