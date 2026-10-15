@@ -1,12 +1,13 @@
+import {selectMainBrands, isMainBrand} from './brand-ranking.mjs';
 import {calculateScore, nextScoreTarget} from './score.mjs';
 const $ = id => document.getElementById(id);
 const escapeHTML = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const silhouette = `<div class="visual"><svg viewBox="0 0 200 90" fill="none" aria-hidden="true"><path d="M22 59V48l20-7 24-24h59l30 24 25 7v18H22Z" fill="currentColor" opacity=".3"/><path d="m58 40 17-17h45l21 17H58Z" fill="currentColor" opacity=".5"/><circle cx="53" cy="65" r="13" fill="currentColor"/><circle cx="150" cy="65" r="13" fill="currentColor"/><circle cx="53" cy="65" r="6" fill="#eef0e8"/><circle cx="150" cy="65" r="6" fill="#eef0e8"/></svg><span class="placeholder">Reference photo not available</span></div>`;
 let selectedLetter = 'A';
-let expandedBrands = false, featuredBrands = new Set(), brandPreferences = new Map();
-const brandIsPreferred = brand => brandPreferences.has(brand) ? brandPreferences.get(brand) : featuredBrands.has(brand);
+let expandedBrands = false, featuredBrands = new Set(), brandPreferences = new Map(), defaultMainBrands = new Set();
+const brandIsPreferred = brand => isMainBrand(brand, defaultMainBrands, brandPreferences);
 const unfoldedLetters = new Set();
-const brandIsFeatured = brand => unfoldedLetters.has(firstLetter(brand)) || brandIsPreferred(brand);
+const brandIsFeatured = brand => isMainBrand(brand, defaultMainBrands, brandPreferences, unfoldedLetters.has(firstLetter(brand)));
 let selectedBrand = null, selectedFamily = null, selectedGeneration = null, selectedBody = null, selectedEngine = null, selectedSpecification = null;
 let cars = [], sightings = [], db, activeCar, pageSize = 48, photoData = null, photoLoading = false, photoRevision = 0;
 const englishGeneration = label => String(label ?? '').replace(/покол[іi]ння/gi, 'Generation').replace(/рестайл[іi]нг/gi, 'Facelift').replace(/^[IVXІ]+(?=[ -]Generation)/, prefix => prefix.replaceAll('І', 'I'));
@@ -101,9 +102,7 @@ $('catalogue-view').addEventListener('click', event => {
     brandPreferences = next;
     if (!show) expandedBrands = true;
     render();
-    $('status').textContent = !show && unfoldedLetters.has(firstLetter(brand))
-      ? `Preference saved for ${brand}. This letter shows all brands while three or fewer would be under Show All.`
-      : `${brand} ${show ? 'moved to the main list' : 'moved under Show All'}.`;
+    $('status').textContent = `${brand} ${show ? 'moved to the main list' : 'moved under Show All'}.`;
     const moved = [...document.querySelectorAll('[data-brand-settings]')].find(el => el.dataset.brandSettings === brand);
     moved?.querySelector('summary').focus();
     return;
@@ -217,7 +216,7 @@ function renderFolder(spotted) {
     // Recalculate from saved preferences, before search, so the threshold is per letter.
     const hiddenCounts = new Map();
     for (const brand of groups.keys()) {
-      if (!brandIsPreferred(brand)) hiddenCounts.set(firstLetter(brand), (hiddenCounts.get(firstLetter(brand)) || 0) + 1);
+      if (!brandPreferences.has(brand) && !brandIsPreferred(brand)) hiddenCounts.set(firstLetter(brand), (hiddenCounts.get(firstLetter(brand)) || 0) + 1);
     }
     unfoldedLetters.clear();
     for (const letter of [...'ABCDEFGHIJKLMNOPQRSTUVWXYZ', '#']) {
@@ -380,6 +379,13 @@ try {
   const featuredResponse = await fetch('./featured-brands.json');
   if (!featuredResponse.ok) throw new Error('Featured brands request failed');
   featuredBrands = new Set(await featuredResponse.json());
+  let popularity = {};
+  try {
+    const response = await fetch('./brand-popularity.json');
+    if (!response.ok) throw new Error('Popularity snapshot unavailable');
+    popularity = (await response.json()).brands || {};
+  } catch { /* Curated and model-count defaults still work offline or on older deployments. */ }
+  defaultMainBrands = selectMainBrands(cars, featuredBrands, popularity);
   try {
     const saved = JSON.parse(localStorage.getItem('car-spotter-brand-preferences') || '[]');
     if (Array.isArray(saved)) brandPreferences = new Map(saved.filter(entry => Array.isArray(entry) && typeof entry[0] === 'string' && typeof entry[1] === 'boolean'));

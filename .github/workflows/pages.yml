@@ -21,7 +21,7 @@ jobs:
       - name: Check JavaScript
         run: node --check web/app.js
       - name: Validate scoring rules
-        run: node --test web/tests/score.test.mjs
+        run: node --test web/tests/*.test.mjs
       - name: Validate catalogue
         run: python3 -m unittest discover -s scripts -p 'test_*.py' -v
       - uses: actions/configure-pages@v5
