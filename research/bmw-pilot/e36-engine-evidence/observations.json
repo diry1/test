@@ -1,0 +1,543 @@
+[
+  {
+    "query_id": "316-199506-Limousine",
+    "model": "316",
+    "date": "199506",
+    "category": "Limousine",
+    "fuel": "PETROL",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/316/modelranges?firstregistration=199506&category=Limousine&fuel=PETROL",
+    "retrieved_at_utc": "2026-10-15T11:21:14.737537+00:00",
+    "status": 200,
+    "ranges": [
+      "E36"
+    ]
+  },
+  {
+    "query_id": "316-199506-EstateCar",
+    "model": "316",
+    "date": "199506",
+    "category": "EstateCar",
+    "fuel": "PETROL",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/316/modelranges?firstregistration=199506&category=EstateCar&fuel=PETROL",
+    "retrieved_at_utc": "2026-10-15T11:21:14.738159+00:00",
+    "status": 200,
+    "ranges": []
+  },
+  {
+    "query_id": "316-199506-SportsCar",
+    "model": "316",
+    "date": "199506",
+    "category": "SportsCar",
+    "fuel": "PETROL",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/316/modelranges?firstregistration=199506&category=SportsCar&fuel=PETROL",
+    "retrieved_at_utc": "2026-10-15T11:21:15.465219+00:00",
+    "status": 200,
+    "ranges": [
+      "E36"
+    ]
+  },
+  {
+    "query_id": "316-199506-Cabrio",
+    "model": "316",
+    "date": "199506",
+    "category": "Cabrio",
+    "fuel": "PETROL",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/316/modelranges?firstregistration=199506&category=Cabrio&fuel=PETROL",
+    "retrieved_at_utc": "2026-10-15T11:21:15.600119+00:00",
+    "status": 200,
+    "ranges": []
+  },
+  {
+    "query_id": "316-199806-Limousine",
+    "model": "316",
+    "date": "199806",
+    "category": "Limousine",
+    "fuel": "PETROL",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/316/modelranges?firstregistration=199806&category=Limousine&fuel=PETROL",
+    "retrieved_at_utc": "2026-10-15T11:21:16.181011+00:00",
+    "status": 200,
+    "ranges": [
+      "E36"
+    ]
+  },
+  {
+    "query_id": "316-199806-EstateCar",
+    "model": "316",
+    "date": "199806",
+    "category": "EstateCar",
+    "fuel": "PETROL",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/316/modelranges?firstregistration=199806&category=EstateCar&fuel=PETROL",
+    "retrieved_at_utc": "2026-10-15T11:21:16.391478+00:00",
+    "status": 200,
+    "ranges": [
+      "E36"
+    ]
+  },
+  {
+    "query_id": "316-199806-SportsCar",
+    "model": "316",
+    "date": "199806",
+    "category": "SportsCar",
+    "fuel": "PETROL",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/316/modelranges?firstregistration=199806&category=SportsCar&fuel=PETROL",
+    "retrieved_at_utc": "2026-10-15T11:21:16.784576+00:00",
+    "status": 200,
+    "ranges": [
+      "E36"
+    ]
+  },
+  {
+    "query_id": "316-199806-Cabrio",
+    "model": "316",
+    "date": "199806",
+    "category": "Cabrio",
+    "fuel": "PETROL",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/316/modelranges?firstregistration=199806&category=Cabrio&fuel=PETROL",
+    "retrieved_at_utc": "2026-10-15T11:21:16.932311+00:00",
+    "status": 200,
+    "ranges": []
+  },
+  {
+    "query_id": "320-199506-Limousine",
+    "model": "320",
+    "date": "199506",
+    "category": "Limousine",
+    "fuel": "PETROL",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=199506&category=Limousine&fuel=PETROL",
+    "retrieved_at_utc": "2026-10-15T11:21:17.107720+00:00",
+    "status": 200,
+    "ranges": [
+      "E36"
+    ]
+  },
+  {
+    "query_id": "320-199506-EstateCar",
+    "model": "320",
+    "date": "199506",
+    "category": "EstateCar",
+    "fuel": "PETROL",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=199506&category=EstateCar&fuel=PETROL",
+    "retrieved_at_utc": "2026-10-15T11:21:17.419638+00:00",
+    "status": 200,
+    "ranges": [
+      "E36"
+    ]
+  },
+  {
+    "query_id": "320-199506-SportsCar",
+    "model": "320",
+    "date": "199506",
+    "category": "SportsCar",
+    "fuel": "PETROL",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=199506&category=SportsCar&fuel=PETROL",
+    "retrieved_at_utc": "2026-10-15T11:21:17.548532+00:00",
+    "status": 200,
+    "ranges": [
+      "E36"
+    ]
+  },
+  {
+    "query_id": "320-199506-Cabrio",
+    "model": "320",
+    "date": "199506",
+    "category": "Cabrio",
+    "fuel": "PETROL",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=199506&category=Cabrio&fuel=PETROL",
+    "retrieved_at_utc": "2026-10-15T11:21:17.852410+00:00",
+    "status": 200,
+    "ranges": [
+      "E36"
+    ]
+  },
+  {
+    "query_id": "320-199806-Limousine",
+    "model": "320",
+    "date": "199806",
+    "category": "Limousine",
+    "fuel": "PETROL",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=199806&category=Limousine&fuel=PETROL",
+    "retrieved_at_utc": "2026-10-15T11:21:18.025667+00:00",
+    "status": 200,
+    "ranges": [
+      "E36",
+      "E46"
+    ]
+  },
+  {
+    "query_id": "320-199806-EstateCar",
+    "model": "320",
+    "date": "199806",
+    "category": "EstateCar",
+    "fuel": "PETROL",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=199806&category=EstateCar&fuel=PETROL",
+    "retrieved_at_utc": "2026-10-15T11:21:18.494520+00:00",
+    "status": 200,
+    "ranges": [
+      "E36"
+    ]
+  },
+  {
+    "query_id": "320-199806-SportsCar",
+    "model": "320",
+    "date": "199806",
+    "category": "SportsCar",
+    "fuel": "PETROL",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=199806&category=SportsCar&fuel=PETROL",
+    "retrieved_at_utc": "2026-10-15T11:21:18.712442+00:00",
+    "status": 200,
+    "ranges": [
+      "E36"
+    ]
+  },
+  {
+    "query_id": "320-199806-Cabrio",
+    "model": "320",
+    "date": "199806",
+    "category": "Cabrio",
+    "fuel": "PETROL",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/320/modelranges?firstregistration=199806&category=Cabrio&fuel=PETROL",
+    "retrieved_at_utc": "2026-10-15T11:21:19.282503+00:00",
+    "status": 200,
+    "ranges": [
+      "E36"
+    ]
+  },
+  {
+    "query_id": "323-199506-Limousine",
+    "model": "323",
+    "date": "199506",
+    "category": "Limousine",
+    "fuel": "PETROL",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/323/modelranges?firstregistration=199506&category=Limousine&fuel=PETROL",
+    "retrieved_at_utc": "2026-10-15T11:21:19.595578+00:00",
+    "status": 200,
+    "ranges": [
+      "E36"
+    ]
+  },
+  {
+    "query_id": "323-199506-EstateCar",
+    "model": "323",
+    "date": "199506",
+    "category": "EstateCar",
+    "fuel": "PETROL",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/323/modelranges?firstregistration=199506&category=EstateCar&fuel=PETROL",
+    "retrieved_at_utc": "2026-10-15T11:21:19.938775+00:00",
+    "status": 200,
+    "ranges": [
+      "E36"
+    ]
+  },
+  {
+    "query_id": "323-199506-SportsCar",
+    "model": "323",
+    "date": "199506",
+    "category": "SportsCar",
+    "fuel": "PETROL",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/323/modelranges?firstregistration=199506&category=SportsCar&fuel=PETROL",
+    "retrieved_at_utc": "2026-10-15T11:21:20.499342+00:00",
+    "status": 200,
+    "ranges": [
+      "E36"
+    ]
+  },
+  {
+    "query_id": "323-199506-Cabrio",
+    "model": "323",
+    "date": "199506",
+    "category": "Cabrio",
+    "fuel": "PETROL",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/323/modelranges?firstregistration=199506&category=Cabrio&fuel=PETROL",
+    "retrieved_at_utc": "2026-10-15T11:21:21.064058+00:00",
+    "status": 200,
+    "ranges": []
+  },
+  {
+    "query_id": "323-199806-Limousine",
+    "model": "323",
+    "date": "199806",
+    "category": "Limousine",
+    "fuel": "PETROL",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/323/modelranges?firstregistration=199806&category=Limousine&fuel=PETROL",
+    "retrieved_at_utc": "2026-10-15T11:21:21.370912+00:00",
+    "status": 200,
+    "ranges": [
+      "E36",
+      "E46"
+    ]
+  },
+  {
+    "query_id": "323-199806-EstateCar",
+    "model": "323",
+    "date": "199806",
+    "category": "EstateCar",
+    "fuel": "PETROL",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/323/modelranges?firstregistration=199806&category=EstateCar&fuel=PETROL",
+    "retrieved_at_utc": "2026-10-15T11:21:21.684714+00:00",
+    "status": 200,
+    "ranges": [
+      "E36"
+    ]
+  },
+  {
+    "query_id": "323-199806-SportsCar",
+    "model": "323",
+    "date": "199806",
+    "category": "SportsCar",
+    "fuel": "PETROL",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/323/modelranges?firstregistration=199806&category=SportsCar&fuel=PETROL",
+    "retrieved_at_utc": "2026-10-15T11:21:22.018250+00:00",
+    "status": 200,
+    "ranges": [
+      "E36"
+    ]
+  },
+  {
+    "query_id": "323-199806-Cabrio",
+    "model": "323",
+    "date": "199806",
+    "category": "Cabrio",
+    "fuel": "PETROL",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/323/modelranges?firstregistration=199806&category=Cabrio&fuel=PETROL",
+    "retrieved_at_utc": "2026-10-15T11:21:22.555950+00:00",
+    "status": 200,
+    "ranges": []
+  },
+  {
+    "query_id": "325-199506-Limousine",
+    "model": "325",
+    "date": "199506",
+    "category": "Limousine",
+    "fuel": "PETROL",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/325/modelranges?firstregistration=199506&category=Limousine&fuel=PETROL",
+    "retrieved_at_utc": "2026-10-15T11:21:22.871874+00:00",
+    "status": 200,
+    "ranges": []
+  },
+  {
+    "query_id": "325-199506-EstateCar",
+    "model": "325",
+    "date": "199506",
+    "category": "EstateCar",
+    "fuel": "PETROL",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/325/modelranges?firstregistration=199506&category=EstateCar&fuel=PETROL",
+    "retrieved_at_utc": "2026-10-15T11:21:23.188503+00:00",
+    "status": 200,
+    "ranges": []
+  },
+  {
+    "query_id": "325-199506-SportsCar",
+    "model": "325",
+    "date": "199506",
+    "category": "SportsCar",
+    "fuel": "PETROL",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/325/modelranges?firstregistration=199506&category=SportsCar&fuel=PETROL",
+    "retrieved_at_utc": "2026-10-15T11:21:23.818142+00:00",
+    "status": 200,
+    "ranges": []
+  },
+  {
+    "query_id": "325-199506-Cabrio",
+    "model": "325",
+    "date": "199506",
+    "category": "Cabrio",
+    "fuel": "PETROL",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/325/modelranges?firstregistration=199506&category=Cabrio&fuel=PETROL",
+    "retrieved_at_utc": "2026-10-15T11:21:23.818745+00:00",
+    "status": 200,
+    "ranges": []
+  },
+  {
+    "query_id": "325-199806-Limousine",
+    "model": "325",
+    "date": "199806",
+    "category": "Limousine",
+    "fuel": "PETROL",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/325/modelranges?firstregistration=199806&category=Limousine&fuel=PETROL",
+    "retrieved_at_utc": "2026-10-15T11:21:24.138175+00:00",
+    "status": 200,
+    "ranges": [
+      "E46"
+    ]
+  },
+  {
+    "query_id": "325-199806-EstateCar",
+    "model": "325",
+    "date": "199806",
+    "category": "EstateCar",
+    "fuel": "PETROL",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/325/modelranges?firstregistration=199806&category=EstateCar&fuel=PETROL",
+    "retrieved_at_utc": "2026-10-15T11:21:24.383160+00:00",
+    "status": 200,
+    "ranges": []
+  },
+  {
+    "query_id": "325-199806-SportsCar",
+    "model": "325",
+    "date": "199806",
+    "category": "SportsCar",
+    "fuel": "PETROL",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/325/modelranges?firstregistration=199806&category=SportsCar&fuel=PETROL",
+    "retrieved_at_utc": "2026-10-15T11:21:24.446104+00:00",
+    "status": 200,
+    "ranges": []
+  },
+  {
+    "query_id": "325-199806-Cabrio",
+    "model": "325",
+    "date": "199806",
+    "category": "Cabrio",
+    "fuel": "PETROL",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/325/modelranges?firstregistration=199806&category=Cabrio&fuel=PETROL",
+    "retrieved_at_utc": "2026-10-15T11:21:24.689776+00:00",
+    "status": 200,
+    "ranges": []
+  },
+  {
+    "query_id": "328-199506-Limousine",
+    "model": "328",
+    "date": "199506",
+    "category": "Limousine",
+    "fuel": "PETROL",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/328/modelranges?firstregistration=199506&category=Limousine&fuel=PETROL",
+    "retrieved_at_utc": "2026-10-15T11:21:24.751768+00:00",
+    "status": 200,
+    "ranges": [
+      "E36"
+    ]
+  },
+  {
+    "query_id": "328-199506-EstateCar",
+    "model": "328",
+    "date": "199506",
+    "category": "EstateCar",
+    "fuel": "PETROL",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/328/modelranges?firstregistration=199506&category=EstateCar&fuel=PETROL",
+    "retrieved_at_utc": "2026-10-15T11:21:25.001853+00:00",
+    "status": 200,
+    "ranges": [
+      "E36"
+    ]
+  },
+  {
+    "query_id": "328-199506-SportsCar",
+    "model": "328",
+    "date": "199506",
+    "category": "SportsCar",
+    "fuel": "PETROL",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/328/modelranges?firstregistration=199506&category=SportsCar&fuel=PETROL",
+    "retrieved_at_utc": "2026-10-15T11:21:25.075280+00:00",
+    "status": 200,
+    "ranges": [
+      "E36"
+    ]
+  },
+  {
+    "query_id": "328-199506-Cabrio",
+    "model": "328",
+    "date": "199506",
+    "category": "Cabrio",
+    "fuel": "PETROL",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/328/modelranges?firstregistration=199506&category=Cabrio&fuel=PETROL",
+    "retrieved_at_utc": "2026-10-15T11:21:25.314944+00:00",
+    "status": 200,
+    "ranges": []
+  },
+  {
+    "query_id": "328-199806-Limousine",
+    "model": "328",
+    "date": "199806",
+    "category": "Limousine",
+    "fuel": "PETROL",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/328/modelranges?firstregistration=199806&category=Limousine&fuel=PETROL",
+    "retrieved_at_utc": "2026-10-15T11:21:25.394164+00:00",
+    "status": 200,
+    "ranges": [
+      "E36",
+      "E46"
+    ]
+  },
+  {
+    "query_id": "328-199806-EstateCar",
+    "model": "328",
+    "date": "199806",
+    "category": "EstateCar",
+    "fuel": "PETROL",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/328/modelranges?firstregistration=199806&category=EstateCar&fuel=PETROL",
+    "retrieved_at_utc": "2026-10-15T11:21:25.626139+00:00",
+    "status": 200,
+    "ranges": [
+      "E36"
+    ]
+  },
+  {
+    "query_id": "328-199806-SportsCar",
+    "model": "328",
+    "date": "199806",
+    "category": "SportsCar",
+    "fuel": "PETROL",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/328/modelranges?firstregistration=199806&category=SportsCar&fuel=PETROL",
+    "retrieved_at_utc": "2026-10-15T11:21:25.765199+00:00",
+    "status": 200,
+    "ranges": [
+      "E36"
+    ]
+  },
+  {
+    "query_id": "328-199806-Cabrio",
+    "model": "328",
+    "date": "199806",
+    "category": "Cabrio",
+    "fuel": "PETROL",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/328/modelranges?firstregistration=199806&category=Cabrio&fuel=PETROL",
+    "retrieved_at_utc": "2026-10-15T11:21:25.930154+00:00",
+    "status": 200,
+    "ranges": [
+      "E36"
+    ]
+  },
+  {
+    "query_id": "325-199306-Limousine",
+    "model": "325",
+    "date": "199306",
+    "category": "Limousine",
+    "fuel": "PETROL",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/325/modelranges?firstregistration=199306&category=Limousine&fuel=PETROL",
+    "retrieved_at_utc": "2026-10-15T11:23:32.857582+00:00",
+    "status": 200,
+    "ranges": []
+  },
+  {
+    "query_id": "325-199306-EstateCar",
+    "model": "325",
+    "date": "199306",
+    "category": "EstateCar",
+    "fuel": "PETROL",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/325/modelranges?firstregistration=199306&category=EstateCar&fuel=PETROL",
+    "retrieved_at_utc": "2026-10-15T11:23:33.455706+00:00",
+    "status": 200,
+    "ranges": []
+  },
+  {
+    "query_id": "325-199306-SportsCar",
+    "model": "325",
+    "date": "199306",
+    "category": "SportsCar",
+    "fuel": "PETROL",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/325/modelranges?firstregistration=199306&category=SportsCar&fuel=PETROL",
+    "retrieved_at_utc": "2026-10-15T11:23:33.918903+00:00",
+    "status": 200,
+    "ranges": []
+  },
+  {
+    "query_id": "325-199306-Cabrio",
+    "model": "325",
+    "date": "199306",
+    "category": "Cabrio",
+    "fuel": "PETROL",
+    "url": "https://services.mobile.de/refdata/sites/GERMANY/classes/Car/makes/BMW/models/325/modelranges?firstregistration=199306&category=Cabrio&fuel=PETROL",
+    "retrieved_at_utc": "2026-10-15T11:23:34.507102+00:00",
+    "status": 200,
+    "ranges": []
+  }
+]

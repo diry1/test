@@ -3,6 +3,7 @@ import argparse
 import csv
 import json
 from catalogue_english import english_text
+from bmw_hierarchy import enrich_bmw
 from pathlib import Path
 
 
@@ -42,7 +43,7 @@ def convert(source):
                             "sourceID": row["modification_id"],
                         })
                         specifications.add(spec_id)
-    return sorted(models.values(), key=lambda m: (m["brand"].casefold(), m["name"].casefold(), m["id"]))
+    return enrich_bmw(sorted(models.values(), key=lambda m: (m["brand"].casefold(), m["name"].casefold(), m["id"])))
 
 
 if __name__ == "__main__":

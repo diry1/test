@@ -89,3 +89,13 @@ A score gauge at the top of the browser app is recalculated from all saved sight
 Run the scoring tests with `node --test web/tests/score.test.mjs`. They also run before Pages deployment.
 
 Each catalogue brand, model, generation, and specification card includes a Google it link. Queries include the selected brand and each available deeper level; specification searches include the supplied specification name. Links open Google Search in a separate tab without changing the current folder. Sighting cards and model/generation/specification detail views also have contextual links. Notes and photos are never included in the search query.
+
+### BMW generation hierarchy
+
+BMW browser navigation now groups the chassis code above its existing facelift versions:
+
+`BMW → 3 Series → E36 → Pre-facelift (non-LCI) / Facelift (LCI) → Sedan / Wagon / Coupé / Convertible → engine designation`
+
+Engine cards group repeated gearbox/power records into labels such as 320i. Optional technical-reference selection remains available when logging. The body and engine are saved with the sighting and included in contextual Google searches. Changing a generation or body clears dependent selections. Unsupported combinations remain under **Body style not specified**, including existing specifications whose exact body assignment is unknown. For known body-specific codes, F31 leads to Wagon and F15 to SUV. The native prototype's browsing UI remains flat.
+
+The hierarchy is additive: all existing model, generation and specification IDs and source fields remain unchanged. BMW model completion counts chassis families, while the existing discovery-points formula remains unchanged; selecting bodies or engines never adds points. See `research/bmw-pilot/e36-engine-evidence/README.md` for source scope and limitations. Run `python3 scripts/bmw_hierarchy.py` to regenerate the hierarchy from the existing bundle, or run the normal CSV importer to rebuild it from source. Test the full browser path with `node web/tests/bmw-hierarchy.cjs` using the same Playwright environment options as other browser tests.

@@ -95,9 +95,13 @@ const assert = require('node:assert/strict');
   await page.locator('[data-level=model][data-value="autoria:9:3219"]').click();
   for (const name of ['E36', 'F30']) {
     await page.locator('#search').fill(name);
-    await page.locator('#cars .card').filter({has:page.locator('.car-name', {hasText:new RegExp('^' + name + '$')})}).click();
+    await page.locator('#cars [data-level=family]').filter({hasText:name}).click();
+    assert.match(await page.locator('#folder-title').innerText(), /Facelift versions/);
+    await page.locator('#cars [data-level=generation]').first().click();
+    assert.match(await page.locator('#folder-title').innerText(), /Body styles/);
+    await page.locator('#cars [data-level=body]').first().click();
     assert.match(await page.locator('#results').innerText(), /specifications/);
-    assert.ok(await page.locator('#cars [data-spec]').count() > 0);
+    assert.ok(await page.locator('#cars [data-engine]').count() > 0);
     await page.locator('#breadcrumbs [data-level=model]').click();
   }
   assert.equal(await page.locator('#score-total').innerText(), '22');
