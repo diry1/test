@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Car Spotter</title><link rel="stylesheet" href="styles.css?v=global-search-3">
+<title>Car Spotter</title><link rel="stylesheet" href="styles.css?v=advanced-search-1">
 </head>
 <body>
 <header><a class="logo" href="#">◉ Car Spotter</a><span class="local">Saved on this device</span></header>
@@ -19,7 +19,18 @@
 <nav aria-label="Views"><button id="catalogue-tab" class="active">Catalogue</button><button id="garage-tab">My garage <span id="count">0</span></button></nav>
 <p id="status" role="status"></p>
 <nav id="alphabet" aria-label="Filter brands by first letter"></nav>
-<form id="catalogue-search" class="filters" role="search"><label class="search">Search the entire catalogue<input id="search" type="search" placeholder="Search brands, models, generations or specifications…" autocomplete="off" aria-describedby="search-help"></label><button type="submit" class="primary">Search</button></form>
+<form id="catalogue-search" class="filters" role="search"><label class="search">Search the entire catalogue<input id="search" type="search" placeholder="Search brands, models, generations or specifications…" autocomplete="off" aria-describedby="search-help"></label><button type="button" id="expand-search" aria-expanded="false" aria-controls="advanced-search">Expand search</button><button type="submit" class="primary">Search</button></form>
+<section id="advanced-search" class="advanced-search" hidden aria-label="Search filters">
+<div class="advanced-fields">
+<label>Brand<select id="filter-brand"><option value="">All brands</option></select></label>
+<label>Model<select id="filter-model" disabled><option value="">All models</option></select></label>
+<label>Year from<input id="filter-year-from" type="number" min="1880" max="2100" step="1" placeholder="Any year" form="catalogue-search"></label>
+<label>Year to<input id="filter-year-to" type="number" min="1880" max="2100" step="1" placeholder="Any year" form="catalogue-search"></label>
+<label>Horsepower from<input id="filter-hp-min" type="number" min="0" step="1" placeholder="Any hp" form="catalogue-search"></label>
+<label>Horsepower to<input id="filter-hp-max" type="number" min="0" step="1" placeholder="Any hp" form="catalogue-search"></label>
+</div><p class="muted small">Years match overlapping generation production periods; unspecified end years are treated as open-ended. Horsepower uses reported hp labels. Entries without the required data are excluded.</p><p id="filter-error" role="alert"></p><button type="button" id="clear-search-filters">Clear filters</button>
+</section>
+<p id="active-filter-summary" class="muted small" role="status"></p>
 <p id="search-help" class="muted small">Search all letters, brands, models, generations and specifications. Combine brand, model, generation or specification words in any order; press Enter or Search for all partial matches.</p>
 <section id="catalogue-view">
 <nav id="breadcrumbs" aria-label="Catalogue folders"></nav>
@@ -33,5 +44,5 @@
 <footer class="site-footer">Vehicle data by <a href="https://vehiclesdb.com" target="_blank" rel="noopener noreferrer">VehiclesDB</a> · CC BY 4.0 · <a href="credits.html">Data sources &amp; attribution</a></footer>
 <dialog id="detail"><button class="close" aria-label="Close car card">×</button><div id="detail-content"></div></dialog>
 <dialog id="log"><button class="close" aria-label="Close sighting form">×</button><p class="eyebrow">ADD TO YOUR COLLECTION</p><h2 id="log-title"></h2><form id="log-form"><label>Generation<select id="generation"></select></label><label>Body style<select id="body-style"></select></label><label>Engine / designation<select id="engine"></select></label><label>Technical reference (optional)<select id="specification"></select></label><label>Short note <span class="muted">optional</span><textarea id="note" maxlength="500" rows="3" placeholder="Where did you see it? What stood out?"></textarea></label><label class="photo-picker">Photo <span class="muted">optional</span><input id="photo" type="file" accept="image/*"></label><img id="preview" alt="Selected sighting photo" hidden><p class="muted small">A photo records your sighting; it is not independently verified.</p><p id="form-error" role="alert"></p><button type="submit" class="primary">Save sighting</button></form></dialog>
-<script type="module" src="app.js?v=global-search-3"></script>
+<script type="module" src="app.js?v=advanced-search-1"></script>
 </body></html>

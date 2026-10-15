@@ -1,4 +1,4 @@
-import {buildSearchIndex, searchCatalogue} from './search.mjs?v=global-search-3';
+import {buildSearchIndex, searchCatalogue} from './search.mjs?v=advanced-search-1';
 import {selectMainBrands, isMainBrand} from './brand-ranking.mjs';
 import {calculateScore, nextScoreTarget} from './score.mjs';
 const $ = id => document.getElementById(id);
@@ -66,6 +66,30 @@ $('catalogue-tab').onclick = () => tab(false);
 $('garage-tab').onclick = () => tab(true);
 $('search').addEventListener('input', () => { searchSubmitted = false; pageSize = 48; tab(false); render(); });
 $('catalogue-search').addEventListener('submit', event => { event.preventDefault(); searchSubmitted = true; pageSize = 48; tab(false); render(); });
+const filterIDs = {brand:'filter-brand',model:'filter-model',yearFrom:'filter-year-from',yearTo:'filter-year-to',hpMin:'filter-hp-min',hpMax:'filter-hp-max'};
+const currentFilters = () => Object.fromEntries(Object.entries(filterIDs).map(([key,id]) => [key,$(id).value]));
+const hasSearchFilters = () => Object.values(currentFilters()).some(Boolean);
+const searching = () => Boolean($('search').value.trim()) || hasSearchFilters();
+function updateFilterModels() {
+  const brand=$('filter-brand').value;
+  $('filter-model').innerHTML = '<option value="">All models</option>' + (brand ? cars.filter(c=>c.brand===brand).sort((a,b)=>a.name.localeCompare(b.name)).map(c=>`<option value="${escapeHTML(c.id)}">${escapeHTML(c.name)}</option>`).join('') : '');
+  $('filter-model').disabled = !brand;
+}
+function clearSearchFilters() {
+  for (const id of Object.values(filterIDs)) $(id).value='';
+  updateFilterModels(); $('filter-error').textContent='';
+}
+$('expand-search').onclick = () => {
+  const open=$('advanced-search').hidden;
+  $('advanced-search').hidden=!open;
+  $('expand-search').setAttribute('aria-expanded',String(open));
+  $('expand-search').textContent=open ? 'Collapse search' : 'Expand search';
+};
+$('advanced-search').addEventListener('input',event=>{
+  if (event.target.id==='filter-brand') updateFilterModels();
+  searchSubmitted=true;pageSize=48;tab(false);render();
+});
+$('clear-search-filters').onclick=()=>{clearSearchFilters();pageSize=48;render();};
 $('more').onclick = () => { pageSize += 48; render(); };
 for (const dialog of document.querySelectorAll('dialog')) {
   dialog.querySelector('.close').onclick = () => dialog.close();
@@ -74,7 +98,7 @@ $('alphabet').onclick = event => {
   const button = event.target.closest('[data-letter]');
   if (!button || button.disabled) return;
   tab(false);
-  selectedLetter = button.dataset.letter; selectedBrand = null; activeCar = null; selectedFamily = null; selectedGeneration = null; selectedBody = null; selectedEngine = null; selectedSpecification = null; expandedBrands = false; $('search').value = ''; searchSubmitted = false; pageSize = 48; render();
+  selectedLetter = button.dataset.letter; selectedBrand = null; activeCar = null; selectedFamily = null; selectedGeneration = null; selectedBody = null; selectedEngine = null; selectedSpecification = null; expandedBrands = false; clearSearchFilters(); $('search').value = ''; searchSubmitted = false; pageSize = 48; render();
 };
 const firstLetter = name => /^[A-Z]$/.test(name[0].toUpperCase()) ? name[0].toUpperCase() : '#';
 function navigate(level, value) {
@@ -86,7 +110,7 @@ function navigate(level, value) {
   if (level === 'family') { selectedFamily = activeCar.generationFamilies.find(f => f.id === value); selectedGeneration = null; selectedBody = null; }
   if (level === 'generation') { selectedGeneration = activeCar.generations.find(g => g.id === value); selectedBody = null; }
   if (level === 'body') { selectedBody = phaseFor(activeCar, selectedGeneration.id).bodyStyles.find(b => b.id === value); }
-  $('search').value = ''; searchSubmitted = false; pageSize = 48; render();
+  clearSearchFilters(); $('search').value = ''; searchSubmitted = false; pageSize = 48; render();
 }
 $('breadcrumbs').onclick = event => {
   const button = event.target.closest('[data-level]');
@@ -124,7 +148,7 @@ $('catalogue-view').addEventListener('click', event => {
     selectedGeneration = activeCar?.generations.find(g => g.id === route.generationID) ?? null;
     selectedBody = phaseFor(activeCar, route.generationID)?.bodyStyles.find(b => b.id === route.bodyID) ?? null;
     selectedEngine = null; selectedSpecification = null;
-    $('search').value = ''; searchSubmitted = false; pageSize = 48; render();
+    clearSearchFilters(); $('search').value = ''; searchSubmitted = false; pageSize = 48; render();
     if (route.specificationID) showSpecification(route.specificationID);
     return;
   }
@@ -213,10 +237,14 @@ document.addEventListener('keydown', event => {
 });
 function renderAlphabet() {
   const available = new Set([...featuredBrands, ...cars.map(c => c.brand)].map(firstLetter));
-$('alphabet').innerHTML = `<div class="alphabet-heading"><span class="eyebrow">BROWSE BY LETTER</span><span class="letter-current" aria-live="polite">${$('search').value.trim() ? 'ALL' : selectedLetter}</span></div><div class="alphabet-letters">` + ['#', ...'ABCDEFGHIJKLMNOPQRSTUVWXYZ'].filter(letter => letter !== '#' || available.has('#')).map(letter => `<button data-letter="${letter}" aria-pressed="${!$('search').value.trim() && selectedLetter === letter}" ${!available.has(letter) ? 'disabled' : ''} aria-label="Brands starting with ${letter === '#' ? 'numbers or symbols' : letter}">${letter}</button>`).join('') + '</div>';
+$('alphabet').innerHTML = `<div class="alphabet-heading"><span class="eyebrow">BROWSE BY LETTER</span><span class="letter-current" aria-live="polite">${searching() ? 'ALL' : selectedLetter}</span></div><div class="alphabet-letters">` + ['#', ...'ABCDEFGHIJKLMNOPQRSTUVWXYZ'].filter(letter => letter !== '#' || available.has('#')).map(letter => `<button data-letter="${letter}" aria-pressed="${!searching() && selectedLetter === letter}" ${!available.has(letter) ? 'disabled' : ''} aria-label="Brands starting with ${letter === '#' ? 'numbers or symbols' : letter}">${letter}</button>`).join('') + '</div>';
 }
 function renderFolder(spotted) {
   renderAlphabet();
+  const f=currentFilters();
+  const summary=[f.brand, f.model ? catalogueByID.get(f.model)?.name : '', f.yearFrom || f.yearTo ? `Years ${f.yearFrom || 'any'}–${f.yearTo || 'any'}` : '', f.hpMin || f.hpMax ? `${f.hpMin || 'any'}–${f.hpMax || 'any'} hp` : ''].filter(Boolean);
+  $('active-filter-summary').textContent=summary.length ? `Filters: ${summary.join(' · ')}` : '';
+  if (!hasSearchFilters()) $('filter-error').textContent='';
   const crumb = (level, value, title) => `<button data-level="${level}" data-value="${escapeHTML(value)}">${escapeHTML(title)}</button>`;
   $('breadcrumbs').innerHTML = crumb('root', '', `${selectedLetter} brands`) +
     (selectedBrand ? ' / ' + crumb('brand', selectedBrand, selectedBrand) : '') +
@@ -233,7 +261,7 @@ function renderFolder(spotted) {
   $('additional-brands').innerHTML = '';
   $('search').closest('.filters').hidden = false;
   $('search').placeholder = 'Search brands, models, generations or specifications…';
-  if (query) { renderGlobalSearch(); return; }
+  if (searching()) { renderGlobalSearch(); return; }
   if (!selectedBrand) {
     $('folder-title').textContent = `${selectedLetter} · Brands`;
     const groups = new Map();
@@ -313,7 +341,9 @@ function renderFolder(spotted) {
   const log = $('open-log'); if (log) log.onclick = openLog;
 }
 function renderGlobalSearch() {
-  const results = searchCatalogue(searchIndex, $('search').value, searchSubmitted);
+  const results = searchCatalogue(searchIndex, $('search').value, searchSubmitted, currentFilters());
+  const f=currentFilters();
+  $('filter-error').textContent = f.yearFrom && f.yearTo && +f.yearFrom>+f.yearTo ? 'Year from must not exceed year to.' : f.hpMin && f.hpMax && +f.hpMin>+f.hpMax ? 'Minimum horsepower must not exceed maximum horsepower.' : '';
   $('breadcrumbs').innerHTML = '<span class="search-scope">Entire catalogue · All letters</span>';
   $('folder-title').textContent = searchSubmitted ? 'Search results · Entire catalogue' : 'Suggestions · Entire catalogue';
   $('results').textContent = `${results.length.toLocaleString()} ${searchSubmitted ? 'results' : 'suggestions'}`;
@@ -407,6 +437,7 @@ try {
   if (!featuredResponse.ok) throw new Error('Featured brands request failed');
   featuredBrands = new Set(await featuredResponse.json());
   searchIndex = buildSearchIndex(cars, featuredBrands);
+  $('filter-brand').innerHTML = '<option value="">All brands</option>' + [...new Set([...featuredBrands,...cars.map(c=>c.brand)])].sort((a,b)=>a.localeCompare(b)).map(brand=>`<option value="${escapeHTML(brand)}">${escapeHTML(brand)}</option>`).join('');
   let popularity = {};
   try {
     const response = await fetch('./brand-popularity.json');

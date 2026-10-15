@@ -116,3 +116,9 @@ The search field is available in catalogue folders and My garage. Multi-word sea
 Validate search with `node --test web/tests/*.test.mjs` and the Playwright browser flow `node web/tests/search.cjs` (using `CAR_SPOTTER_URL` and `CHROMIUM_PATH` as needed).
 
 Browser entry scripts and the search module use versioned URLs so cached JavaScript from an older deployment does not leave the updated search form running the old letter filter. Bump those URLs when changing search behavior.
+
+### Expanded search filters
+
+Expand search opens brand and dependent model selectors, generation-production year-from/year-to fields, and reported horsepower bounds. Filters combine with text search, work without text, and apply across all letters. Year ranges use inclusive overlap, with unspecified generation end years treated as open-ended. Horsepower is parsed only from explicit `hp` labels, without converting kW or inferring missing power. Missing required metadata excludes an entry; horsepower filters therefore return specifications, while year filters return dated generations and their descendants. Invalid reversed ranges show an error. Clear filters retains text; navigating to a result or another letter clears filters. A summary remains visible when the panel is collapsed.
+
+In the current snapshot all 10,456 generation records have a start year; 97,361 of 98,333 specification labels contain an extractable horsepower value. These are source labels, not independently verified measurements. Model-reference-only additions cannot satisfy year or power filters until deeper metadata is added. Run `node web/tests/search-filters.cjs` with the same Playwright options as the other browser checks.

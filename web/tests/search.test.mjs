@@ -62,3 +62,19 @@ test('live multi-word searches cross hierarchy levels in any order',()=>{
  assert(searchCatalogue(data,'bmw 320i').some(r=>r.entry.type==='model'));
  assert(!searchCatalogue(data,'bmw mw').length); // Prefixes still apply to individual words.
 });
+test('advanced filters combine brand, model, overlapping years and reported horsepower',()=>{
+ const data=buildSearchIndex([
+  {id:'a',brand:'BMW',name:'3 Series',generations:[{id:'old',name:'E30',yearFrom:1982,yearTo:1994,specifications:[{id:'low',name:'320i (129 hp)'},{id:'high',name:'325i (170 hp)'},{id:'unknown',name:'Unknown engine'}]}]},
+  {id:'b',brand:'Other',name:'320',generations:[{id:'new',name:'New',yearFrom:2020,yearTo:null,specifications:[{id:'newer',name:'2.0 (170 hp)'}]}]},
+  {id:'c',brand:'BMW',name:'Reference only',generations:[]}
+ ]);
+ const filtered=searchCatalogue(data,'',true,{brand:'BMW',model:'a',yearFrom:'1990',yearTo:'1995',hpMin:'120',hpMax:'150'});
+ assert.deepEqual(filtered.map(r=>r.entry.route.specificationID),['low']);
+ assert(!searchCatalogue(data,'',true,{yearFrom:'1995',yearTo:'1980'}).length);
+ assert(!searchCatalogue(data,'',true,{hpMin:'200',hpMax:'100'}).length);
+ assert(!searchCatalogue(data,'',true,{hpMin:'bad'}).length);
+ assert(searchCatalogue(data,'',true,{yearFrom:'2024'}).some(r=>r.entry.route.generationID==='new'));
+ assert(!searchCatalogue(data,'',true,{yearTo:'1980'}).length);
+ assert(!searchCatalogue(data,'',true,{hpMin:'1'}).some(r=>r.entry.route.specificationID==='unknown'));
+ assert(searchCatalogue(data,'320',true,{brand:'Other'}).every(r=>r.entry.route.brand==='Other'));
+});
