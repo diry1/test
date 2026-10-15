@@ -1,4 +1,4 @@
-import {buildSearchIndex, searchCatalogue} from './search.mjs?v=global-search-2';
+import {buildSearchIndex, searchCatalogue} from './search.mjs?v=global-search-3';
 import {selectMainBrands, isMainBrand} from './brand-ranking.mjs';
 import {calculateScore, nextScoreTarget} from './score.mjs';
 const $ = id => document.getElementById(id);
@@ -317,7 +317,7 @@ function renderGlobalSearch() {
   $('breadcrumbs').innerHTML = '<span class="search-scope">Entire catalogue · All letters</span>';
   $('folder-title').textContent = searchSubmitted ? 'Search results · Entire catalogue' : 'Suggestions · Entire catalogue';
   $('results').textContent = `${results.length.toLocaleString()} ${searchSubmitted ? 'results' : 'suggestions'}`;
-  $('folder-info').textContent = searchSubmitted ? 'Partial matches across all brands, models, generations and specifications.' : 'Suggestions across all letters. Names match their beginning; numbers also match within names. Press Enter or Search for all partial matches.';
+  $('folder-info').textContent = searchSubmitted ? 'Partial matches across all brands, models, generations and specifications.' : 'Suggestions across all letters. Each word can match a different part of the car’s path; numbers also match within names. Press Enter or Search for all partial matches.';
   $('cars').innerHTML = results.slice(0,pageSize).map(({id,entry}) => `<article class="card search-card"><button class="brand-open" data-search-result="${id}" data-level="${entry.type === 'brand' ? 'brand' : entry.type === 'model' ? 'model' : entry.route.bodyID ? 'body' : entry.route.generationID ? 'generation' : 'family'}" data-value="${escapeHTML(entry.route.bodyID || entry.route.generationID || entry.route.familyID || entry.route.carID || entry.route.brand)}"><div class="card-body"><span class="brand-name">${escapeHTML(entry.type)}</span><div class="car-name">${escapeHTML(entry.title)}</div><span class="meta">${escapeHTML(entry.label)}</span></div></button></article>`).join('') || '<div class="empty">No matches. Try another name or press Search for partial matches.</div>';
   $('more').hidden = results.length <= pageSize;
   $('more').textContent = 'Show more results';

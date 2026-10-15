@@ -17,6 +17,16 @@ const {chromium}=require('playwright');const assert=require('node:assert/strict'
  await page.locator('#search').fill('320');
  const numeric=await page.locator('#cars .meta').allTextContents();
  assert(numeric.some(label=>label.includes('BMW')));assert(numeric.some(label=>label.includes('Mercedes-Benz')));
+ for (const query of ['bmw e30','bmw 320i','e30 bmw']) {
+  await page.locator('#search').fill(query);
+  const live=await page.locator('#cars .meta').allTextContents();
+  assert(live.length>0,query);assert(live.every(label=>/^BMW(?: ›|-Alpina ›)/.test(label)),query);
+  assert(live.some(label=>query.includes('320i') ? /320i/i.test(label) : /e30/i.test(label)),query);
+  await page.locator('#search').press('Enter');assert(await page.locator('#cars [data-search-result]').count(),query);
+ }
+ await page.locator('#search').fill('bmw e30');
+ await page.locator('#cars [data-value="autoria:9:3219:family:E30"]').click();
+ assert.match(await page.locator('#breadcrumbs').innerText(),/BMW.*3 Series.*E30/s);
  await page.locator('#search').fill('AM');
  const brands=await page.locator('#cars .card').filter({has:page.locator('.brand-name',{hasText:/^brand$/})}).locator('.car-name').allTextContents();
  assert(brands.includes('AMC'));assert(!brands.includes('Aixam'));assert(!brands.includes('Altamera'));

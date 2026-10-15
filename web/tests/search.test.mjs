@@ -46,3 +46,19 @@ test('submitted searches return matching paths in hierarchy order, excluding unr
  assert(results.every(r=>r.entry.text.includes('porsche')));
  assert(!results.some(r=>r.entry.route.carID==='a'));
 });
+test('live multi-word searches cross hierarchy levels in any order',()=>{
+ const data=buildSearchIndex([
+  {id:'bmw',brand:'BMW',name:'3 Series',referenceVariants:[{name:'320i'}],generations:[{id:'e30',name:'E30',specifications:[{id:'320',name:'320i (129 hp)'}]}]},
+  {id:'merc',brand:'Mercedes-Benz',name:'E320',generations:[]},
+ ]);
+ for (const submitted of [false,true]) {
+  for (const query of ['bmw e30','e30 bmw','BMW 320i','bmw e30 320','bmw   3 ser e30']) {
+   const results=searchCatalogue(data,query,submitted);
+   assert(results.some(r=>r.entry.route.specificationID==='320'),query);
+   assert(results.every(r=>r.entry.route.brand==='BMW'),query);
+  }
+  assert(!searchCatalogue(data,'bmw e320',submitted).length);
+ }
+ assert(searchCatalogue(data,'bmw 320i').some(r=>r.entry.type==='model'));
+ assert(!searchCatalogue(data,'bmw mw').length); // Prefixes still apply to individual words.
+});

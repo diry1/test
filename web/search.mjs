@@ -3,7 +3,7 @@ export function buildSearchIndex(cars, featured = []) {
   const entries = [];
   const add = (type, title, path, route, aliases = []) => {
     const label = path.join(' › ');
-    entries.push({type,title,label,route, keys: [...new Set([title, ...aliases, path.join(' '), ...aliases.map(a => [...path.slice(0,-1),a].join(' '))].map(normalizeSearch))], text: normalizeSearch([label,...aliases].join(' '))});
+    entries.push({type,title,label,route, keys: [...new Set([title, ...aliases, path.join(' '), ...aliases.map(a => [...path.slice(0,-1),a].join(' '))].map(normalizeSearch))], text: normalizeSearch([label,...aliases].join(' ')), words: normalizeSearch([label,...aliases].join(' ')).split(' ')});
   };
   for (const brand of new Set([...featured,...cars.map(c=>c.brand)])) add('brand',brand,[brand],{brand});
   for (const car of cars) {
@@ -35,7 +35,11 @@ export function searchCatalogue(index, query, submitted = false) {
     const entry=index[id];
     const exact=entry.keys.includes(q), prefix=exact || entry.keys.some(k=>k.startsWith(q));
     const numberMatch = numericQuery && entry.keys.some(k => k.includes(q));
-    if (!(submitted ? tokens.every(t=>entry.text.includes(t)) : prefix || numberMatch)) continue;
+    // Each term can match a different level; intervening model names are optional.
+    const pathMatch = tokens.length > 1 && tokens.every(token =>
+      entry.words.some(word => /^\d+$/.test(token) ? word.includes(token) : word.startsWith(token)));
+
+    if (!(submitted ? tokens.every(t=>entry.text.includes(t)) : prefix || numberMatch || pathMatch)) continue;
     ranked.push({id,entry,rank:exact ? 0 : prefix ? 1 : 2});
   }
   return ranked.sort((a,b)=> submitted
