@@ -19,8 +19,9 @@
 <nav aria-label="Views"><button id="catalogue-tab" class="active">Catalogue</button><button id="garage-tab">My garage <span id="count">0</span></button></nav>
 <p id="status" role="status"></p>
 <nav id="alphabet" aria-label="Filter brands by first letter"></nav>
+<form id="catalogue-search" class="filters" role="search"><label class="search">Search the entire catalogue<input id="search" type="search" placeholder="Search brands, models, generations or specifications…" autocomplete="off" aria-describedby="search-help"></label><button type="submit" class="primary">Search</button></form>
+<p id="search-help" class="muted small">Type for suggestions starting with your search. Press Enter or Search for partial matches everywhere.</p>
 <section id="catalogue-view">
-<div class="filters"><label class="search">Search within this folder<input id="search" type="search" placeholder="Find a brand…"></label></div>
 <nav id="breadcrumbs" aria-label="Catalogue folders"></nav>
 <div class="section-heading"><h2 id="folder-title">Brands</h2><span id="results"></span></div>
 <div id="folder-info"></div>

@@ -1,0 +1,25 @@
+const {chromium}=require('playwright');const assert=require('node:assert/strict');
+(async()=>{
+ const browser=await chromium.launch({executablePath:process.env.CHROMIUM_PATH||undefined,args:['--no-sandbox']});
+ const page=await browser.newPage();const errors=[];page.on('pageerror',e=>errors.push(e.message));
+ await page.goto(process.env.CAR_SPOTTER_URL||'http://127.0.0.1:8000');await page.locator('#folder-title').filter({hasText:'A · Brands'}).waitFor();
+ await page.locator('#search').fill('AM');
+ const brands=await page.locator('#cars .card').filter({has:page.locator('.brand-name',{hasText:/^brand$/})}).locator('.car-name').allTextContents();
+ assert(brands.includes('AMC'));assert(!brands.includes('Aixam'));assert(!brands.includes('Altamera'));
+ await page.locator('#search').fill('ixam');assert.equal(await page.locator('#cars [data-search-result]').count(),0);
+ await page.locator('#search').press('Enter');assert(await page.locator('#cars .car-name').filter({hasText:/^Aixam$/}).count());
+ await page.locator('#search').fill('F30');
+ const f30=page.locator('#cars .card').filter({has:page.locator('.car-name',{hasText:/^F30$/})}).filter({hasText:'BMW › 3 Series'}).first();
+ await f30.locator('button').click();
+ assert.match(await page.locator('#breadcrumbs').innerText(),/BMW.*3 Series.*F30/s);
+ assert.equal(await page.locator('#alphabet [data-letter=B]').getAttribute('aria-pressed'),'true');
+ await page.locator('#search').fill('Tesla');await page.locator('#cars .card').filter({has:page.locator('.brand-name',{hasText:/^brand$/})}).filter({hasText:'Tesla'}).first().locator('button').click();
+ assert.match(await page.locator('#folder-title').innerText(),/Tesla models/);
+ await page.locator('#search').fill('F30');await page.locator('#search').fill('');assert.match(await page.locator('#folder-title').innerText(),/Tesla models/);
+ await page.locator('#search').fill('BMW F30 320i');await page.locator('#catalogue-search [type=submit]').click();
+ const spec=page.locator('#cars .card').filter({has:page.locator('.brand-name',{hasText:/^specification$/})}).first();await spec.locator('button').click();
+ await page.locator('#detail').waitFor({state:'visible'});assert.match(await page.locator('#detail-content').innerText(),/320i/);await page.locator('#detail .close').click();
+ await page.locator('#garage-tab').click();await page.locator('#search').fill('F30');assert(await page.locator('#catalogue-view').isVisible());
+ await page.setViewportSize({width:390,height:844});assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));assert.deepEqual(errors,[]);
+ await browser.close();console.log('PASS: prefix suggestions, submitted partial matches, global F30 navigation, cross-brand search, clear recovery, spec details, garage search, mobile layout');
+})().catch(e=>{console.error(e);process.exit(1)});

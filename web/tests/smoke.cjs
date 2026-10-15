@@ -64,7 +64,7 @@ const assert = require('node:assert/strict');
   assert.equal(await page.locator('#score-total').innerText(), '0');
   await page.locator('#catalogue-tab').click();
   await page.locator('#search').fill('zzzz-no-such-car');
-  assert.match(await page.locator('#cars').innerText(), /No matching folders/);
+  assert.match(await page.locator('#cars').innerText(), /No matches/);
   await page.setViewportSize({width:390,height:844});
   await page.locator('#search').fill('BMW');
   assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth),true);
@@ -95,7 +95,7 @@ const assert = require('node:assert/strict');
   await page.locator('[data-level=model][data-value="autoria:9:3219"]').click();
   for (const name of ['E36', 'F30']) {
     await page.locator('#search').fill(name);
-    await page.locator('#cars [data-level=family]').filter({hasText:name}).click();
+    await page.locator(`#cars [data-level=family][data-value="autoria:9:3219:family:${name}"]`).click();
     assert.match(await page.locator('#folder-title').innerText(), /Facelift versions/);
     await page.locator('#cars [data-level=generation]').first().click();
     assert.match(await page.locator('#folder-title').innerText(), /Body styles/);
