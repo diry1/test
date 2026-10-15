@@ -1,0 +1,87 @@
+{
+  "retrieved_at_utc": "2026-10-15T10:52:11.783631+00:00",
+  "request_headers": {
+    "Accept": "application/xml",
+    "Accept-Language": "en"
+  },
+  "sources": [
+    {
+      "file": "categories.xml",
+      "url": "https://services.mobile.de/refdata/classes/Car/categories",
+      "sha256": "152d0000ec4a605b49802dbb76610058967f8840348cc3f8fdd428cd1ed44de6",
+      "status": 200
+    },
+    {
+      "file": "group-1__BMW_ER_SERIES.xml",
+      "url": "https://services.mobile.de/refdata/classes/Car/makes/BMW/modelgroups/1__BMW_ER_SERIES/models",
+      "sha256": "8dd3ff49c728b6b3ca0a5073f29f75aedfff1da162345981f1880ea355df969d",
+      "status": 200
+    },
+    {
+      "file": "group-2__BMW_ER_SERIES.xml",
+      "url": "https://services.mobile.de/refdata/classes/Car/makes/BMW/modelgroups/2__BMW_ER_SERIES/models",
+      "sha256": "d0c764457f7d66832c11d913932e8251d51aad5c47ca9e03b6017afe7ed98557",
+      "status": 200
+    },
+    {
+      "file": "group-3__BMW_ER_SERIES.xml",
+      "url": "https://services.mobile.de/refdata/classes/Car/makes/BMW/modelgroups/3__BMW_ER_SERIES/models",
+      "sha256": "8501a70f70f9e94cd41b7f2257c5fce88e21341d1f0f49df0f747b2e25aa3808",
+      "status": 200
+    },
+    {
+      "file": "group-4__BMW_ER_SERIES.xml",
+      "url": "https://services.mobile.de/refdata/classes/Car/makes/BMW/modelgroups/4__BMW_ER_SERIES/models",
+      "sha256": "068cf4c8487d83d50e5d23190dd1c2b9e0e211ee5c6103d0b8466c289c7899a1",
+      "status": 200
+    },
+    {
+      "file": "group-5__BMW_ER_SERIES.xml",
+      "url": "https://services.mobile.de/refdata/classes/Car/makes/BMW/modelgroups/5__BMW_ER_SERIES/models",
+      "sha256": "63790a90ed7f20b10ecba8ab1a1af507e9a5275b1a8f05da8698e1eda7002677",
+      "status": 200
+    },
+    {
+      "file": "group-6__BMW_ER_SERIES.xml",
+      "url": "https://services.mobile.de/refdata/classes/Car/makes/BMW/modelgroups/6__BMW_ER_SERIES/models",
+      "sha256": "1df1a1d79e4111a75039d40767e6f19e590fac9a604d06ca3158c96f04062d63",
+      "status": 200
+    },
+    {
+      "file": "group-7__BMW_ER_SERIES.xml",
+      "url": "https://services.mobile.de/refdata/classes/Car/makes/BMW/modelgroups/7__BMW_ER_SERIES/models",
+      "sha256": "c317e96b5af03235a37ef3bb54d18c83ba55e511054496ac95935c00c466a55a",
+      "status": 200
+    },
+    {
+      "file": "group-M__BMW_MODELS.xml",
+      "url": "https://services.mobile.de/refdata/classes/Car/makes/BMW/modelgroups/M__BMW_MODELS/models",
+      "sha256": "39602c1e814cc3b47d1fcb3a0a636163d36d083d883bfe7b034f7146da0b6aa1",
+      "status": 200
+    },
+    {
+      "file": "group-X__BMW_SERIES.xml",
+      "url": "https://services.mobile.de/refdata/classes/Car/makes/BMW/modelgroups/X__BMW_SERIES/models",
+      "sha256": "b5d5fed74bae5ff51a6c1999a95682ede8215114fa079697ad888e4200fe5ada",
+      "status": 200
+    },
+    {
+      "file": "group-Z__BMW_SERIES.xml",
+      "url": "https://services.mobile.de/refdata/classes/Car/makes/BMW/modelgroups/Z__BMW_SERIES/models",
+      "sha256": "2d5b31e0e4e0f43b32605ff67ccd159c3fe936c7a6646a5bd8fd649b329312cb",
+      "status": 200
+    },
+    {
+      "file": "modelgroups.xml",
+      "url": "https://services.mobile.de/refdata/classes/Car/makes/BMW/modelgroups",
+      "sha256": "b9b534de26c12d02fb520695fec192eb21d978338a08b8f38176d6862d1e056f",
+      "status": 200
+    },
+    {
+      "file": "models.xml",
+      "url": "https://services.mobile.de/refdata/classes/Car/makes/BMW/models",
+      "sha256": "0244e25f61bda14c66a6be49d72e68e23dd69b7a352a1cb0ae3c1873804121cf",
+      "status": 200
+    }
+  ]
+}

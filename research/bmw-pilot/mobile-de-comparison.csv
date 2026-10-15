@@ -1,0 +1,163 @@
+mobile_model_key,mobile_label,mobile_groups,candidate_existing_model_id,review_status
+114,114,1 Series,,review_required
+116,116,1 Series,,review_required
+118,118,1 Series,,review_required
+120,120,1 Series,,review_required
+123,123,1 Series,,review_required
+125,125,1 Series,,review_required
+128,128,1 Series,,review_required
+130,130,1 Series,,review_required
+135,135,1 Series,,review_required
+1er_M_Coupe,1er M Coupé,1 Series,,review_required
+2 Series Gran Coupe,2er Gran Coupé,2 Series,autoria:9:60508,direct_label_match
+2002,2002,,autoria:9:47386,direct_label_match
+214 Active Tourer,214 Active Tourer,2 Series,,review_required
+214 Gran Tourer,214 Gran Tourer,2 Series,,review_required
+216,216,2 Series,,review_required
+216 Active Tourer,216 Active Tourer,2 Series,,review_required
+216 Gran Coupe,216 Gran Coupé,2 Series,,review_required
+216 Gran Tourer,216 Gran Tourer,2 Series,,review_required
+218,218,2 Series,,review_required
+218 Active Tourer,218 Active Tourer,2 Series,,review_required
+218 Gran Coupe,218 Gran Coupé,2 Series,,review_required
+218 Gran Tourer,218 Gran Tourer,2 Series,,review_required
+220,220,2 Series,,review_required
+220 Active Tourer,220 Active Tourer,2 Series,,review_required
+220 Gran Coupe,220 Gran Coupé,2 Series,,review_required
+220 Gran Tourer,220 Gran Tourer,2 Series,,review_required
+223,223,2 Series,,review_required
+223 Active Tourer,223 Active Tourer,2 Series,,review_required
+223 Gran Coupé,223 Gran Coupé,2 Series,,review_required
+225,225,2 Series,,review_required
+225 Active Tourer,225 Active Tourer,2 Series,,review_required
+228,228,2 Series,,review_required
+230,230,2 Series,,review_required
+230 Active Tourer,230 Active Tourer,2 Series,,review_required
+315,315,3 Series,autoria:9:37454,direct_label_match
+316,316,3 Series,,review_required
+318,318,3 Series,,review_required
+318 Gran Turismo,318 Gran Turismo,3 Series,,review_required
+320,320,3 Series,,review_required
+320 Gran Turismo,320 Gran Turismo,3 Series,,review_required
+323,323,3 Series,,review_required
+324,324,3 Series,,review_required
+325,325,3 Series,,review_required
+325 Gran Turismo,325 Gran Turismo,3 Series,,review_required
+328,328,3 Series,,review_required
+328 Gran Turismo,328 Gran Turismo,3 Series,,review_required
+330,330,3 Series,,review_required
+330 Gran Turismo,330 Gran Turismo,3 Series,,review_required
+335,335,3 Series,,review_required
+335 Gran Turismo,335 Gran Turismo,3 Series,,review_required
+340,340,3 Series,,review_required
+340 Gran Turismo,340 Gran Turismo,3 Series,,review_required
+418,418,4 Series,,review_required
+418 Gran Coupe,418 Gran Coupé,4 Series,,review_required
+420,420,4 Series,,review_required
+420 Gran Coupe,420 Gran Coupé,4 Series,,review_required
+425,425,4 Series,,review_required
+425 Gran Coupe,425 Gran Coupé,4 Series,,review_required
+428,428,4 Series,,review_required
+428 Gran Coupe,428 Gran Coupé,4 Series,,review_required
+430,430,4 Series,,review_required
+430 Gran Coupe,430 Gran Coupé,4 Series,,review_required
+435,435,4 Series,,review_required
+435 Gran Coupe,435 Gran Coupé,4 Series,,review_required
+440,440,4 Series,,review_required
+440 Gran Coupe,440 Gran Coupé,4 Series,,review_required
+518,518,5 Series,,review_required
+520,520,5 Series,,review_required
+520 Gran Turismo,520 Gran Turismo,5 Series,,review_required
+523,523,5 Series,,review_required
+524,524,5 Series,,review_required
+525,525,5 Series,,review_required
+528,528,5 Series,,review_required
+530,530,5 Series,,review_required
+530 Gran Turismo,530 Gran Turismo,5 Series,,review_required
+535,535,5 Series,,review_required
+535 Gran Turismo,535 Gran Turismo,5 Series,,review_required
+540,540,5 Series,,review_required
+545,545,5 Series,,review_required
+550,550,5 Series,,review_required
+550 Gran Turismo,550 Gran Turismo,5 Series,,review_required
+620 Gran Turismo,620 Gran Turismo,6 Series,,review_required
+628,628,6 Series,,review_required
+630,630,6 Series,,review_required
+630 Gran Turismo,630 Gran Turismo,6 Series,,review_required
+633,633,6 Series,,review_required
+635,635,6 Series,,review_required
+640,640,6 Series,,review_required
+640 Gran Coupe,640 Gran Coupé,6 Series,,review_required
+640 Gran Turismo,640 Gran Turismo,6 Series,,review_required
+645,645,6 Series,,review_required
+650,650,6 Series,,review_required
+650 Gran Coupe,650 Gran Coupé,6 Series,,review_required
+725,725,7 Series,,review_required
+728,728,7 Series,,review_required
+730,730,7 Series,,review_required
+732,732,7 Series,,review_required
+735,735,7 Series,,review_required
+740,740,7 Series,,review_required
+745,745,7 Series,,review_required
+750,750,7 Series,,review_required
+760,760,7 Series,,review_required
+840,840,,,review_required
+850,850,,,review_required
+ActiveHybrid 3,ActiveHybrid 3,3 Series,,review_required
+ActiveHybrid 5,ActiveHybrid 5,5 Series,,review_required
+ActiveHybrid 7,ActiveHybrid 7,7 Series,,review_required
+ActiveHybrid X6,ActiveHybrid X6,X Series,,review_required
+M135,M135,M Models,,review_required
+M140i,M140i,M Models,,review_required
+M2,M2,M Models,autoria:9:44856,direct_label_match
+M235i,M235,M Models,,review_required
+M240i,M240i,M Models,,review_required
+M3,M3,M Models,autoria:9:3292,direct_label_match
+M340d,M340d,M Models,,review_required
+M340i,M340i,M Models,,review_required
+M4,M4,M Models,autoria:9:44857,direct_label_match
+M440,M440,M Models,,review_required
+M5,M5,M Models,autoria:9:3213,direct_label_match
+M550,M550,M Models,,review_required
+M6,M6,M Models,autoria:9:3592,direct_label_match
+M760,M760,M Models,,review_required
+M8,M8,M Models,autoria:9:59450,direct_label_match
+M850,M850,M Models,,review_required
+X1,X1,X Series,autoria:9:3597,direct_label_match
+X2,X2,X Series,autoria:9:42029,direct_label_match
+X3,X3,X Series,autoria:9:1866,direct_label_match
+X3 M,X3 M,X Series,autoria:9:57774,direct_label_match
+X3 M40,X3 M40,X Series,,review_required
+X3 M50,X3 M50,X Series,,review_required
+X4,X4,X Series,autoria:9:43735,direct_label_match
+X4 M,X4 M,X Series,autoria:9:57775,direct_label_match
+X4 M40,X4 M40,X Series,,review_required
+X5,X5,X Series,autoria:9:96,direct_label_match
+X5 M,X5 M,X Series,autoria:9:3158,direct_label_match
+X5 M50,X5 M50,X Series,,review_required
+X5 M60,X5 M60,X Series,,review_required
+X6,X6,X Series,autoria:9:2153,direct_label_match
+X6 M,X6 M,X Series,autoria:9:3442,direct_label_match
+X6 M50,X6 M50,X Series,,review_required
+X6 M60,X6 M60,X Series,,review_required
+X7,X7,X Series,autoria:9:49169,direct_label_match
+X7 M,X7 M50,X Series,,review_required
+X7 M60,X7 M60,X Series,,review_required
+XM,XM,X Series,autoria:9:64483,direct_label_match
+Z1,Z1,Z Series,autoria:9:97,direct_label_match
+Z3,Z3,Z Series,autoria:9:98,direct_label_match
+Z3 M,Z3 M,Z Series,autoria:9:3223,direct_label_match
+Z4,Z4,Z Series,autoria:9:99,direct_label_match
+Z4 M,Z4 M,Z Series,autoria:9:59518,direct_label_match
+Z4 M40i,Z4 M40,Z Series,,review_required
+Z8,Z8,Z Series,autoria:9:100,direct_label_match
+i3,i3,,autoria:9:44838,direct_label_match
+i4,i4,,autoria:9:63124,direct_label_match
+i5,i5,,autoria:9:65411,direct_label_match
+i7,i7,,autoria:9:63477,direct_label_match
+i8,i8,,autoria:9:44537,direct_label_match
+iX,iX,,autoria:9:62701,direct_label_match
+iX1,iX1,,autoria:9:63528,direct_label_match
+iX2,iX2,,autoria:9:66901,direct_label_match
+iX3,iX3,,autoria:9:61275,direct_label_match
+ANDERE,Other,,,other_bucket
