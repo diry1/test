@@ -1,0 +1,38 @@
+[
+  {
+    "url": "https://raw.githubusercontent.com/vehiclesdb/vehiclesdb/main/manifest.json",
+    "sha256": "a401b7bd9bb58ea581fffaf1cccfb79a28b4592d4674c36b10e419f6c30b8fa8"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/vehiclesdb/vehiclesdb/main/dist/vehicles.csv",
+    "sha256": "4647c58d9ff6fe962568f9990ce7bc16b92f71abaa3e18035ef41d7e818805ee"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/vehiclesdb/vehiclesdb/main/LICENSE",
+    "sha256": "48a2c12a43e8df6700e36440f089c1497e62a507e194e995d69a7d3530999e78"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/vehiclesdb/vehiclesdb/main/ATTRIBUTION.md",
+    "sha256": "bf2ebd50a843d1b6e445ce3aff594b2ec94658aa1cd7b786e4e73db04ad6cd21"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/gor3a/vehicle-makes-models/main/data/json/bmw.json",
+    "sha256": "fea25f4c438f2cfba64a0c421e83390b9c2b82ceaa2a8e8c4b6588a64ee099a3"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/gor3a/vehicle-makes-models/main/LICENSE-DATA",
+    "sha256": "929002c598eb35029cbcd8fc40a9c47626da4d13eda06bba25cbafba531b8cb8"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/lifeofcapo/car-api/main/car-brands.json",
+    "sha256": "93f90151ebe43cac2577611a504be24333b3a4213161339e5ff988d0c6e3103c"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/lifeofcapo/car-api/main/LICENSE",
+    "sha256": "da35be985aa62cb9dff02f0bbd1e113647ee3fcb1e68d02a942b0dbb0643383e"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/abhionlyone/us-car-models-data/master/LICENSE",
+    "sha256": "0f6bd28bef191065d326869dc6d6019f50b994f1fb42f7be328494526a3751dd"
+  }
+]

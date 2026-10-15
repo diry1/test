@@ -1,0 +1,52 @@
+{
+  "checked_at_utc": "2026-10-15T12:22:21.975731+00:00",
+  "sources": {
+    "vehiclesdb": {
+      "repository": "https://github.com/vehiclesdb/vehiclesdb",
+      "licence_url": "https://github.com/vehiclesdb/vehiclesdb/blob/main/LICENSE",
+      "licence_observed": "CC BY 4.0 plus upstream attribution notices",
+      "passenger_car_rows_measured": 5541,
+      "normalized_name_matches": 2241,
+      "unmatched_name_candidates": 3300,
+      "release": "2026.10.4"
+    },
+    "gor3a": {
+      "repository": "https://github.com/gor3a/vehicle-makes-models",
+      "licence_url": "https://github.com/gor3a/vehicle-makes-models/blob/main/LICENSE-DATA",
+      "data_licence_observed": "ODbL 1.0; code MIT",
+      "readme_claimed_totals": {
+        "makes": 164,
+        "models": 2621,
+        "generations": 7169,
+        "engines": 30390
+      },
+      "bmw_measured": {
+        "models": 65,
+        "generations": 286,
+        "engines": 2372,
+        "populated_bodyType_fields": 0
+      }
+    },
+    "lifeofcapo": {
+      "repository": "https://github.com/lifeofcapo/car-api",
+      "licence_url": "https://github.com/lifeofcapo/car-api/blob/main/LICENSE",
+      "licence_observed": "MIT",
+      "measured": {
+        "brands": 142,
+        "models": 2379,
+        "generations": 4642
+      }
+    },
+    "us_models": {
+      "repository": "https://github.com/abhionlyone/us-car-models-data",
+      "licence_url": "https://github.com/abhionlyone/us-car-models-data/blob/master/LICENSE",
+      "licence_observed": "CC BY 4.0",
+      "readme_claim": "15,000+ year/model entries, 1992\u20132026; free updates discontinued"
+    },
+    "worldwide": {
+      "repository": "https://github.com/florianbaillien/dataset-automobile-worldwide",
+      "readme_claim": "2,147 models",
+      "licence_observed": "No licence identified on the inspected repository overview; reuse not established"
+    }
+  }
+}
