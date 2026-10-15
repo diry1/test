@@ -1,0 +1,107 @@
+[
+  {
+    "source": "VehiclesDB",
+    "id": "vehiclesdb:car:bmw:active",
+    "sourceBrand": "BMW",
+    "name": "Active",
+    "reason": "ambiguous_or_cross_make_registration_label"
+  },
+  {
+    "source": "VehiclesDB",
+    "id": "vehiclesdb:car:bmw:alpina",
+    "sourceBrand": "BMW",
+    "name": "Alpina",
+    "reason": "ambiguous_or_cross_make_registration_label"
+  },
+  {
+    "source": "VehiclesDB",
+    "id": "vehiclesdb:car:bmw:clubman-cooper",
+    "sourceBrand": "BMW",
+    "name": "Clubman Cooper",
+    "reason": "ambiguous_or_cross_make_registration_label"
+  },
+  {
+    "source": "VehiclesDB",
+    "id": "vehiclesdb:car:bmw:cooper",
+    "sourceBrand": "BMW",
+    "name": "Cooper",
+    "reason": "ambiguous_or_cross_make_registration_label"
+  },
+  {
+    "source": "VehiclesDB",
+    "id": "vehiclesdb:car:bmw:cooper-s",
+    "sourceBrand": "BMW",
+    "name": "Cooper S",
+    "reason": "ambiguous_or_cross_make_registration_label"
+  },
+  {
+    "source": "VehiclesDB",
+    "id": "vehiclesdb:car:bmw:cs",
+    "sourceBrand": "BMW",
+    "name": "Cs",
+    "reason": "ambiguous_or_cross_make_registration_label"
+  },
+  {
+    "source": "VehiclesDB",
+    "id": "vehiclesdb:car:bmw:john-cooper-works",
+    "sourceBrand": "BMW",
+    "name": "John Cooper Works",
+    "reason": "ambiguous_or_cross_make_registration_label"
+  },
+  {
+    "source": "VehiclesDB",
+    "id": "vehiclesdb:car:bmw:m-roadster",
+    "sourceBrand": "BMW",
+    "name": "M Roadster",
+    "reason": "ambiguous_or_cross_make_registration_label"
+  },
+  {
+    "source": "VehiclesDB",
+    "id": "vehiclesdb:car:bmw:mini",
+    "sourceBrand": "BMW",
+    "name": "Mini",
+    "reason": "ambiguous_or_cross_make_registration_label"
+  },
+  {
+    "source": "VehiclesDB",
+    "id": "vehiclesdb:car:bmw:mini-cooper",
+    "sourceBrand": "BMW",
+    "name": "Mini Cooper",
+    "reason": "ambiguous_or_cross_make_registration_label"
+  },
+  {
+    "source": "VehiclesDB",
+    "id": "vehiclesdb:car:bmw:mini-one",
+    "sourceBrand": "BMW",
+    "name": "Mini One",
+    "reason": "ambiguous_or_cross_make_registration_label"
+  },
+  {
+    "source": "VehiclesDB",
+    "id": "vehiclesdb:car:bmw:one",
+    "sourceBrand": "BMW",
+    "name": "One",
+    "reason": "ambiguous_or_cross_make_registration_label"
+  },
+  {
+    "source": "VehiclesDB",
+    "id": "vehiclesdb:car:bmw:x-reihe",
+    "sourceBrand": "BMW",
+    "name": "X-Reihe",
+    "reason": "ambiguous_or_cross_make_registration_label"
+  },
+  {
+    "source": "VehiclesDB",
+    "id": "vehiclesdb:car:bmw:xdrive30d",
+    "sourceBrand": "BMW",
+    "name": "XDRIVE30D",
+    "reason": "engine_without_model_identity"
+  },
+  {
+    "source": "VehiclesDB",
+    "id": "vehiclesdb:car:bmw:z-series",
+    "sourceBrand": "BMW",
+    "name": "Z Series",
+    "reason": "ambiguous_or_cross_make_registration_label"
+  }
+]

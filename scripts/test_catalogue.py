@@ -29,9 +29,10 @@ class CatalogueTests(unittest.TestCase):
 
     def test_bundled_catalogue_integrity(self):
         cars = json.loads((Path(__file__).resolve().parents[1] / 'CarSpotter/Resources/catalogue.json').read_text())
-        self.assertEqual(len(cars), 5053)
+        self.assertEqual(sum(c['id'].startswith('autoria:') for c in cars), 5053)
+        self.assertGreaterEqual(len(cars), 5053)
         self.assertEqual(len({car['id'] for car in cars}), len(cars))
-        self.assertEqual(len({car['brand'] for car in cars}), 387)
+        self.assertGreaterEqual(len({car['brand'] for car in cars}), 387)
         generations = [g for car in cars for g in car['generations']]
         self.assertEqual(len(generations), 10456)
         self.assertEqual(len({g['id'] for g in generations}), 10456)

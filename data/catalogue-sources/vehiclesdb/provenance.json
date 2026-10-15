@@ -1,0 +1,9 @@
+{
+  "source": "VehiclesDB",
+  "release": "2026.10.4",
+  "url": "https://raw.githubusercontent.com/vehiclesdb/vehiclesdb/main/dist/vehicles.csv",
+  "upstream_sha256": "4647c58d9ff6fe962568f9990ce7bc16b92f71abaa3e18035ef41d7e818805ee",
+  "car_subset_sha256": "17eec2bd72768eb8d9865a672789dcbc2844925e24bc165515f6ad8a99d9d2c9",
+  "filter": "kind == car; all original CSV fields retained",
+  "rows": 5541
+}

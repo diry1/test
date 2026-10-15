@@ -244,9 +244,9 @@ function renderFolder(spotted) {
   } else if (!activeCar) {
     $('folder-title').textContent = `${selectedBrand} models`;
     $('search').placeholder = `Find a ${selectedBrand} model…`;
-    entries = cars.filter(c => c.brand === selectedBrand && c.name.toLocaleLowerCase().includes(query)).map(c => {
+    entries = cars.filter(c => c.brand === selectedBrand && [c.name, ...(c.referenceVariants ?? []).map(r => r.name)].some(name => name.toLocaleLowerCase().includes(query))).map(c => {
       const completion = modelCompletion(c, spottedGenerations, spotted);
-      return folderCard('model', c.id, c.name, `${c.generationFamilies?.length ?? c.generations.length} known generations`, spotted.has(c.id), completionCircle(completion.completed, completion.total, c.generations.length ? 'generations' : 'models'));
+      return folderCard('model', c.id, c.name, c.catalogueStatus === 'model_reference_only' ? 'Model reference · generation details pending' : `${c.generationFamilies?.length ?? c.generations.length} known generations`, spotted.has(c.id), completionCircle(completion.completed, completion.total, c.generations.length ? 'generations' : 'models'));
     });
   } else if (activeCar.generationFamilies?.length && !selectedFamily) {
     $('folder-title').textContent = `${activeCar.name} generations`;
@@ -279,6 +279,13 @@ function renderFolder(spotted) {
     const specs = selectedGeneration.specifications ?? [];
     entries = specs.filter(spec => spec.name.toLocaleLowerCase().includes(query)).map(spec => `<article class="card search-card"><button class="brand-open" data-spec="${escapeHTML(spec.id)}"><div class="card-body"><h3>${escapeHTML(spec.name)}</h3><p class="meta">Source record ${escapeHTML(spec.sourceID)}</p><span class="meta">View specification →</span></div></button><div class="card-links">${googleLink(activeCar.brand, activeCar.name, selectedGeneration.name, spec.name)}</div></article>`);
     $('folder-info').innerHTML = `<div class="spec-panel"><div class="detail-visual">${silhouette}</div><h3>${escapeHTML(formatGeneration(selectedGeneration))}</h3><p class="muted">${specs.length ? 'Available specifications for this generation.' : 'Engine, trim, and specification records are not available in the source catalogue yet.'}</p>${googleLink(activeCar.brand, activeCar.name, selectedGeneration.name)}<button id="open-log" class="primary" ${db ? '' : 'disabled'}>Log this generation</button></div>`;
+  }
+  if (activeCar) {
+    if (activeCar.catalogueStatus === 'model_reference_only') {
+      $('folder-info').insertAdjacentHTML('afterbegin', '<p class="muted">This model was added from an external reference index. Generation and specification details are not available yet.</p>');
+    }
+    const aliases = [...new Set((activeCar.referenceVariants ?? []).map(r => r.name))].sort((a,b) => a.localeCompare(b));
+    if (aliases.length) $('folder-info').insertAdjacentHTML('beforeend', `<details class="reference-options"><summary>Also listed as · ${aliases.length} model / variant names</summary><p class="muted small">Related source names are grouped here. They do not identify a specific generation or earn separate model points.</p><ul>${aliases.map(name => `<li><span>${escapeHTML(name)}</span> ${googleLink(activeCar.brand, activeCar.name, name)}</li>`).join('')}</ul></details>`);
   }
   if (selectedBrand) {
     const unit = !activeCar ? 'models' : selectedBody ? 'specifications' : selectedFamily && selectedGeneration ? 'body styles' : selectedFamily ? 'facelift versions' : selectedGeneration ? 'specifications' : 'generations';

@@ -1,0 +1,3091 @@
+[
+  {
+    "make": "AUDI",
+    "key": "TT.",
+    "name": "TT (alle)",
+    "url": "https://services.mobile.de/refdata/classes/Car/makes/AUDI/modelgroups/TT./models",
+    "status": 200,
+    "models": [
+      {
+        "key": "TT",
+        "name": "TT"
+      },
+      {
+        "key": "TT RS",
+        "name": "TT RS"
+      },
+      {
+        "key": "TTS",
+        "name": "TTS"
+      }
+    ]
+  },
+  {
+    "make": "BENTLEY",
+    "key": "Continental",
+    "name": "Continental",
+    "url": "https://services.mobile.de/refdata/classes/Car/makes/BENTLEY/modelgroups/Continental/models",
+    "status": 200,
+    "models": [
+      {
+        "key": "Continental",
+        "name": "Continental"
+      },
+      {
+        "key": "Continental Flying Spur",
+        "name": "Continental Flying Spur"
+      },
+      {
+        "key": "Continental GT",
+        "name": "Continental GT"
+      },
+      {
+        "key": "Continental GTC",
+        "name": "Continental GTC"
+      },
+      {
+        "key": "Continental Supersports",
+        "name": "Continental Supersports"
+      }
+    ]
+  },
+  {
+    "make": "BMW",
+    "key": "1__BMW_ER_SERIES",
+    "name": "1 Series",
+    "url": "https://services.mobile.de/refdata/classes/Car/makes/BMW/modelgroups/1__BMW_ER_SERIES/models",
+    "status": 200,
+    "models": [
+      {
+        "key": "114",
+        "name": "114"
+      },
+      {
+        "key": "116",
+        "name": "116"
+      },
+      {
+        "key": "118",
+        "name": "118"
+      },
+      {
+        "key": "120",
+        "name": "120"
+      },
+      {
+        "key": "123",
+        "name": "123"
+      },
+      {
+        "key": "125",
+        "name": "125"
+      },
+      {
+        "key": "128",
+        "name": "128"
+      },
+      {
+        "key": "130",
+        "name": "130"
+      },
+      {
+        "key": "135",
+        "name": "135"
+      },
+      {
+        "key": "1er_M_Coupe",
+        "name": "1er M Coup\u00e9"
+      }
+    ]
+  },
+  {
+    "make": "BMW",
+    "key": "2__BMW_ER_SERIES",
+    "name": "2 Series",
+    "url": "https://services.mobile.de/refdata/classes/Car/makes/BMW/modelgroups/2__BMW_ER_SERIES/models",
+    "status": 200,
+    "models": [
+      {
+        "key": "2 Series Gran Coupe",
+        "name": "2er Gran Coup\u00e9"
+      },
+      {
+        "key": "214 Active Tourer",
+        "name": "214 Active Tourer"
+      },
+      {
+        "key": "214 Gran Tourer",
+        "name": "214 Gran Tourer"
+      },
+      {
+        "key": "216",
+        "name": "216"
+      },
+      {
+        "key": "216 Active Tourer",
+        "name": "216 Active Tourer"
+      },
+      {
+        "key": "216 Gran Coupe",
+        "name": "216 Gran Coup\u00e9"
+      },
+      {
+        "key": "216 Gran Tourer",
+        "name": "216 Gran Tourer"
+      },
+      {
+        "key": "218",
+        "name": "218"
+      },
+      {
+        "key": "218 Active Tourer",
+        "name": "218 Active Tourer"
+      },
+      {
+        "key": "218 Gran Coupe",
+        "name": "218 Gran Coup\u00e9"
+      },
+      {
+        "key": "218 Gran Tourer",
+        "name": "218 Gran Tourer"
+      },
+      {
+        "key": "220",
+        "name": "220"
+      },
+      {
+        "key": "220 Active Tourer",
+        "name": "220 Active Tourer"
+      },
+      {
+        "key": "220 Gran Coupe",
+        "name": "220 Gran Coup\u00e9"
+      },
+      {
+        "key": "220 Gran Tourer",
+        "name": "220 Gran Tourer"
+      },
+      {
+        "key": "223",
+        "name": "223"
+      },
+      {
+        "key": "223 Active Tourer",
+        "name": "223 Active Tourer"
+      },
+      {
+        "key": "223 Gran Coup\u00e9",
+        "name": "223 Gran Coup\u00e9"
+      },
+      {
+        "key": "225",
+        "name": "225"
+      },
+      {
+        "key": "225 Active Tourer",
+        "name": "225 Active Tourer"
+      },
+      {
+        "key": "228",
+        "name": "228"
+      },
+      {
+        "key": "230",
+        "name": "230"
+      },
+      {
+        "key": "230 Active Tourer",
+        "name": "230 Active Tourer"
+      }
+    ]
+  },
+  {
+    "make": "BMW",
+    "key": "3__BMW_ER_SERIES",
+    "name": "3 Series",
+    "url": "https://services.mobile.de/refdata/classes/Car/makes/BMW/modelgroups/3__BMW_ER_SERIES/models",
+    "status": 200,
+    "models": [
+      {
+        "key": "315",
+        "name": "315"
+      },
+      {
+        "key": "316",
+        "name": "316"
+      },
+      {
+        "key": "318",
+        "name": "318"
+      },
+      {
+        "key": "318 Gran Turismo",
+        "name": "318 Gran Turismo"
+      },
+      {
+        "key": "320",
+        "name": "320"
+      },
+      {
+        "key": "320 Gran Turismo",
+        "name": "320 Gran Turismo"
+      },
+      {
+        "key": "323",
+        "name": "323"
+      },
+      {
+        "key": "324",
+        "name": "324"
+      },
+      {
+        "key": "325",
+        "name": "325"
+      },
+      {
+        "key": "325 Gran Turismo",
+        "name": "325 Gran Turismo"
+      },
+      {
+        "key": "328",
+        "name": "328"
+      },
+      {
+        "key": "328 Gran Turismo",
+        "name": "328 Gran Turismo"
+      },
+      {
+        "key": "330",
+        "name": "330"
+      },
+      {
+        "key": "330 Gran Turismo",
+        "name": "330 Gran Turismo"
+      },
+      {
+        "key": "335",
+        "name": "335"
+      },
+      {
+        "key": "335 Gran Turismo",
+        "name": "335 Gran Turismo"
+      },
+      {
+        "key": "340",
+        "name": "340"
+      },
+      {
+        "key": "340 Gran Turismo",
+        "name": "340 Gran Turismo"
+      },
+      {
+        "key": "ActiveHybrid 3",
+        "name": "ActiveHybrid 3"
+      }
+    ]
+  },
+  {
+    "make": "BMW",
+    "key": "4__BMW_ER_SERIES",
+    "name": "4 Series",
+    "url": "https://services.mobile.de/refdata/classes/Car/makes/BMW/modelgroups/4__BMW_ER_SERIES/models",
+    "status": 200,
+    "models": [
+      {
+        "key": "418",
+        "name": "418"
+      },
+      {
+        "key": "418 Gran Coupe",
+        "name": "418 Gran Coup\u00e9"
+      },
+      {
+        "key": "420",
+        "name": "420"
+      },
+      {
+        "key": "420 Gran Coupe",
+        "name": "420 Gran Coup\u00e9"
+      },
+      {
+        "key": "425",
+        "name": "425"
+      },
+      {
+        "key": "425 Gran Coupe",
+        "name": "425 Gran Coup\u00e9"
+      },
+      {
+        "key": "428",
+        "name": "428"
+      },
+      {
+        "key": "428 Gran Coupe",
+        "name": "428 Gran Coup\u00e9"
+      },
+      {
+        "key": "430",
+        "name": "430"
+      },
+      {
+        "key": "430 Gran Coupe",
+        "name": "430 Gran Coup\u00e9"
+      },
+      {
+        "key": "435",
+        "name": "435"
+      },
+      {
+        "key": "435 Gran Coupe",
+        "name": "435 Gran Coup\u00e9"
+      },
+      {
+        "key": "440",
+        "name": "440"
+      },
+      {
+        "key": "440 Gran Coupe",
+        "name": "440 Gran Coup\u00e9"
+      }
+    ]
+  },
+  {
+    "make": "BMW",
+    "key": "5__BMW_ER_SERIES",
+    "name": "5 Series",
+    "url": "https://services.mobile.de/refdata/classes/Car/makes/BMW/modelgroups/5__BMW_ER_SERIES/models",
+    "status": 200,
+    "models": [
+      {
+        "key": "518",
+        "name": "518"
+      },
+      {
+        "key": "520",
+        "name": "520"
+      },
+      {
+        "key": "520 Gran Turismo",
+        "name": "520 Gran Turismo"
+      },
+      {
+        "key": "523",
+        "name": "523"
+      },
+      {
+        "key": "524",
+        "name": "524"
+      },
+      {
+        "key": "525",
+        "name": "525"
+      },
+      {
+        "key": "528",
+        "name": "528"
+      },
+      {
+        "key": "530",
+        "name": "530"
+      },
+      {
+        "key": "530 Gran Turismo",
+        "name": "530 Gran Turismo"
+      },
+      {
+        "key": "535",
+        "name": "535"
+      },
+      {
+        "key": "535 Gran Turismo",
+        "name": "535 Gran Turismo"
+      },
+      {
+        "key": "540",
+        "name": "540"
+      },
+      {
+        "key": "545",
+        "name": "545"
+      },
+      {
+        "key": "550",
+        "name": "550"
+      },
+      {
+        "key": "550 Gran Turismo",
+        "name": "550 Gran Turismo"
+      },
+      {
+        "key": "ActiveHybrid 5",
+        "name": "ActiveHybrid 5"
+      }
+    ]
+  },
+  {
+    "make": "BMW",
+    "key": "6__BMW_ER_SERIES",
+    "name": "6 Series",
+    "url": "https://services.mobile.de/refdata/classes/Car/makes/BMW/modelgroups/6__BMW_ER_SERIES/models",
+    "status": 200,
+    "models": [
+      {
+        "key": "620 Gran Turismo",
+        "name": "620 Gran Turismo"
+      },
+      {
+        "key": "628",
+        "name": "628"
+      },
+      {
+        "key": "630",
+        "name": "630"
+      },
+      {
+        "key": "630 Gran Turismo",
+        "name": "630 Gran Turismo"
+      },
+      {
+        "key": "633",
+        "name": "633"
+      },
+      {
+        "key": "635",
+        "name": "635"
+      },
+      {
+        "key": "640",
+        "name": "640"
+      },
+      {
+        "key": "640 Gran Coupe",
+        "name": "640 Gran Coup\u00e9"
+      },
+      {
+        "key": "640 Gran Turismo",
+        "name": "640 Gran Turismo"
+      },
+      {
+        "key": "645",
+        "name": "645"
+      },
+      {
+        "key": "650",
+        "name": "650"
+      },
+      {
+        "key": "650 Gran Coupe",
+        "name": "650 Gran Coup\u00e9"
+      }
+    ]
+  },
+  {
+    "make": "BMW",
+    "key": "7__BMW_ER_SERIES",
+    "name": "7 Series",
+    "url": "https://services.mobile.de/refdata/classes/Car/makes/BMW/modelgroups/7__BMW_ER_SERIES/models",
+    "status": 200,
+    "models": [
+      {
+        "key": "725",
+        "name": "725"
+      },
+      {
+        "key": "728",
+        "name": "728"
+      },
+      {
+        "key": "730",
+        "name": "730"
+      },
+      {
+        "key": "732",
+        "name": "732"
+      },
+      {
+        "key": "735",
+        "name": "735"
+      },
+      {
+        "key": "740",
+        "name": "740"
+      },
+      {
+        "key": "745",
+        "name": "745"
+      },
+      {
+        "key": "750",
+        "name": "750"
+      },
+      {
+        "key": "760",
+        "name": "760"
+      },
+      {
+        "key": "ActiveHybrid 7",
+        "name": "ActiveHybrid 7"
+      }
+    ]
+  },
+  {
+    "make": "BMW",
+    "key": "M__BMW_MODELS",
+    "name": "M Models",
+    "url": "https://services.mobile.de/refdata/classes/Car/makes/BMW/modelgroups/M__BMW_MODELS/models",
+    "status": 200,
+    "models": [
+      {
+        "key": "M135",
+        "name": "M135"
+      },
+      {
+        "key": "M140i",
+        "name": "M140i"
+      },
+      {
+        "key": "M2",
+        "name": "M2"
+      },
+      {
+        "key": "M235i",
+        "name": "M235"
+      },
+      {
+        "key": "M240i",
+        "name": "M240i"
+      },
+      {
+        "key": "M3",
+        "name": "M3"
+      },
+      {
+        "key": "M340d",
+        "name": "M340d"
+      },
+      {
+        "key": "M340i",
+        "name": "M340i"
+      },
+      {
+        "key": "M4",
+        "name": "M4"
+      },
+      {
+        "key": "M440",
+        "name": "M440"
+      },
+      {
+        "key": "M5",
+        "name": "M5"
+      },
+      {
+        "key": "M550",
+        "name": "M550"
+      },
+      {
+        "key": "M6",
+        "name": "M6"
+      },
+      {
+        "key": "M760",
+        "name": "M760"
+      },
+      {
+        "key": "M8",
+        "name": "M8"
+      },
+      {
+        "key": "M850",
+        "name": "M850"
+      }
+    ]
+  },
+  {
+    "make": "BMW",
+    "key": "X__BMW_SERIES",
+    "name": "X Series",
+    "url": "https://services.mobile.de/refdata/classes/Car/makes/BMW/modelgroups/X__BMW_SERIES/models",
+    "status": 200,
+    "models": [
+      {
+        "key": "ActiveHybrid X6",
+        "name": "ActiveHybrid X6"
+      },
+      {
+        "key": "X1",
+        "name": "X1"
+      },
+      {
+        "key": "X2",
+        "name": "X2"
+      },
+      {
+        "key": "X3",
+        "name": "X3"
+      },
+      {
+        "key": "X3 M",
+        "name": "X3 M"
+      },
+      {
+        "key": "X3 M40",
+        "name": "X3 M40"
+      },
+      {
+        "key": "X3 M50",
+        "name": "X3 M50"
+      },
+      {
+        "key": "X4",
+        "name": "X4"
+      },
+      {
+        "key": "X4 M",
+        "name": "X4 M"
+      },
+      {
+        "key": "X4 M40",
+        "name": "X4 M40"
+      },
+      {
+        "key": "X5",
+        "name": "X5"
+      },
+      {
+        "key": "X5 M",
+        "name": "X5 M"
+      },
+      {
+        "key": "X5 M50",
+        "name": "X5 M50"
+      },
+      {
+        "key": "X5 M60",
+        "name": "X5 M60"
+      },
+      {
+        "key": "X6",
+        "name": "X6"
+      },
+      {
+        "key": "X6 M",
+        "name": "X6 M"
+      },
+      {
+        "key": "X6 M50",
+        "name": "X6 M50"
+      },
+      {
+        "key": "X6 M60",
+        "name": "X6 M60"
+      },
+      {
+        "key": "X7",
+        "name": "X7"
+      },
+      {
+        "key": "X7 M",
+        "name": "X7 M50"
+      },
+      {
+        "key": "X7 M60",
+        "name": "X7 M60"
+      },
+      {
+        "key": "XM",
+        "name": "XM"
+      }
+    ]
+  },
+  {
+    "make": "BMW",
+    "key": "Z__BMW_SERIES",
+    "name": "Z Series",
+    "url": "https://services.mobile.de/refdata/classes/Car/makes/BMW/modelgroups/Z__BMW_SERIES/models",
+    "status": 200,
+    "models": [
+      {
+        "key": "Z1",
+        "name": "Z1"
+      },
+      {
+        "key": "Z3",
+        "name": "Z3"
+      },
+      {
+        "key": "Z3 M",
+        "name": "Z3 M"
+      },
+      {
+        "key": "Z4",
+        "name": "Z4"
+      },
+      {
+        "key": "Z4 M",
+        "name": "Z4 M"
+      },
+      {
+        "key": "Z4 M40i",
+        "name": "Z4 M40"
+      },
+      {
+        "key": "Z8",
+        "name": "Z8"
+      }
+    ]
+  },
+  {
+    "make": "DFM",
+    "key": "Forthing",
+    "name": "Forthing",
+    "url": "https://services.mobile.de/refdata/classes/Car/makes/DFM/modelgroups/Forthing/models",
+    "status": 200,
+    "models": [
+      {
+        "key": "Forthing 3",
+        "name": "Forthing 3"
+      },
+      {
+        "key": "Forthing 4",
+        "name": "Forthing 4"
+      },
+      {
+        "key": "Forthing 5",
+        "name": "Forthing 5"
+      },
+      {
+        "key": "Forthing 7",
+        "name": "Forthing 7"
+      },
+      {
+        "key": "Forthing 9",
+        "name": "Forthing 9"
+      }
+    ]
+  },
+  {
+    "make": "DFSK",
+    "key": "Fengon",
+    "name": "Fengon",
+    "url": "https://services.mobile.de/refdata/classes/Car/makes/DFSK/modelgroups/Fengon/models",
+    "status": 200,
+    "models": [
+      {
+        "key": "Fengo",
+        "name": "Fengon"
+      },
+      {
+        "key": "Fengon 5",
+        "name": "Fengon 5"
+      },
+      {
+        "key": "Fengon 500",
+        "name": "Fengon 500"
+      },
+      {
+        "key": "Fengon 580",
+        "name": "Fengon 580"
+      },
+      {
+        "key": "Fengon 600",
+        "name": "Fengon 600"
+      },
+      {
+        "key": "Fengon 7",
+        "name": "Fengon 7"
+      }
+    ]
+  },
+  {
+    "make": "FORD",
+    "key": "Tourneo_All",
+    "name": "Tourneo (alle)",
+    "url": "https://services.mobile.de/refdata/classes/Car/makes/FORD/modelgroups/Tourneo_All/models",
+    "status": 200,
+    "models": [
+      {
+        "key": "Tourneo",
+        "name": "Tourneo"
+      },
+      {
+        "key": "Tourneo Connect",
+        "name": "Tourneo Connect"
+      },
+      {
+        "key": "Tourneo Courier",
+        "name": "Tourneo Courier"
+      },
+      {
+        "key": "Tourneo Custom",
+        "name": "Tourneo Custom"
+      }
+    ]
+  },
+  {
+    "make": "FORD",
+    "key": "Transit",
+    "name": "Transit",
+    "url": "https://services.mobile.de/refdata/classes/Car/makes/FORD/modelgroups/Transit/models",
+    "status": 200,
+    "models": [
+      {
+        "key": "Transit",
+        "name": "Transit"
+      },
+      {
+        "key": "Transit Connect",
+        "name": "Transit Connect"
+      },
+      {
+        "key": "Transit Courier",
+        "name": "Transit Courier"
+      },
+      {
+        "key": "Transit Custom",
+        "name": "Transit Custom"
+      }
+    ]
+  },
+  {
+    "make": "LEXUS",
+    "key": "ES__LEXUS_SERIES",
+    "name": "ES Series",
+    "url": "https://services.mobile.de/refdata/classes/Car/makes/LEXUS/modelgroups/ES__LEXUS_SERIES/models",
+    "status": 200,
+    "models": [
+      {
+        "key": "ES 300",
+        "name": "ES 300"
+      },
+      {
+        "key": "ES 330",
+        "name": "ES 330"
+      },
+      {
+        "key": "ES 350",
+        "name": "ES 350"
+      }
+    ]
+  },
+  {
+    "make": "LEXUS",
+    "key": "GS__LEXUS_SERIES",
+    "name": "GS Series",
+    "url": "https://services.mobile.de/refdata/classes/Car/makes/LEXUS/modelgroups/GS__LEXUS_SERIES/models",
+    "status": 200,
+    "models": [
+      {
+        "key": "GS 250",
+        "name": "GS 250"
+      },
+      {
+        "key": "GS 300",
+        "name": "GS 300"
+      },
+      {
+        "key": "GS 350",
+        "name": "GS 350"
+      },
+      {
+        "key": "GS 430",
+        "name": "GS 430"
+      },
+      {
+        "key": "GS 450",
+        "name": "GS 450"
+      },
+      {
+        "key": "GS 460",
+        "name": "GS 460"
+      },
+      {
+        "key": "GS F",
+        "name": "GS F"
+      }
+    ]
+  },
+  {
+    "make": "LEXUS",
+    "key": "GX Series",
+    "name": "GX Series",
+    "url": "https://services.mobile.de/refdata/classes/Car/makes/LEXUS/modelgroups/GX%20Series/models",
+    "status": 200,
+    "models": [
+      {
+        "key": "GX 460",
+        "name": "GX 460"
+      },
+      {
+        "key": "GX 470",
+        "name": "GX 470"
+      },
+      {
+        "key": "GX 550",
+        "name": "GX 550"
+      }
+    ]
+  },
+  {
+    "make": "LEXUS",
+    "key": "IS__LEXUS_SERIES",
+    "name": "IS Series",
+    "url": "https://services.mobile.de/refdata/classes/Car/makes/LEXUS/modelgroups/IS__LEXUS_SERIES/models",
+    "status": 200,
+    "models": [
+      {
+        "key": "IS 200",
+        "name": "IS 200"
+      },
+      {
+        "key": "IS 220",
+        "name": "IS 220"
+      },
+      {
+        "key": "IS 250",
+        "name": "IS 250"
+      },
+      {
+        "key": "IS 300",
+        "name": "IS 300"
+      },
+      {
+        "key": "IS 350",
+        "name": "IS 350"
+      },
+      {
+        "key": "IS-F",
+        "name": "IS-F"
+      }
+    ]
+  },
+  {
+    "make": "LEXUS",
+    "key": "LS__LEXUS_SERIES",
+    "name": "LS Series",
+    "url": "https://services.mobile.de/refdata/classes/Car/makes/LEXUS/modelgroups/LS__LEXUS_SERIES/models",
+    "status": 200,
+    "models": [
+      {
+        "key": "LS 400",
+        "name": "LS 400"
+      },
+      {
+        "key": "LS 430",
+        "name": "LS 430"
+      },
+      {
+        "key": "LS 460",
+        "name": "LS 460"
+      },
+      {
+        "key": "LS 500",
+        "name": "LS 500"
+      },
+      {
+        "key": "LS 600",
+        "name": "LS 600"
+      }
+    ]
+  },
+  {
+    "make": "LEXUS",
+    "key": "LX__LEXUS_SERIES",
+    "name": "LX Series",
+    "url": "https://services.mobile.de/refdata/classes/Car/makes/LEXUS/modelgroups/LX__LEXUS_SERIES/models",
+    "status": 200,
+    "models": [
+      {
+        "key": "LX 450",
+        "name": "LX 450"
+      },
+      {
+        "key": "LX 470",
+        "name": "LX 470"
+      },
+      {
+        "key": "LX 500",
+        "name": "LX 500"
+      },
+      {
+        "key": "LX 570",
+        "name": "LX 570"
+      },
+      {
+        "key": "LX 600",
+        "name": "LX 600"
+      },
+      {
+        "key": "LX 700",
+        "name": "LX 700"
+      }
+    ]
+  },
+  {
+    "make": "LEXUS",
+    "key": "NX__LEXUS_SERIES",
+    "name": "NX Series",
+    "url": "https://services.mobile.de/refdata/classes/Car/makes/LEXUS/modelgroups/NX__LEXUS_SERIES/models",
+    "status": 200,
+    "models": [
+      {
+        "key": "NX 200",
+        "name": "NX 200"
+      },
+      {
+        "key": "NX 300",
+        "name": "NX 300"
+      },
+      {
+        "key": "NX 350",
+        "name": "NX 350h"
+      },
+      {
+        "key": "NX 450",
+        "name": "NX 450h"
+      }
+    ]
+  },
+  {
+    "make": "LEXUS",
+    "key": "RC__LEXUS_SERIES",
+    "name": "RC Series",
+    "url": "https://services.mobile.de/refdata/classes/Car/makes/LEXUS/modelgroups/RC__LEXUS_SERIES/models",
+    "status": 200,
+    "models": [
+      {
+        "key": "RC 200",
+        "name": "RC 200"
+      },
+      {
+        "key": "RC 300",
+        "name": "RC 300"
+      },
+      {
+        "key": "RC 350",
+        "name": "RC 350"
+      },
+      {
+        "key": "RC F",
+        "name": "RC F"
+      }
+    ]
+  },
+  {
+    "make": "LEXUS",
+    "key": "RX__LEXUS_SERIES",
+    "name": "RX Series",
+    "url": "https://services.mobile.de/refdata/classes/Car/makes/LEXUS/modelgroups/RX__LEXUS_SERIES/models",
+    "status": 200,
+    "models": [
+      {
+        "key": "RX 200",
+        "name": "RX 200"
+      },
+      {
+        "key": "RX 300",
+        "name": "RX 300"
+      },
+      {
+        "key": "RX 330",
+        "name": "RX 330"
+      },
+      {
+        "key": "RX 350",
+        "name": "RX 350"
+      },
+      {
+        "key": "RX 400",
+        "name": "RX 400"
+      },
+      {
+        "key": "RX 450",
+        "name": "RX 450"
+      },
+      {
+        "key": "RX 500",
+        "name": "RX 500"
+      }
+    ]
+  },
+  {
+    "make": "MERCEDES-BENZ",
+    "key": "A-Klasse",
+    "name": "A-Class",
+    "url": "https://services.mobile.de/refdata/classes/Car/makes/MERCEDES-BENZ/modelgroups/A-Klasse/models",
+    "status": 200,
+    "models": [
+      {
+        "key": "A 140",
+        "name": "A 140"
+      },
+      {
+        "key": "A 150",
+        "name": "A 150"
+      },
+      {
+        "key": "A 160",
+        "name": "A 160"
+      },
+      {
+        "key": "A 170",
+        "name": "A 170"
+      },
+      {
+        "key": "A 180",
+        "name": "A 180"
+      },
+      {
+        "key": "A 190",
+        "name": "A 190"
+      },
+      {
+        "key": "A 200",
+        "name": "A 200"
+      },
+      {
+        "key": "A 210",
+        "name": "A 210"
+      },
+      {
+        "key": "A 220",
+        "name": "A 220"
+      },
+      {
+        "key": "A 250",
+        "name": "A 250"
+      },
+      {
+        "key": "A 35 AMG",
+        "name": "A 35 AMG"
+      },
+      {
+        "key": "A 45 AMG",
+        "name": "A 45 AMG"
+      }
+    ]
+  },
+  {
+    "make": "MERCEDES-BENZ",
+    "key": "B-Klasse",
+    "name": "B-Class",
+    "url": "https://services.mobile.de/refdata/classes/Car/makes/MERCEDES-BENZ/modelgroups/B-Klasse/models",
+    "status": 200,
+    "models": [
+      {
+        "key": "B 150",
+        "name": "B 150"
+      },
+      {
+        "key": "B 160",
+        "name": "B 160"
+      },
+      {
+        "key": "B 170",
+        "name": "B 170"
+      },
+      {
+        "key": "B 180",
+        "name": "B 180"
+      },
+      {
+        "key": "B 200",
+        "name": "B 200"
+      },
+      {
+        "key": "B 220",
+        "name": "B 220"
+      },
+      {
+        "key": "B 250",
+        "name": "B 250"
+      },
+      {
+        "key": "B Electric Drive",
+        "name": "B Electric Drive"
+      }
+    ]
+  },
+  {
+    "make": "MERCEDES-BENZ",
+    "key": "C-Klasse",
+    "name": "C-Class",
+    "url": "https://services.mobile.de/refdata/classes/Car/makes/MERCEDES-BENZ/modelgroups/C-Klasse/models",
+    "status": 200,
+    "models": [
+      {
+        "key": "C 160",
+        "name": "C 160"
+      },
+      {
+        "key": "C 180",
+        "name": "C 180"
+      },
+      {
+        "key": "C 200",
+        "name": "C 200"
+      },
+      {
+        "key": "C 220",
+        "name": "C 220"
+      },
+      {
+        "key": "C 230",
+        "name": "C 230"
+      },
+      {
+        "key": "C 240",
+        "name": "C 240"
+      },
+      {
+        "key": "C 250",
+        "name": "C 250"
+      },
+      {
+        "key": "C 270",
+        "name": "C 270"
+      },
+      {
+        "key": "C 280",
+        "name": "C 280"
+      },
+      {
+        "key": "C 30 AMG",
+        "name": "C 30 AMG"
+      },
+      {
+        "key": "C 300",
+        "name": "C 300"
+      },
+      {
+        "key": "C 32 AMG",
+        "name": "C 32 AMG"
+      },
+      {
+        "key": "C 320",
+        "name": "C 320"
+      },
+      {
+        "key": "C 350",
+        "name": "C 350"
+      },
+      {
+        "key": "C 36 AMG",
+        "name": "C 36 AMG"
+      },
+      {
+        "key": "C 400",
+        "name": "C 400"
+      },
+      {
+        "key": "C 43 AMG",
+        "name": "C 43 AMG"
+      },
+      {
+        "key": "C 450 AMG",
+        "name": "C 450 AMG"
+      },
+      {
+        "key": "C 55 AMG",
+        "name": "C 55 AMG"
+      },
+      {
+        "key": "C 63 AMG",
+        "name": "C 63 AMG"
+      }
+    ]
+  },
+  {
+    "make": "MERCEDES-BENZ",
+    "key": "CE-Klasse",
+    "name": "CE-Class",
+    "url": "https://services.mobile.de/refdata/classes/Car/makes/MERCEDES-BENZ/modelgroups/CE-Klasse/models",
+    "status": 200,
+    "models": [
+      {
+        "key": "CE 200",
+        "name": "CE 200"
+      },
+      {
+        "key": "CE 220",
+        "name": "CE 220"
+      },
+      {
+        "key": "CE 230",
+        "name": "CE 230"
+      },
+      {
+        "key": "CE 280",
+        "name": "CE 280"
+      },
+      {
+        "key": "CE 300",
+        "name": "CE 300"
+      },
+      {
+        "key": "CE 320",
+        "name": "CE 320"
+      }
+    ]
+  },
+  {
+    "make": "MERCEDES-BENZ",
+    "key": "CL-Klasse",
+    "name": "CL-Class",
+    "url": "https://services.mobile.de/refdata/classes/Car/makes/MERCEDES-BENZ/modelgroups/CL-Klasse/models",
+    "status": 200,
+    "models": [
+      {
+        "key": "CL 160",
+        "name": "CL 160"
+      },
+      {
+        "key": "CL 180",
+        "name": "CL 180"
+      },
+      {
+        "key": "CL 200",
+        "name": "CL 200"
+      },
+      {
+        "key": "CL 220",
+        "name": "CL 220"
+      },
+      {
+        "key": "CL 230",
+        "name": "CL 230"
+      },
+      {
+        "key": "CL 320",
+        "name": "CL 320"
+      },
+      {
+        "key": "CL 420",
+        "name": "CL 420"
+      },
+      {
+        "key": "CL 500",
+        "name": "CL 500"
+      },
+      {
+        "key": "CL 55 AMG",
+        "name": "CL 55 AMG"
+      },
+      {
+        "key": "CL 600",
+        "name": "CL 600"
+      },
+      {
+        "key": "CL 63 AMG",
+        "name": "CL 63 AMG"
+      },
+      {
+        "key": "CL 65 AMG",
+        "name": "CL 65 AMG"
+      }
+    ]
+  },
+  {
+    "make": "MERCEDES-BENZ",
+    "key": "CLA-Klasse",
+    "name": "CLA-Class",
+    "url": "https://services.mobile.de/refdata/classes/Car/makes/MERCEDES-BENZ/modelgroups/CLA-Klasse/models",
+    "status": 200,
+    "models": [
+      {
+        "key": "CLA 180",
+        "name": "CLA 180"
+      },
+      {
+        "key": "CLA 180 Shooting Brake",
+        "name": "CLA 180 Shooting Brake"
+      },
+      {
+        "key": "CLA 200",
+        "name": "CLA 200"
+      },
+      {
+        "key": "CLA 200 Shooting Brake",
+        "name": "CLA 200 Shooting Brake"
+      },
+      {
+        "key": "CLA 220",
+        "name": "CLA 220"
+      },
+      {
+        "key": "CLA 220 Shooting Brake",
+        "name": "CLA 220 Shooting Brake"
+      },
+      {
+        "key": "CLA 250",
+        "name": "CLA 250"
+      },
+      {
+        "key": "CLA 250 Shooting Brake",
+        "name": "CLA 250 Shooting Brake"
+      },
+      {
+        "key": "CLA 35 AMG",
+        "name": "CLA 35 AMG"
+      },
+      {
+        "key": "CLA 35 AMG Shooting Brake",
+        "name": "CLA 35 AMG Shooting Brake"
+      },
+      {
+        "key": "CLA 350",
+        "name": "CLA 350"
+      },
+      {
+        "key": "CLA 350 Shooting Brake",
+        "name": "CLA 350 Shooting Brake"
+      },
+      {
+        "key": "CLA 45 AMG",
+        "name": "CLA 45 AMG"
+      },
+      {
+        "key": "CLA 45 AMG Shooting Brake",
+        "name": "CLA 45 AMG Shooting Brake"
+      },
+      {
+        "key": "CLA Shooting Brake",
+        "name": "CLA Shooting Brake"
+      }
+    ]
+  },
+  {
+    "make": "MERCEDES-BENZ",
+    "key": "CLC-Klasse",
+    "name": "CLC-Class",
+    "url": "https://services.mobile.de/refdata/classes/Car/makes/MERCEDES-BENZ/modelgroups/CLC-Klasse/models",
+    "status": 200,
+    "models": [
+      {
+        "key": "CLC 160",
+        "name": "CLC 160"
+      },
+      {
+        "key": "CLC 180",
+        "name": "CLC 180"
+      },
+      {
+        "key": "CLC 200",
+        "name": "CLC 200"
+      },
+      {
+        "key": "CLC 220",
+        "name": "CLC 220"
+      },
+      {
+        "key": "CLC 230",
+        "name": "CLC 230"
+      },
+      {
+        "key": "CLC 250",
+        "name": "CLC 250"
+      },
+      {
+        "key": "CLC 350",
+        "name": "CLC 350"
+      }
+    ]
+  },
+  {
+    "make": "MERCEDES-BENZ",
+    "key": "CLE-Klasse",
+    "name": "CLE-Class",
+    "url": "https://services.mobile.de/refdata/classes/Car/makes/MERCEDES-BENZ/modelgroups/CLE-Klasse/models",
+    "status": 200,
+    "models": [
+      {
+        "key": "CLE 180",
+        "name": "CLE 180"
+      },
+      {
+        "key": "CLE 200",
+        "name": "CLE 200"
+      },
+      {
+        "key": "CLE 220",
+        "name": "CLE 220"
+      },
+      {
+        "key": "CLE 300",
+        "name": "CLE 300"
+      },
+      {
+        "key": "CLE 450",
+        "name": "CLE 450"
+      },
+      {
+        "key": "CLE 53 AMG",
+        "name": "CLE 53 AMG"
+      }
+    ]
+  },
+  {
+    "make": "MERCEDES-BENZ",
+    "key": "CLK-Klasse",
+    "name": "CLK-Class",
+    "url": "https://services.mobile.de/refdata/classes/Car/makes/MERCEDES-BENZ/modelgroups/CLK-Klasse/models",
+    "status": 200,
+    "models": [
+      {
+        "key": "CLK 200",
+        "name": "CLK 200"
+      },
+      {
+        "key": "CLK 220",
+        "name": "CLK 220"
+      },
+      {
+        "key": "CLK 230",
+        "name": "CLK 230"
+      },
+      {
+        "key": "CLK 240",
+        "name": "CLK 240"
+      },
+      {
+        "key": "CLK 270",
+        "name": "CLK 270"
+      },
+      {
+        "key": "CLK 280",
+        "name": "CLK 280"
+      },
+      {
+        "key": "CLK 320",
+        "name": "CLK 320"
+      },
+      {
+        "key": "CLK 350",
+        "name": "CLK 350"
+      },
+      {
+        "key": "CLK 430",
+        "name": "CLK 430"
+      },
+      {
+        "key": "CLK 500",
+        "name": "CLK 500"
+      },
+      {
+        "key": "CLK 55 AMG",
+        "name": "CLK 55 AMG"
+      },
+      {
+        "key": "CLK 63 AMG",
+        "name": "CLK 63 AMG"
+      }
+    ]
+  },
+  {
+    "make": "MERCEDES-BENZ",
+    "key": "CLS-Klasse",
+    "name": "CLS-Class",
+    "url": "https://services.mobile.de/refdata/classes/Car/makes/MERCEDES-BENZ/modelgroups/CLS-Klasse/models",
+    "status": 200,
+    "models": [
+      {
+        "key": "CLS 220",
+        "name": "CLS 220"
+      },
+      {
+        "key": "CLS 220 Shooting Brake",
+        "name": "CLS 220 Shooting Brake"
+      },
+      {
+        "key": "CLS 250",
+        "name": "CLS 250"
+      },
+      {
+        "key": "CLS 250 Shooting Brake",
+        "name": "CLS 250 Shooting Brake"
+      },
+      {
+        "key": "CLS 280",
+        "name": "CLS 280"
+      },
+      {
+        "key": "CLS 300",
+        "name": "CLS 300"
+      },
+      {
+        "key": "CLS 320",
+        "name": "CLS 320"
+      },
+      {
+        "key": "CLS 350",
+        "name": "CLS 350"
+      },
+      {
+        "key": "CLS 350 Shooting Brake",
+        "name": "CLS 350 Shooting Brake"
+      },
+      {
+        "key": "CLS 400",
+        "name": "CLS 400"
+      },
+      {
+        "key": "CLS 400 Shooting Brake",
+        "name": "CLS 400 Shooting Brake"
+      },
+      {
+        "key": "CLS 450",
+        "name": "CLS 450"
+      },
+      {
+        "key": "CLS 500",
+        "name": "CLS 500"
+      },
+      {
+        "key": "CLS 500 Shooting Brake",
+        "name": "CLS 500 Shooting Brake"
+      },
+      {
+        "key": "CLS 53 AMG",
+        "name": "CLS 53 AMG"
+      },
+      {
+        "key": "CLS 55 AMG",
+        "name": "CLS 55 AMG"
+      },
+      {
+        "key": "CLS 63 AMG",
+        "name": "CLS 63 AMG"
+      },
+      {
+        "key": "CLS 63 AMG Shooting Brake",
+        "name": "CLS 63 AMG Shooting Brake"
+      },
+      {
+        "key": "CLS Shooting Brake",
+        "name": "CLS Shooting Brake"
+      }
+    ]
+  },
+  {
+    "make": "MERCEDES-BENZ",
+    "key": "E-Klasse",
+    "name": "E-Class",
+    "url": "https://services.mobile.de/refdata/classes/Car/makes/MERCEDES-BENZ/modelgroups/E-Klasse/models",
+    "status": 200,
+    "models": [
+      {
+        "key": "E 200",
+        "name": "E 200"
+      },
+      {
+        "key": "E 220",
+        "name": "E 220"
+      },
+      {
+        "key": "E 230",
+        "name": "E 230"
+      },
+      {
+        "key": "E 240",
+        "name": "E 240"
+      },
+      {
+        "key": "E 250",
+        "name": "E 250"
+      },
+      {
+        "key": "E 260",
+        "name": "E 260"
+      },
+      {
+        "key": "E 270",
+        "name": "E 270"
+      },
+      {
+        "key": "E 280",
+        "name": "E 280"
+      },
+      {
+        "key": "E 290",
+        "name": "E 290"
+      },
+      {
+        "key": "E 300",
+        "name": "E 300"
+      },
+      {
+        "key": "E 320",
+        "name": "E 320"
+      },
+      {
+        "key": "E 350",
+        "name": "E 350"
+      },
+      {
+        "key": "E 36 AMG",
+        "name": "E 36 AMG"
+      },
+      {
+        "key": "E 400",
+        "name": "E 400"
+      },
+      {
+        "key": "E 420",
+        "name": "E 420"
+      },
+      {
+        "key": "E 43 AMG",
+        "name": "E 43 AMG"
+      },
+      {
+        "key": "E 430",
+        "name": "E 430"
+      },
+      {
+        "key": "E 450",
+        "name": "E 450"
+      },
+      {
+        "key": "E 50",
+        "name": "E 50"
+      },
+      {
+        "key": "E 500",
+        "name": "E 500"
+      },
+      {
+        "key": "E 53 AMG",
+        "name": "E 53 AMG"
+      },
+      {
+        "key": "E 55 AMG",
+        "name": "E 55 AMG"
+      },
+      {
+        "key": "E 60 AMG",
+        "name": "E 60 AMG"
+      },
+      {
+        "key": "E 63 AMG",
+        "name": "E 63 AMG"
+      }
+    ]
+  },
+  {
+    "make": "MERCEDES-BENZ",
+    "key": "G-Klasse",
+    "name": "G-Class",
+    "url": "https://services.mobile.de/refdata/classes/Car/makes/MERCEDES-BENZ/modelgroups/G-Klasse/models",
+    "status": 200,
+    "models": [
+      {
+        "key": "G 230",
+        "name": "G 230"
+      },
+      {
+        "key": "G 240",
+        "name": "G 240"
+      },
+      {
+        "key": "G 250",
+        "name": "G 250"
+      },
+      {
+        "key": "G 270",
+        "name": "G 270"
+      },
+      {
+        "key": "G 280",
+        "name": "G 280"
+      },
+      {
+        "key": "G 290",
+        "name": "G 290"
+      },
+      {
+        "key": "G 300",
+        "name": "G 300"
+      },
+      {
+        "key": "G 320",
+        "name": "G 320"
+      },
+      {
+        "key": "G 350",
+        "name": "G 350"
+      },
+      {
+        "key": "G 400",
+        "name": "G 400"
+      },
+      {
+        "key": "G 450",
+        "name": "G 450"
+      },
+      {
+        "key": "G 500",
+        "name": "G 500"
+      },
+      {
+        "key": "G 55 AMG",
+        "name": "G 55 AMG"
+      },
+      {
+        "key": "G 580",
+        "name": "G 580"
+      },
+      {
+        "key": "G 63 AMG",
+        "name": "G 63 AMG"
+      },
+      {
+        "key": "G 65 AMG",
+        "name": "G 65 AMG"
+      }
+    ]
+  },
+  {
+    "make": "MERCEDES-BENZ",
+    "key": "GL-Klasse",
+    "name": "GL-Class",
+    "url": "https://services.mobile.de/refdata/classes/Car/makes/MERCEDES-BENZ/modelgroups/GL-Klasse/models",
+    "status": 200,
+    "models": [
+      {
+        "key": "GL 320",
+        "name": "GL 320"
+      },
+      {
+        "key": "GL 350",
+        "name": "GL 350"
+      },
+      {
+        "key": "GL 400",
+        "name": "GL 400"
+      },
+      {
+        "key": "GL 420",
+        "name": "GL 420"
+      },
+      {
+        "key": "GL 450",
+        "name": "GL 450"
+      },
+      {
+        "key": "GL 500",
+        "name": "GL 500"
+      },
+      {
+        "key": "GL 55 AMG",
+        "name": "GL 55 AMG"
+      },
+      {
+        "key": "GL 63 AMG",
+        "name": "GL 63 AMG"
+      }
+    ]
+  },
+  {
+    "make": "MERCEDES-BENZ",
+    "key": "GLA-Klasse",
+    "name": "GLA-Class",
+    "url": "https://services.mobile.de/refdata/classes/Car/makes/MERCEDES-BENZ/modelgroups/GLA-Klasse/models",
+    "status": 200,
+    "models": [
+      {
+        "key": "GLA 180",
+        "name": "GLA 180"
+      },
+      {
+        "key": "GLA 200",
+        "name": "GLA 200"
+      },
+      {
+        "key": "GLA 220",
+        "name": "GLA 220"
+      },
+      {
+        "key": "GLA 250",
+        "name": "GLA 250"
+      },
+      {
+        "key": "GLA 35 AMG",
+        "name": "GLA 35 AMG"
+      },
+      {
+        "key": "GLA 45 AMG",
+        "name": "GLA 45 AMG"
+      }
+    ]
+  },
+  {
+    "make": "MERCEDES-BENZ",
+    "key": "GLB-Klasse",
+    "name": "GLB-Class",
+    "url": "https://services.mobile.de/refdata/classes/Car/makes/MERCEDES-BENZ/modelgroups/GLB-Klasse/models",
+    "status": 200,
+    "models": [
+      {
+        "key": "GLB 180",
+        "name": "GLB 180"
+      },
+      {
+        "key": "GLB 200",
+        "name": "GLB 200"
+      },
+      {
+        "key": "GLB 220",
+        "name": "GLB 220"
+      },
+      {
+        "key": "GLB 250",
+        "name": "GLB 250"
+      },
+      {
+        "key": "GLB 35 AMG",
+        "name": "GLB 35 AMG"
+      },
+      {
+        "key": "GLB 350",
+        "name": "GLB 350"
+      }
+    ]
+  },
+  {
+    "make": "MERCEDES-BENZ",
+    "key": "GLC-Klasse",
+    "name": "GLC-Class",
+    "url": "https://services.mobile.de/refdata/classes/Car/makes/MERCEDES-BENZ/modelgroups/GLC-Klasse/models",
+    "status": 200,
+    "models": [
+      {
+        "key": "GLC 200",
+        "name": "GLC 200"
+      },
+      {
+        "key": "GLC 220",
+        "name": "GLC 220"
+      },
+      {
+        "key": "GLC 250",
+        "name": "GLC 250"
+      },
+      {
+        "key": "GLC 300",
+        "name": "GLC 300"
+      },
+      {
+        "key": "GLC 350",
+        "name": "GLC 350"
+      },
+      {
+        "key": "GLC 400",
+        "name": "GLC 400"
+      },
+      {
+        "key": "GLC 43 AMG",
+        "name": "GLC 43 AMG"
+      },
+      {
+        "key": "GLC 450",
+        "name": "GLC 450"
+      },
+      {
+        "key": "GLC 53 AMG",
+        "name": "GLC 53 AMG"
+      },
+      {
+        "key": "GLC 63 AMG",
+        "name": "GLC 63 AMG"
+      }
+    ]
+  },
+  {
+    "make": "MERCEDES-BENZ",
+    "key": "GLE-Klasse",
+    "name": "GLE-Class",
+    "url": "https://services.mobile.de/refdata/classes/Car/makes/MERCEDES-BENZ/modelgroups/GLE-Klasse/models",
+    "status": 200,
+    "models": [
+      {
+        "key": "GLE 250",
+        "name": "GLE 250"
+      },
+      {
+        "key": "GLE 300",
+        "name": "GLE 300"
+      },
+      {
+        "key": "GLE 350",
+        "name": "GLE 350"
+      },
+      {
+        "key": "GLE 400",
+        "name": "GLE 400"
+      },
+      {
+        "key": "GLE 43 AMG",
+        "name": "GLE 43 AMG"
+      },
+      {
+        "key": "GLE 450 AMG",
+        "name": "GLE 450"
+      },
+      {
+        "key": "GLE 500",
+        "name": "GLE 500"
+      },
+      {
+        "key": "GLE 53 AMG",
+        "name": "GLE 53 AMG"
+      },
+      {
+        "key": "GLE 580",
+        "name": "GLE 580"
+      },
+      {
+        "key": "GLE 63 AMG",
+        "name": "GLE 63 AMG"
+      }
+    ]
+  },
+  {
+    "make": "MERCEDES-BENZ",
+    "key": "GLK-Klasse",
+    "name": "GLK-Class",
+    "url": "https://services.mobile.de/refdata/classes/Car/makes/MERCEDES-BENZ/modelgroups/GLK-Klasse/models",
+    "status": 200,
+    "models": [
+      {
+        "key": "GLK 200",
+        "name": "GLK 200"
+      },
+      {
+        "key": "GLK 220",
+        "name": "GLK 220"
+      },
+      {
+        "key": "GLK 250",
+        "name": "GLK 250"
+      },
+      {
+        "key": "GLK 280",
+        "name": "GLK 280"
+      },
+      {
+        "key": "GLK 300",
+        "name": "GLK 300"
+      },
+      {
+        "key": "GLK 320",
+        "name": "GLK 320"
+      },
+      {
+        "key": "GLK 350",
+        "name": "GLK 350"
+      }
+    ]
+  },
+  {
+    "make": "MERCEDES-BENZ",
+    "key": "GLS-Klasse",
+    "name": "GLS-Class",
+    "url": "https://services.mobile.de/refdata/classes/Car/makes/MERCEDES-BENZ/modelgroups/GLS-Klasse/models",
+    "status": 200,
+    "models": [
+      {
+        "key": "GLS 350",
+        "name": "GLS 350"
+      },
+      {
+        "key": "GLS 400",
+        "name": "GLS 400"
+      },
+      {
+        "key": "GLS 450",
+        "name": "GLS 450"
+      },
+      {
+        "key": "GLS 500",
+        "name": "GLS 500"
+      },
+      {
+        "key": "GLS 580",
+        "name": "GLS 580"
+      },
+      {
+        "key": "GLS 600",
+        "name": "GLS 600"
+      },
+      {
+        "key": "GLS 63",
+        "name": "GLS 63"
+      }
+    ]
+  },
+  {
+    "make": "MERCEDES-BENZ",
+    "key": "GT-Klasse",
+    "name": "GT-Class",
+    "url": "https://services.mobile.de/refdata/classes/Car/makes/MERCEDES-BENZ/modelgroups/GT-Klasse/models",
+    "status": 200,
+    "models": [
+      {
+        "key": "AMG GT",
+        "name": "AMG GT"
+      },
+      {
+        "key": "AMG GT C",
+        "name": "AMG GT C"
+      },
+      {
+        "key": "AMG GT R",
+        "name": "AMG GT R"
+      },
+      {
+        "key": "AMG GT S",
+        "name": "AMG GT S"
+      }
+    ]
+  },
+  {
+    "make": "MERCEDES-BENZ",
+    "key": "ML-Klasse",
+    "name": "ML-Class",
+    "url": "https://services.mobile.de/refdata/classes/Car/makes/MERCEDES-BENZ/modelgroups/ML-Klasse/models",
+    "status": 200,
+    "models": [
+      {
+        "key": "ML 230",
+        "name": "ML 230"
+      },
+      {
+        "key": "ML 250",
+        "name": "ML 250"
+      },
+      {
+        "key": "ML 270",
+        "name": "ML 270"
+      },
+      {
+        "key": "ML 280",
+        "name": "ML 280"
+      },
+      {
+        "key": "ML 300",
+        "name": "ML 300"
+      },
+      {
+        "key": "ML 320",
+        "name": "ML 320"
+      },
+      {
+        "key": "ML 350",
+        "name": "ML 350"
+      },
+      {
+        "key": "ML 400",
+        "name": "ML 400"
+      },
+      {
+        "key": "ML 420",
+        "name": "ML 420"
+      },
+      {
+        "key": "ML 430",
+        "name": "ML 430"
+      },
+      {
+        "key": "ML 450",
+        "name": "ML 450"
+      },
+      {
+        "key": "ML 500",
+        "name": "ML 500"
+      },
+      {
+        "key": "ML 55 AMG",
+        "name": "ML 55 AMG"
+      },
+      {
+        "key": "ML 63 AMG",
+        "name": "ML 63 AMG"
+      }
+    ]
+  },
+  {
+    "make": "MERCEDES-BENZ",
+    "key": "R-Klasse",
+    "name": "R-Class",
+    "url": "https://services.mobile.de/refdata/classes/Car/makes/MERCEDES-BENZ/modelgroups/R-Klasse/models",
+    "status": 200,
+    "models": [
+      {
+        "key": "R 280",
+        "name": "R 280"
+      },
+      {
+        "key": "R 300",
+        "name": "R 300"
+      },
+      {
+        "key": "R 320",
+        "name": "R 320"
+      },
+      {
+        "key": "R 350",
+        "name": "R 350"
+      },
+      {
+        "key": "R 500",
+        "name": "R 500"
+      },
+      {
+        "key": "R 63 AMG",
+        "name": "R 63 AMG"
+      }
+    ]
+  },
+  {
+    "make": "MERCEDES-BENZ",
+    "key": "S-Klasse",
+    "name": "S-Class",
+    "url": "https://services.mobile.de/refdata/classes/Car/makes/MERCEDES-BENZ/modelgroups/S-Klasse/models",
+    "status": 200,
+    "models": [
+      {
+        "key": "S 250",
+        "name": "S 250"
+      },
+      {
+        "key": "S 260",
+        "name": "S 260"
+      },
+      {
+        "key": "S 280",
+        "name": "S 280"
+      },
+      {
+        "key": "S 300",
+        "name": "S 300"
+      },
+      {
+        "key": "S 320",
+        "name": "S 320"
+      },
+      {
+        "key": "S 350",
+        "name": "S 350"
+      },
+      {
+        "key": "S 400",
+        "name": "S 400"
+      },
+      {
+        "key": "S 420",
+        "name": "S 420"
+      },
+      {
+        "key": "S 430",
+        "name": "S 430"
+      },
+      {
+        "key": "S 450",
+        "name": "S 450"
+      },
+      {
+        "key": "S 500",
+        "name": "S 500"
+      },
+      {
+        "key": "S 55",
+        "name": "S 55"
+      },
+      {
+        "key": "S 550",
+        "name": "S 550"
+      },
+      {
+        "key": "S 560",
+        "name": "S 560"
+      },
+      {
+        "key": "S 580",
+        "name": "S 580"
+      },
+      {
+        "key": "S 600",
+        "name": "S 600"
+      },
+      {
+        "key": "S 63 AMG",
+        "name": "S 63 AMG"
+      },
+      {
+        "key": "S 65 AMG",
+        "name": "S 65 AMG"
+      },
+      {
+        "key": "S 650",
+        "name": "S 650"
+      },
+      {
+        "key": "S 680",
+        "name": "S 680"
+      }
+    ]
+  },
+  {
+    "make": "MERCEDES-BENZ",
+    "key": "SL-Klasse",
+    "name": "SL-Class",
+    "url": "https://services.mobile.de/refdata/classes/Car/makes/MERCEDES-BENZ/modelgroups/SL-Klasse/models",
+    "status": 200,
+    "models": [
+      {
+        "key": "SL 230",
+        "name": "SL 230"
+      },
+      {
+        "key": "SL 250",
+        "name": "SL 250"
+      },
+      {
+        "key": "SL 280",
+        "name": "SL 280"
+      },
+      {
+        "key": "SL 300",
+        "name": "SL 300"
+      },
+      {
+        "key": "SL 320",
+        "name": "SL 320"
+      },
+      {
+        "key": "SL 350",
+        "name": "SL 350"
+      },
+      {
+        "key": "SL 380",
+        "name": "SL 380"
+      },
+      {
+        "key": "SL 400",
+        "name": "SL 400"
+      },
+      {
+        "key": "SL 420",
+        "name": "SL 420"
+      },
+      {
+        "key": "SL 43 AMG",
+        "name": "SL 43 AMG"
+      },
+      {
+        "key": "SL 450",
+        "name": "SL 450"
+      },
+      {
+        "key": "SL 500",
+        "name": "SL 500"
+      },
+      {
+        "key": "SL 55 AMG",
+        "name": "SL 55 AMG"
+      },
+      {
+        "key": "SL 560",
+        "name": "SL 560"
+      },
+      {
+        "key": "SL 60 AMG",
+        "name": "SL 60 AMG"
+      },
+      {
+        "key": "SL 600",
+        "name": "SL 600"
+      },
+      {
+        "key": "SL 63 AMG",
+        "name": "SL 63 AMG"
+      },
+      {
+        "key": "SL 65 AMG",
+        "name": "SL 65 AMG"
+      },
+      {
+        "key": "SL 680",
+        "name": "SL 680"
+      },
+      {
+        "key": "SL 70 AMG",
+        "name": "SL 70 AMG"
+      },
+      {
+        "key": "SL 73 AMG",
+        "name": "SL 73 AMG"
+      }
+    ]
+  },
+  {
+    "make": "MERCEDES-BENZ",
+    "key": "SLC-Klasse",
+    "name": "SLC-Class",
+    "url": "https://services.mobile.de/refdata/classes/Car/makes/MERCEDES-BENZ/modelgroups/SLC-Klasse/models",
+    "status": 200,
+    "models": [
+      {
+        "key": "SLC 180",
+        "name": "SLC 180"
+      },
+      {
+        "key": "SLC 200",
+        "name": "SLC 200"
+      },
+      {
+        "key": "SLC 250",
+        "name": "SLC 250"
+      },
+      {
+        "key": "SLC 280",
+        "name": "SLC 280"
+      },
+      {
+        "key": "SLC 300",
+        "name": "SLC 300"
+      },
+      {
+        "key": "SLC 43 AMG",
+        "name": "SLC 43 AMG"
+      }
+    ]
+  },
+  {
+    "make": "MERCEDES-BENZ",
+    "key": "SLK-Klasse",
+    "name": "SLK-Class",
+    "url": "https://services.mobile.de/refdata/classes/Car/makes/MERCEDES-BENZ/modelgroups/SLK-Klasse/models",
+    "status": 200,
+    "models": [
+      {
+        "key": "SLK 200",
+        "name": "SLK 200"
+      },
+      {
+        "key": "SLK 230",
+        "name": "SLK 230"
+      },
+      {
+        "key": "SLK 250",
+        "name": "SLK 250"
+      },
+      {
+        "key": "SLK 280",
+        "name": "SLK 280"
+      },
+      {
+        "key": "SLK 300",
+        "name": "SLK 300"
+      },
+      {
+        "key": "SLK 32 AMG",
+        "name": "SLK 32 AMG"
+      },
+      {
+        "key": "SLK 320",
+        "name": "SLK 320"
+      },
+      {
+        "key": "SLK 350",
+        "name": "SLK 350"
+      },
+      {
+        "key": "SLK 55 AMG",
+        "name": "SLK 55 AMG"
+      }
+    ]
+  },
+  {
+    "make": "MERCEDES-BENZ",
+    "key": "V-Klasse",
+    "name": "V-Class",
+    "url": "https://services.mobile.de/refdata/classes/Car/makes/MERCEDES-BENZ/modelgroups/V-Klasse/models",
+    "status": 200,
+    "models": [
+      {
+        "key": "V 200",
+        "name": "V 200"
+      },
+      {
+        "key": "V 220",
+        "name": "V 220"
+      },
+      {
+        "key": "V 230",
+        "name": "V 230"
+      },
+      {
+        "key": "V 250",
+        "name": "V 250"
+      },
+      {
+        "key": "V 280",
+        "name": "V 280"
+      },
+      {
+        "key": "V 300",
+        "name": "V 300"
+      },
+      {
+        "key": "VLE",
+        "name": "VLE"
+      }
+    ]
+  },
+  {
+    "make": "MERCEDES-BENZ",
+    "key": "X-Klasse",
+    "name": "X-Class",
+    "url": "https://services.mobile.de/refdata/classes/Car/makes/MERCEDES-BENZ/modelgroups/X-Klasse/models",
+    "status": 200,
+    "models": [
+      {
+        "key": "X 220",
+        "name": "X 220"
+      },
+      {
+        "key": "X 250",
+        "name": "X 250"
+      },
+      {
+        "key": "X 350",
+        "name": "X 350"
+      }
+    ]
+  },
+  {
+    "make": "MINI",
+    "key": "ACEMAN_SERIES_ALL",
+    "name": "Aceman",
+    "url": "https://services.mobile.de/refdata/classes/Car/makes/MINI/modelgroups/ACEMAN_SERIES_ALL/models",
+    "status": 200,
+    "models": [
+      {
+        "key": "Aceman E",
+        "name": "Aceman E"
+      },
+      {
+        "key": "Aceman SE",
+        "name": "Aceman SE"
+      },
+      {
+        "key": "John Cooper Works Aceman",
+        "name": "John Cooper Works Aceman"
+      }
+    ]
+  },
+  {
+    "make": "MINI",
+    "key": "CABRIO_SERIES_ALL",
+    "name": "Cabrio Series",
+    "url": "https://services.mobile.de/refdata/classes/Car/makes/MINI/modelgroups/CABRIO_SERIES_ALL/models",
+    "status": 200,
+    "models": [
+      {
+        "key": "COOPER_CABRIO",
+        "name": "Cooper Cabrio"
+      },
+      {
+        "key": "COOPER_D_CABRIO",
+        "name": "Cooper D Cabrio"
+      },
+      {
+        "key": "COOPER_SD_CABRIO",
+        "name": "Cooper SD Cabrio"
+      },
+      {
+        "key": "COOPER_S_CABRIO",
+        "name": "Cooper S Cabrio"
+      },
+      {
+        "key": "JOHN_COOPER_WORKS_CABRIO",
+        "name": "John Cooper Works Cabrio"
+      },
+      {
+        "key": "ONE_CABRIO",
+        "name": "One Cabrio"
+      }
+    ]
+  },
+  {
+    "make": "MINI",
+    "key": "CLUBMAN_SERIES_ALL",
+    "name": "Clubman Series",
+    "url": "https://services.mobile.de/refdata/classes/Car/makes/MINI/modelgroups/CLUBMAN_SERIES_ALL/models",
+    "status": 200,
+    "models": [
+      {
+        "key": "COOPER_CLUBMAN",
+        "name": "Cooper Clubman"
+      },
+      {
+        "key": "COOPER_D_CLUBMAN",
+        "name": "Cooper D Clubman"
+      },
+      {
+        "key": "COOPER_SD_CLUBMAN",
+        "name": "Cooper SD Clubman"
+      },
+      {
+        "key": "COOPER_S_CLUBMAN",
+        "name": "Cooper S Clubman"
+      },
+      {
+        "key": "JOHN_COOPER_WORKS_CLUBMAN",
+        "name": "John Cooper Works Clubman"
+      },
+      {
+        "key": "ONE_CLUBMAN",
+        "name": "One Clubman"
+      },
+      {
+        "key": "ONE_D_CLUBMAN",
+        "name": "One D Clubman"
+      }
+    ]
+  },
+  {
+    "make": "MINI",
+    "key": "COUNTRYMAN_SERIES_ALL",
+    "name": "Countryman Series",
+    "url": "https://services.mobile.de/refdata/classes/Car/makes/MINI/modelgroups/COUNTRYMAN_SERIES_ALL/models",
+    "status": 200,
+    "models": [
+      {
+        "key": "COOPER_COUNTRYMAN",
+        "name": "Cooper Countryman"
+      },
+      {
+        "key": "COOPER_D_COUNTRYMAN",
+        "name": "Countryman D (Cooper)"
+      },
+      {
+        "key": "COOPER_SD_COUNTRYMAN",
+        "name": "Cooper SD Countryman"
+      },
+      {
+        "key": "COOPER_S_COUNTRYMAN",
+        "name": "Countryman S (Cooper)"
+      },
+      {
+        "key": "Cooper C Countryman",
+        "name": "Countryman C (Cooper)"
+      },
+      {
+        "key": "Cooper E Countryman",
+        "name": "Countryman E (Cooper)"
+      },
+      {
+        "key": "Cooper SE Countryman",
+        "name": "Countryman SE (Cooper)"
+      },
+      {
+        "key": "JOHN_COOPER_WORKS_COUNTRYMAN",
+        "name": "John Cooper Works Countryman"
+      },
+      {
+        "key": "ONE_COUNTRYMAN",
+        "name": "One Countryman"
+      },
+      {
+        "key": "ONE_D_COUNTRYMAN",
+        "name": "One D Countryman"
+      }
+    ]
+  },
+  {
+    "make": "MINI",
+    "key": "COUPE_SERIES_ALL",
+    "name": "Coupe Series",
+    "url": "https://services.mobile.de/refdata/classes/Car/makes/MINI/modelgroups/COUPE_SERIES_ALL/models",
+    "status": 200,
+    "models": [
+      {
+        "key": "COOPER_COUPE",
+        "name": "Cooper Coup\u00e9"
+      },
+      {
+        "key": "COOPER_SD_COUPE",
+        "name": "Cooper SD Coup\u00e9"
+      },
+      {
+        "key": "COOPER_S_COUPE",
+        "name": "Cooper S Coup\u00e9"
+      },
+      {
+        "key": "JOHN_COOPER_WORKS_COUPE",
+        "name": "John Cooper Works Coup\u00e9"
+      }
+    ]
+  },
+  {
+    "make": "MINI",
+    "key": "MINI_ALL",
+    "name": "MINI",
+    "url": "https://services.mobile.de/refdata/classes/Car/makes/MINI/modelgroups/MINI_ALL/models",
+    "status": 200,
+    "models": [
+      {
+        "key": "1000",
+        "name": "1000"
+      },
+      {
+        "key": "1300",
+        "name": "1300"
+      },
+      {
+        "key": "COOPER",
+        "name": "Cooper"
+      },
+      {
+        "key": "COOPER SE",
+        "name": "Cooper SE"
+      },
+      {
+        "key": "COOPER_D",
+        "name": "Cooper D"
+      },
+      {
+        "key": "COOPER_S",
+        "name": "Cooper S"
+      },
+      {
+        "key": "COOPER_SD",
+        "name": "Cooper SD"
+      },
+      {
+        "key": "Cooper C",
+        "name": "Cooper C"
+      },
+      {
+        "key": "Cooper E",
+        "name": "Cooper E"
+      },
+      {
+        "key": "JOHN_COOPER_WORKS",
+        "name": "John Cooper Works"
+      },
+      {
+        "key": "ONE",
+        "name": "ONE"
+      },
+      {
+        "key": "ONE_D",
+        "name": "One D"
+      },
+      {
+        "key": "ONE_FIRST",
+        "name": "One First"
+      }
+    ]
+  },
+  {
+    "make": "MINI",
+    "key": "PACEMAN_SERIES_ALL",
+    "name": "Paceman Series",
+    "url": "https://services.mobile.de/refdata/classes/Car/makes/MINI/modelgroups/PACEMAN_SERIES_ALL/models",
+    "status": 200,
+    "models": [
+      {
+        "key": "COOPER_D_PACEMAN",
+        "name": "Cooper D Paceman"
+      },
+      {
+        "key": "COOPER_PACEMAN",
+        "name": "Cooper Paceman"
+      },
+      {
+        "key": "COOPER_SD_PACEMAN",
+        "name": "Cooper SD Paceman"
+      },
+      {
+        "key": "COOPER_S_PACEMAN",
+        "name": "Cooper S Paceman"
+      },
+      {
+        "key": "JOHN_COOPER_WORKS_PACEMAN",
+        "name": "John Cooper Works Paceman"
+      }
+    ]
+  },
+  {
+    "make": "MINI",
+    "key": "ROADSTER_SERIES_ALL",
+    "name": "Roadster Series",
+    "url": "https://services.mobile.de/refdata/classes/Car/makes/MINI/modelgroups/ROADSTER_SERIES_ALL/models",
+    "status": 200,
+    "models": [
+      {
+        "key": "COOPER_ROADSTER",
+        "name": "Cooper Roadster"
+      },
+      {
+        "key": "COOPER_SD_ROADSTER",
+        "name": "Cooper SD Roadster"
+      },
+      {
+        "key": "COOPER_S_ROADSTER",
+        "name": "Cooper S Roadster"
+      },
+      {
+        "key": "JOHN_COOPER_WORKS_ROADSTER",
+        "name": "John Cooper Works Roadster"
+      }
+    ]
+  },
+  {
+    "make": "PORSCHE",
+    "key": "911",
+    "name": "Series 911",
+    "url": "https://services.mobile.de/refdata/classes/Car/makes/PORSCHE/modelgroups/911/models",
+    "status": 200,
+    "models": [
+      {
+        "key": "911",
+        "name": "911"
+      },
+      {
+        "key": "930",
+        "name": "930"
+      },
+      {
+        "key": "964",
+        "name": "964"
+      },
+      {
+        "key": "991",
+        "name": "991"
+      },
+      {
+        "key": "992",
+        "name": "992"
+      },
+      {
+        "key": "993",
+        "name": "993"
+      },
+      {
+        "key": "996",
+        "name": "996"
+      },
+      {
+        "key": "997",
+        "name": "997"
+      }
+    ]
+  },
+  {
+    "make": "VW",
+    "key": "Golf",
+    "name": "Golf",
+    "url": "https://services.mobile.de/refdata/classes/Car/makes/VW/modelgroups/Golf/models",
+    "status": 200,
+    "models": [
+      {
+        "key": "Golf",
+        "name": "Golf"
+      },
+      {
+        "key": "Golf Plus",
+        "name": "Golf Plus"
+      },
+      {
+        "key": "Golf Sportsvan",
+        "name": "Golf Sportsvan"
+      }
+    ]
+  },
+  {
+    "make": "VW",
+    "key": "Passat",
+    "name": "Passat",
+    "url": "https://services.mobile.de/refdata/classes/Car/makes/VW/modelgroups/Passat/models",
+    "status": 200,
+    "models": [
+      {
+        "key": "Passat",
+        "name": "Passat"
+      },
+      {
+        "key": "Passat Alltrack",
+        "name": "Passat Alltrack"
+      },
+      {
+        "key": "Passat CC",
+        "name": "Passat CC"
+      },
+      {
+        "key": "Passat Variant",
+        "name": "Passat Variant"
+      }
+    ]
+  },
+  {
+    "make": "VW",
+    "key": "T3",
+    "name": "T3",
+    "url": "https://services.mobile.de/refdata/classes/Car/makes/VW/modelgroups/T3/models",
+    "status": 200,
+    "models": [
+      {
+        "key": "T3 Caravelle",
+        "name": "T3 Caravelle"
+      },
+      {
+        "key": "T3 Multivan",
+        "name": "T3 Multivan"
+      },
+      {
+        "key": "T3_Kombi",
+        "name": "T3 Kombi"
+      },
+      {
+        "key": "T3__MODEL_OTHER",
+        "name": "T3 other"
+      }
+    ]
+  },
+  {
+    "make": "VW",
+    "key": "T4",
+    "name": "T4",
+    "url": "https://services.mobile.de/refdata/classes/Car/makes/VW/modelgroups/T4/models",
+    "status": 200,
+    "models": [
+      {
+        "key": "T4 California",
+        "name": "T4 California"
+      },
+      {
+        "key": "T4 Caravelle",
+        "name": "T4 Caravelle"
+      },
+      {
+        "key": "T4 Multivan",
+        "name": "T4 Multivan"
+      },
+      {
+        "key": "T4_Kombi",
+        "name": "T4 Kombi"
+      },
+      {
+        "key": "T4__MODEL_OTHER",
+        "name": "T4 other"
+      }
+    ]
+  },
+  {
+    "make": "VW",
+    "key": "T5",
+    "name": "T5",
+    "url": "https://services.mobile.de/refdata/classes/Car/makes/VW/modelgroups/T5/models",
+    "status": 200,
+    "models": [
+      {
+        "key": "T5 California",
+        "name": "T5 California"
+      },
+      {
+        "key": "T5 Caravelle",
+        "name": "T5 Caravelle"
+      },
+      {
+        "key": "T5 Multivan",
+        "name": "T5 Multivan"
+      },
+      {
+        "key": "T5 Shuttle",
+        "name": "T5 Shuttle"
+      },
+      {
+        "key": "T5 Transporter",
+        "name": "T5 Transporter"
+      },
+      {
+        "key": "T5_Kombi",
+        "name": "T5 Kombi"
+      },
+      {
+        "key": "T5__MODEL_OTHER",
+        "name": "T5 other"
+      }
+    ]
+  },
+  {
+    "make": "VW",
+    "key": "T6",
+    "name": "T6",
+    "url": "https://services.mobile.de/refdata/classes/Car/makes/VW/modelgroups/T6/models",
+    "status": 200,
+    "models": [
+      {
+        "key": "T6 California",
+        "name": "T6 California"
+      },
+      {
+        "key": "T6 Caravelle",
+        "name": "T6 Caravelle"
+      },
+      {
+        "key": "T6 Kombi",
+        "name": "T6 Kombi"
+      },
+      {
+        "key": "T6 Multivan",
+        "name": "T6 Multivan"
+      },
+      {
+        "key": "T6 Transporter",
+        "name": "T6 Transporter"
+      },
+      {
+        "key": "T6__MODEL_OTHER",
+        "name": "T6 other"
+      }
+    ]
+  },
+  {
+    "make": "VW",
+    "key": "T7",
+    "name": "T7",
+    "url": "https://services.mobile.de/refdata/classes/Car/makes/VW/modelgroups/T7/models",
+    "status": 200,
+    "models": [
+      {
+        "key": "T7 California",
+        "name": "T7 California"
+      },
+      {
+        "key": "T7 Caravelle",
+        "name": "T7 Caravelle"
+      },
+      {
+        "key": "T7 Kombi",
+        "name": "T7 Kombi"
+      },
+      {
+        "key": "T7 Multivan",
+        "name": "T7 Multivan"
+      },
+      {
+        "key": "T7 Transporter",
+        "name": "T7 Transporter"
+      },
+      {
+        "key": "T7__MODEL_OTHER",
+        "name": "T7 other"
+      }
+    ]
+  }
+]

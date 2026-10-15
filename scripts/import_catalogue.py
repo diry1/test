@@ -52,6 +52,8 @@ if __name__ == "__main__":
     parser.add_argument("destination")
     args = parser.parse_args()
     models = convert(args.source)
+    from expand_catalogue import expand
+    models, _, _ = expand(models)
     Path(args.destination).write_text(json.dumps(models, ensure_ascii=False, separators=(",", ":")) + "\n", encoding="utf-8")
     print(f"Imported {len(models)} models, {len({m['brand'] for m in models})} brands, "
           f"{sum(len(m['generations']) for m in models)} generations")

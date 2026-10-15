@@ -1,0 +1,16 @@
+{
+  "original_models": 5053,
+  "added_models": 3532,
+  "total_models": 8585,
+  "original_brand_folders": 387,
+  "total_brand_folders": 538,
+  "references": 8052,
+  "unresolved_references": 15,
+  "new_models_by_source": {
+    "mobile.de": 579,
+    "VehiclesDB": 2953
+  },
+  "linked_references": 4505,
+  "generation_records": 10456,
+  "specification_records": 98333
+}
